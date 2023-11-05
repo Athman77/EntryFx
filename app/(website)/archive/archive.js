@@ -14,7 +14,7 @@ export default async function Post({ searchParams }) {
   const pageIndex = parseInt(page, 10) || 1;
 
   // Set the number of posts to be displayed per page
-  const POSTS_PER_PAGE = 6;
+  const POSTS_PER_PAGE = 7;
 
   // Define the parameters for fetching posts based on the current page
   const params = {
@@ -76,7 +76,7 @@ export default async function Post({ searchParams }) {
                         preloadImage={true}
                       />
                     ))}
-                    {posts.slice(2, 5000).map((post) => (
+                    {posts.slice(1, 5000).map((post) => (
                       <BlogTwo
                         key={post._id}
                         post={post}
@@ -96,7 +96,9 @@ export default async function Post({ searchParams }) {
         isFirstPage={isFirstPage}
         isLastPage={isLastPage}
       />
-                  </main>
+                     <Subscribe />
+          </main>
+          <Footer />
                  </div>
                           </div>
     </>
