@@ -43,7 +43,7 @@ export default async function Post({ searchParams }) {
               <h1 className="global-title-large">Latest</h1>
               <span className="archive-counter">Articles & News</span>
               <p className="archive-description">
-                Popular Blog Post We update everyday.
+        
               </p>
             </div>
 
