@@ -61,14 +61,14 @@ export default async function Post({ searchParams }) {
             <div className="loop-section">
               <div className="loop-wrap">
                 {/*** blog **/}
-                {visiblePosts && visiblePosts?.length === 0 && (
+                {posts && posts?.length === 0 && (
                   <div className="flex h-40 items-center justify-center">
                     <span className="text-lg text-gray-500">
                       End of the result!
                     </span>
                   </div>
                 )}
-               {visiblePosts.slice(0, 1).map((post) => (
+               {posts.slice(0, 1).map((post) => (
                       <BlogOne
                         key={post._id}
                         post={post}
@@ -76,7 +76,7 @@ export default async function Post({ searchParams }) {
                         preloadImage={true}
                       />
                     ))}
-                    {visiblePosts.slice(2, 5000).map((post) => (
+                    {posts.slice(2, 5000).map((post) => (
                       <BlogTwo
                         key={post._id}
                         post={post}
