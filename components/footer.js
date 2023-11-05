@@ -6,57 +6,77 @@ import VercelLogo from "../public/img/vercel.svg";
 
 export default function Footer(props) {
   return (
-    <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
-      <div className="text-center text-sm">
-        Copyright © {new Date().getFullYear()} {props?.copyright}. All
-        rights reserved.
+    
+        <>
+        <footer className="footer-section global-footer">
+    <div className="footer-wrap">
+      <div className="footer-logo">
+        <a href="/" className="is-image"><img src="https://cdn.sanity.io/images/cwzkjmps/production/0b99b196195486d2660b0667b1453b3384244d52-240x60.png" alt="Genki" /></a>
       </div>
-      <div className="mt-1 flex justify-center gap-1 text-center text-sm text-gray-500 dark:text-gray-600">
-        <span>
-          {" "}
-          Made by{" "}
-          {/*  // ** 🙏  Can I ask you a favor? 🙏 **
-            // Please do not remove the below link.
-           // It helps us to grow & continue our work. Thank you.
-          // OR Purchase PRO version for commercial license.  */}
-          <a
-            href="https://web3templates.com/?ref=stablo-template"
-            rel="noopener"
-            target="_blank">
-            Web3Templates
-          </a>
-        </span>
-        <span>&middot;</span>
-        <span>
-          {" "}
-          <a
-            href="https://github.com/web3templates/stablo"
-            rel="noopener"
-            target="_blank">
-            Github
-          </a>
-        </span>
-      </div>
-      <div className="mt-2 flex items-center justify-between">
-        <div className="mt-5">
-          <a
-            href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
-            target="_blank"
-            rel="noopener"
-            className="relative block w-44">
-            <Image
-              src={VercelLogo}
-              alt="Powered by Vercel"
-              unoptimized={true}
-              width="150"
-              height="25"
-            />
-          </a>
+      <div className="footer-nav">
+        <div className="footer-nav-column is-social">
+          <small>Social</small>
+          <ul>
+            <li><a href=""><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"></path>
+                </svg>Facebook</a></li>
+            <li><a href=""><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+                </svg>Twitter</a></li>
+
+
+            <li><a href="https://youtube.com/@Binarybotsltd?si=WmbTs1GG24fsM-E5"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path className="a" d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path>
+                </svg>YouTube</a></li>
+          </ul>
         </div>
-        <ThemeSwitch />
+
+
+
+
+        <div className="footer-nav-column">
+          <small>About</small>
+          <ul>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Our Podcast</a></li>
+          </ul>
+        </div>
+
+        <div className="footer-nav-column">
+          <small>Features</small>
+          <ul>
+            <li><a href="">Features</a></li>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">Tags</a></li>
+          </ul>
+        </div>
+
+  {/* <div className="footer-nav-column">
+          <small>Support</small>
+          <ul>
+            <li><a href="https://genki.fueko.net/">Light version</a></li>
+            <li><a href="https://genki-medium.fueko.net/">Medium version</a></li>
+            <li><a href="https://genki-dark.fueko.net/demo-account-paid-member/">Account</a></li>
+          </ul>
+        </div>*/}
+
+        <div className="footer-nav-column">
+          <small>Membership</small>
+          <ul>
+            <li><a href="">Sign in Today</a></li>
+            <li><a href="">Sign up Today</a></li>
+          </ul>
+        </div>
+
       </div>
-      <Backlink />
-    </Container>
+    </div>
+    <div className="footer-copyright">
+      <a href="">NextApp</a> © 2023 —
+      All Right Reserved. Published with <a href="" target="_blank" rel="noopener noreferrer">NextApp</a> &amp; <a href="" target="_blank" rel="noopener noreferrer">TechLink</a>.
+    </div>
+  </footer>
+                </>
   );
 }
 
