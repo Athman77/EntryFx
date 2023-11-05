@@ -25,7 +25,7 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable)}>
-      <body className="antialiased text-gray-800 dark:bg-black dark:text-gray-400">
+      <body className="antialiased sepia-mode">
         <Providers>{children}</Providers>
       </body>
     </html>
