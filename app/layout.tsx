@@ -1,4 +1,6 @@
 import "@/styles/tailwind.css";
+import "@/styles/screen(1).css";
+import "@/styles/cards.min(1).css";
 import { Providers } from "./providers";
 import { cx } from "@/utils/all";
 import { Inter, Lora } from "next/font/google";
