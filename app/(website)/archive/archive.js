@@ -1,6 +1,11 @@
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
-
+import BlogOne from "@/components/blogone";
+import BlogTwo from "@/components/blogtwo";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+//import PostList from "@/components/postlist";
+import Subscribe from "@/components/subscribe";
 import { getPaginatedPosts } from "@/lib/sanity/client";
 
 export default async function Post({ searchParams }) {
@@ -25,6 +30,24 @@ export default async function Post({ searchParams }) {
 
   return (
     <>
+  <div className="global-cover"></div>
+
+      <div className="global-wrap">
+        <div className="global-content">
+          <Header />
+    
+
+    
+ <main className="global-main">
+            <div className="archive-section">
+              <h1 className="global-title-large">Latest</h1>
+              <span className="archive-counter">Articles & News</span>
+              <p className="archive-description">
+                Popular Blog Post We update everyday.
+              </p>
+            </div>
+
+    
       {posts && posts?.length === 0 && (
         <div className="flex h-40 items-center justify-center">
           <span className="text-lg text-gray-500">
@@ -32,17 +55,50 @@ export default async function Post({ searchParams }) {
           </span>
         </div>
       )}
-      <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3">
-        {posts.map(post => (
-          <PostList key={post._id} post={post} aspect="square" />
-        ))}
-      </div>
+
+
+       {/** ==.hhd ==**/}
+            <div className="loop-section">
+              <div className="loop-wrap">
+                {/*** blog **/}
+                {visiblePosts && visiblePosts?.length === 0 && (
+                  <div className="flex h-40 items-center justify-center">
+                    <span className="text-lg text-gray-500">
+                      End of the result!
+                    </span>
+                  </div>
+                )}
+               {visiblePosts.slice(0, 1).map((post) => (
+                      <BlogOne
+                        key={post._id}
+                        post={post}
+                        aspect="landscape"
+                        preloadImage={true}
+                      />
+                    ))}
+                    {visiblePosts.slice(2, 5000).map((post) => (
+                      <BlogTwo
+                        key={post._id}
+                        post={post}
+                        aspect="landscape"
+                        preloadImage={true}
+                      />
+                    ))}
+              
+              </div>
+            </div>
+
+
+      
 
       <Pagination
         pageIndex={pageIndex}
         isFirstPage={isFirstPage}
         isLastPage={isLastPage}
       />
+                  </main>
+                 </div>
+                          </div>
     </>
   );
 }
