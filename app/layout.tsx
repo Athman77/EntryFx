@@ -1,6 +1,7 @@
 import "@/styles/tailwind.css";
 import "@/styles/screen.css";
 import "@/styles/cards.min.css";
+import { Analytics } from '@vercel/analytics/react';
 import { Providers } from "./providers";
 import { cx } from "@/utils/all";
 import { Inter, Lora } from "next/font/google";
@@ -27,6 +28,7 @@ export default function RootLayout({
       className={cx(inter.variable, lora.variable)}>
       <body className="antialiased sepia-mode">
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
