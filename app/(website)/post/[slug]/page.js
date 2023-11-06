@@ -1,7 +1,9 @@
 import PostPage from "./default";
 
 import { getAllPostsSlugs, getPostBySlug } from "@/lib/sanity/client";
+export const dynamic = "force-dynamic";
 
+export const runtime = "edge";
 export async function generateStaticParams() {
   return await getAllPostsSlugs();
 }
@@ -16,4 +18,4 @@ export default async function PostDefault({ params }) {
   return <PostPage post={post} />;
 }
 
-// export const revalidate = 60;
+export const revalidate = 10;
