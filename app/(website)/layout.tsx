@@ -25,13 +25,11 @@ async function sharedMetaData(params) {
     openGraph: {
       images: [
         {
-          url:
-            urlForImage(settings?.openGraphImage)?.src ||
-            "/img/opengraph.jpg",
+          url: "https://cdn.sanity.io/images/cwzkjmps/production/a03cf28eead83f5e47e9a3eb309616d7e1b6fb97-1014x760.png",
           width: 800,
-          height: 600
-        }
-      ]
+          height: 600,
+        },
+      ],
     },
     twitter: {
       title: settings?.title || "Stablo Template",
