@@ -4644,3 +4644,15 @@ body {
   border-color: rgb(226 232 240 / var(--tw-border-opacity))
 }
 /*Custom Styles Here*/
+.vida {
+
+width:100% !important;
+height:100% !important;
+position: relative !important;
+}
+@media (min-width: 768px) {
+/* Apply max-height only on screens larger than 768px width */
+.vida {
+max-height: 500px !important;
+}
+                           }
