@@ -12,7 +12,7 @@ export default function Post({ posts }) {
   return (
     <>
       
-        
+         
           <div className="global-cover"></div>
           <div className="global-wrap">
             <div className="global-content">
