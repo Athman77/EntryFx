@@ -95,13 +95,36 @@ export default function Post(props) {
                   </div>
                 </div>
                 <figure className="post-image">
-                  {imageProps && (
-                    <img
-                      sizes="(max-width:480px) 400px, (max-width:1440px) 800px, 1600px"
-                      src={imageProps.src}
-                      alt="Look at life with the eyes of a child"
-                    />
-                  )}
+                {post.videoType === "upload" ? (
+                            <video
+                              className="vida"
+                              id="my-video"
+                              controls
+                              poster={cover?.src}
+                              // autoPlay
+                              playsInline>
+                              <source
+                                src={post?.videoUrl}
+                                type="video/mp4"
+                                data-quality="720p"
+                                title="720p"
+                                label="720p"
+                                res="720"
+                                size="720"
+                              />
+                            </video>
+                          ) : (
+                            <iframe
+                              width="100%"
+                              height="100%"
+                              // src={post?.youtube}
+                              src={`https://www.youtube.com/embed/${post?.youtube}?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A3000&amp;widgetid=1`}
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowFullscreen></iframe>
+                              )}
+                 
                 </figure>
               </div>
 
