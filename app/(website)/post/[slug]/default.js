@@ -24,7 +24,9 @@ export default function Post(props) {
   const imageProps = post?.mainImage
     ? urlForImage(post?.mainImage)
     : null;
-
+const cover = post?.videoCover
+    ? urlForImage(post?.videoCover)
+    : null;
   const AuthorimageProps = post?.author?.image
     ? urlForImage(post.author.image)
     : null;
@@ -41,7 +43,7 @@ export default function Post(props) {
             <progress className="post-progress"></progress>
 
             <article className="post-section">
-              <div className="post-header post-full-imageB">
+              <div className="post-header post-full-image">
                 <div className="post-header-content">
                   <div className="post-tags global-tags">
                     <a href="">Lifestyle</a>
@@ -121,7 +123,7 @@ export default function Post(props) {
                               src={`https://www.youtube.com/embed/${post?.youtube}?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A3000&amp;widgetid=1`}
                               title="YouTube video player"
                               frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                             // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                               allowFullscreen></iframe>
                               )}
                  
