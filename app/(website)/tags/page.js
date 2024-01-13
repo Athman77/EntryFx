@@ -1,24 +1,13 @@
-import { Suspense } from "react";
-import Container from "@/components/container";
-import Archive from "./archive";
-import Loading from "@/components/loading";
+import Tags from "./archive";
 
+import { getAllPosts } from "@/lib/sanity/client";
 export const dynamic = "force-dynamic";
 
 export const runtime = "edge";
-
-export default async function ArchivePage({ searchParams }) {
-  return (
-    <>
-
-        <Suspense
-          key={searchParams.page || "1"}
-          fallback={<Loading />}>
-          <Archive searchParams={searchParams} />
-        </Suspense>
-    
-    </>
-  );
+export default async function IndexPage() {
+  const posts = await getAllPosts();
+  return <Tags posts={posts} />;
 }
+
 
 // export const revalidate = 60;
