@@ -4,6 +4,11 @@ import Header from "@/components/header";
 import Link from "next/link";
 export default function Tags({ posts }) {
 
+
+
+  const lifeStyles = posts.filter((post) => {
+    return post.categories.some((category) => category.title === "lifestyle");
+  });
   return (
     <>
       <div className="global-cover"></div>
@@ -32,22 +37,25 @@ export default function Tags({ posts }) {
                     </a>
                   </Link>
                   <h2>
-                    <a href="/tag/creative/">All Posts</a>
+                  <Link href="/archive">
+                    <a>All Posts</a></Link>
                   </h2>
                   <span>{posts?.length} posts</span>
                 </div>
                 <div className="custom-archive-item">
-                  <a href="/tag/art/" className="global-image">
+                <Link href="/archive">
+                  <a className="global-image">
                     <img
                       src="https://cdn.sanity.io/images/11ognen8/production/e3b0790ad874f9f0436391aa924b44ee09183a3c-736x1104.jpg"
                       loading="lazy"
                       alt="Art"
                     />{" "}
                   </a>
+                  </Link>
                   <h2>
-                    <a href="/tag/art/">Lifestyle</a>
-                  </h2>
-                  <span>5 posts</span>
+                  <Link href="/archive">
+                    <a>Lifestyle</a></Link>
+                  </h2><span>{posts && lifeStyles?.length ? `${lifeStyles.length} posts` : '0 posts'}</span>
                 </div>
                 <div className="custom-archive-item">
                   <a href="/tag/lifestyle/" className="global-image">
