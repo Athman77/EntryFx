@@ -57,13 +57,7 @@ export default async function Post({ searchParams }) {
             <div className="loop-section">
               <div className="loop-wrap">
                 {/*** blog **/}
-                {quran && quran?.length === 0 && (
-                  <div className="flex h-40 items-center justify-center">
-                    <span className="text-lg text-gray-500">
-                      End of the result!
-                    </span>
-                  </div>
-                )}
+             
                 {quran.slice(0, 1).map(post => (
                   <BlogOne
                     key={post._id}
