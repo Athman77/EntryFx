@@ -22,8 +22,8 @@ export default async function Post({ searchParams }) {
     limit: pageIndex * POSTS_PER_PAGE
   };
 
-  const posts = await getPaginatedPosts(params);
-  const quran = posts.filter(post => post.videoType === 'youtube');
+  //const posts = await getPaginatedPosts(params);
+  const quran = await getPaginatedPosts(params).filter(post => post.videoType === 'youtube');
  
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
