@@ -39,64 +39,48 @@ export default async function Post({ searchParams }) {
 
     
  <main className="global-main">
-            <div className="archive-section">
-              <h1 className="global-title-large">Latest</h1>
-              <span className="archive-counter">Articles & News</span>
-              <p className="archive-description">
-        
-              </p>
-            </div>
-
-    
-      {posts && posts?.length === 0 && (
-        <div className="flex h-40 items-center justify-center">
-          <span className="text-lg text-gray-500">
-            End of the result!
-          </span>
-        </div>
-      )}
-
-
-       {/** ==.hhd ==**/}
-            <div className="loop-section">
-              <div className="loop-wrap">
-                {/*** blog **/}
-                {posts && posts?.length === 0 && (
-                  <div className="flex h-40 items-center justify-center">
-                    <span className="text-lg text-gray-500">
-                      End of the result!
-                    </span>
-                  </div>
-                )}
-               {posts.slice(0, 1).map((post) => (
-                      <BlogOne
-                        key={post._id}
-                        post={post}
-                        aspect="landscape"
-                        preloadImage={true}
-                      />
-                    ))}
-                    {posts.slice(1, 5000).map((post) => (
-                      <BlogTwo
-                        key={post._id}
-                        post={post}
-                        aspect="landscape"
-                        preloadImage={true}
-                      />
-                    ))}
-              
-              </div>
-            </div>
-
-
-      
-
-      <Pagination
-        pageIndex={pageIndex}
-        isFirstPage={isFirstPage}
-        isLastPage={isLastPage}
-      />
-                     <Subscribe />
+ <div className="custom-archive-section">
+ <h1 id="post-title" className="custom-archive-title global-title-big">Explore our <span>tags</span></h1>
+ <div className="custom-archive-wrap loop-wrap">
+   <div className="custom-archive-item">
+     <a href="/tag/creative/" className="global-image">
+       <img src="images/veronika-jorjobert-UU62Fwb5VxQ-unsplash-1.jpg" loading="lazy" alt="Creative" /> </a>
+     <h2><a href="/tag/creative/">Creative</a></h2>
+     <span>10 posts</span>
+   </div>
+   <div className="custom-archive-item">
+     <a href="/tag/art/" className="global-image">
+       <img src="images/allec-gomes-6J2zxXbjcxo-unsplash.jpg" loading="lazy" alt="Art" /> </a>
+     <h2><a href="/tag/art/">Art</a></h2>
+     <span>10 posts</span>
+   </div>
+   <div className="custom-archive-item">
+     <a href="/tag/lifestyle/" className="global-image">
+       <img src="images/laura-adai-eHdRLiazcww-unsplash.jpg" loading="lazy" alt="Lifestyle" /> </a>
+     <h2><a href="/tag/lifestyle/">Lifestyle</a></h2>
+     <span>9 posts</span>
+   </div>
+   <h3 className="custom-archive-heading global-title-small"><span>See also</span></h3>
+   <div className="custom-archive-item bottom">
+     <a href="/tag/review/" className="global-image">
+       <img src="images/photo-1612599316791-451087c7fe15.jpeg" loading="lazy" alt="Review" /> </a>
+     <h2><a href="/tag/review/">Review</a></h2>
+     <span>6 posts</span>
+   </div>
+   <div className="custom-archive-item bottom">
+     <a href="/tag/people/" className="global-image">
+       <img src="images/photo-1585007600263-71228e40c8d1.jpeg" loading="lazy" alt="People" /> </a>
+     <h2><a href="/tag/people/">People</a></h2>
+     <span>5 posts</span>
+   </div>
+   <div className="custom-archive-item bottom">
+     <a href="/tag/idea/" className="global-image">
+       <img src="images/photo-1611095564350-2cbe940a8d99.jpeg" loading="lazy" alt="Idea" /> </a>
+     <h2><a href="/tag/idea/">Idea</a></h2>
+     <span>4 posts</span>
+   </div>
+ </div>
+</div>
           </main>
           <Footer />
                  </div>
