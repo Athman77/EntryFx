@@ -43,8 +43,10 @@ export default async function Post({ searchParams }) {
  <h1 id="post-title" className="custom-archive-title global-title-big">Explore our <span>tags</span></h1>
  <div className="custom-archive-wrap loop-wrap">
    <div className="custom-archive-item">
-     <a href="/tag/creative/" className="global-image">
-       <img src="https://cdn.sanity.io/images/11ognen8/production/b40108ca9bb60da852779daf553cf78e95a67089-736x736.jpg" loading="lazy" alt="Creative" /> </a>
+   <Link href="/archive">
+   
+     <a className="global-image">
+       <img src="https://cdn.sanity.io/images/11ognen8/production/b40108ca9bb60da852779daf553cf78e95a67089-736x736.jpg" loading="lazy" alt="Creative" /> </a></Link>
      <h2><a href="/tag/creative/">All Posts</a></h2>
      <span>{posts?.length} posts</span>
    </div>
