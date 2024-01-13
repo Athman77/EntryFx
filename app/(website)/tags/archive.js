@@ -98,15 +98,18 @@ export default function Tags({ posts }) {
                   <span>5 posts</span>
                 </div>
                 <div className="custom-archive-item bottom">
-                  <a href="/tag/idea/" className="global-image">
+                <Link href="/archive">
+                  <a className="global-image">
                     <img
                       src="https://cdn.sanity.io/images/11ognen8/production/4db7c7a7e98225f1b003b93c5bebf6b197493b15-433x639.jpg"
                       loading="lazy"
                       alt="Idea"
                     />{" "}
                   </a>
+                  </Link>
                   <h2>
-                    <a href="/tag/idea/">Quran Recitation</a>
+                  <Link href="/quran">
+                    <a>Quran Recitation</a></Link>
                   </h2>
                   <span>4 posts</span>
                 </div>
