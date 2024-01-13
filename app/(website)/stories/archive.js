@@ -12,7 +12,7 @@ import post from "@/lib/sanity/schemas/post";
 export default async function Post({ searchParams }) {
   // Fetch the current page from the query parameters, defaulting to 1 if it doesn't exist
   const page = searchParams.page;
-  const pageIndex = parseInt(page, 10) || 1;
+  const pageIndex = parseInt(page, 10) || 0;
 
   // Set the number of posts to be displayed per page
   const POSTS_PER_PAGE = 7;
