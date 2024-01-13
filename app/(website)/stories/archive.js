@@ -40,7 +40,7 @@ export default async function Post({ searchParams }) {
 
           <main className="global-main">
             <div className="archive-section">
-              <h1 className="global-title-large">Quran</h1>
+              <h1 className="global-title-large">Islamic Stories</h1>
               <span className="archive-counter">Articles & News</span>
               <p className="archive-description"></p>
             </div>

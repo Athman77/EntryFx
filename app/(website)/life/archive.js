@@ -24,7 +24,7 @@ export default async function Post({ searchParams }) {
   };
 
   const posts = await getPaginatedPosts(params);
-  const quran = posts.filter(post => post.tags === "quran");
+  const quran = posts.filter(post => post.tags === "lifeStyle");
 
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
@@ -40,7 +40,7 @@ export default async function Post({ searchParams }) {
 
           <main className="global-main">
             <div className="archive-section">
-              <h1 className="global-title-large">Quran</h1>
+              <h1 className="global-title-large">Lifestyle</h1>
               <span className="archive-counter">Articles & News</span>
               <p className="archive-description"></p>
             </div>
@@ -57,13 +57,7 @@ export default async function Post({ searchParams }) {
             <div className="loop-section">
               <div className="loop-wrap">
                 {/*** blog **/}
-                {quran && quran?.length === 0 && (
-                  <div className="flex h-40 items-center justify-center">
-                    <span className="text-lg text-gray-500">
-                      End of the result!
-                    </span>
-                  </div>
-                )}
+              
                 {quran.slice(0, 1).map(post => (
                   <BlogOne
                     key={post._id}
@@ -87,7 +81,7 @@ export default async function Post({ searchParams }) {
               pageIndex={pageIndex}
               isFirstPage={isFirstPage}
               isLastPage={isLastPage}
-              tag="quran"
+              tag="life"
             />
             <Subscribe />
           </main>
