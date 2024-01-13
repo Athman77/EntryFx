@@ -89,7 +89,18 @@ width: 7rem !important; /* 112px */
 }
 
 /*****/
+.vida {
 
+width:100% !important;
+height:100% !important;
+position: relative !important;
+}
+@media (min-width: 768px) {
+/* Apply max-height only on screens larger than 768px width */
+.vida {
+max-height: 500px !important;
+}
+    }
 
 [hidden] {
   display: none
