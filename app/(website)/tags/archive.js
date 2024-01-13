@@ -6,9 +6,7 @@ export default function Tags({ posts }) {
 
 
 
-  const lifeStyles = posts.filter((post) => {
-    return post.categories.some((category) => category.title === "lifestyle");
-  });
+
   return (
     <>
       <div className="global-cover"></div>
@@ -55,7 +53,7 @@ export default function Tags({ posts }) {
                   <h2>
                   <Link href="/archive">
                     <a>Lifestyle</a></Link>
-                  </h2><span>{posts && lifeStyles?.length ? `${lifeStyles.length} posts` : '0 posts'}</span>
+                  </h2><span>5 posts</span>
                 </div>
                 <div className="custom-archive-item">
                   <a href="/tag/lifestyle/" className="global-image">
