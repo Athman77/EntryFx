@@ -10,11 +10,11 @@ export default function Header() {
                   <div className="header-logo">
     <Link href="/">
                     <a className="is-image w-28">
-    <Image
+    <img
                           src="https://inros.gbjsolution.com/content/images/2021/12/dark-theme-logo.svg"
                           alt="Logo"
                           sizes="(max-width: 640px) 100vw, 200px"
-                          priority={true}
+                          //priority={true}
                         />
                             {/*<img src="https://cdn.sanity.io/images/cwzkjmps/production/40c902d136fb0cd066ad95ab5154362926949422-406x216.png" alt="Genki" />*/}
                     </a>
