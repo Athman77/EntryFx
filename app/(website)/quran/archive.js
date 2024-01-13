@@ -23,9 +23,8 @@ export default async function Post({ searchParams }) {
   };
 
   const posts = await getPaginatedPosts(params);
-  const quran = posts.filter((post) => {
-    return post.categories.some((category) => category.title === "quran");
-  });
+  const quran = posts.filter(post => post.videoType === 'youtube');
+ 
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
   const isLastPage = quran.length < POSTS_PER_PAGE;
