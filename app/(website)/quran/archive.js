@@ -97,6 +97,7 @@ export default async function Post({ searchParams }) {
         pageIndex={pageIndex}
         isFirstPage={isFirstPage}
         isLastPage={isLastPage}
+        tag="quran"
       />
                      <Subscribe />
           </main>

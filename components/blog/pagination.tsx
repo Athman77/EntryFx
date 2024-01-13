@@ -11,7 +11,8 @@ import {
 export default function Pagination({
   pageIndex,
   isFirstPage,
-  isLastPage
+  isLastPage,
+  tag
 }) {
   const router = useRouter();
 
@@ -24,14 +25,14 @@ export default function Pagination({
     params.set("page", (pageIndex + 1).toString());
     const query = params.toString();
 
-    router.push(`/archive?${query}`);
+    router.push(`/${tag}?${query}`);
   };
 
   const handlePrevPage = () => {
     params.set("page", (pageIndex - 1).toString());
     const query = params.toString();
 
-    router.push(`/archive?${query}`);
+    router.push(`/${tag}?${query}`);
   };
 
   return (
