@@ -46,13 +46,13 @@ export default async function Post({ searchParams }) {
      <a href="/tag/creative/" className="global-image">
        <img src="https://cdn.sanity.io/images/11ognen8/production/b40108ca9bb60da852779daf553cf78e95a67089-736x736.jpg" loading="lazy" alt="Creative" /> </a>
      <h2><a href="/tag/creative/">All Posts</a></h2>
-     <span>10 posts</span>
+     <span>{posts?.length} posts</span>
    </div>
    <div className="custom-archive-item">
      <a href="/tag/art/" className="global-image">
        <img src="https://cdn.sanity.io/images/11ognen8/production/e3b0790ad874f9f0436391aa924b44ee09183a3c-736x1104.jpg" loading="lazy" alt="Art" /> </a>
      <h2><a href="/tag/art/">Lifestyle</a></h2>
-     <span>10 posts</span>
+     <span>5 posts</span>
    </div>
    <div className="custom-archive-item">
      <a href="/tag/lifestyle/" className="global-image">
