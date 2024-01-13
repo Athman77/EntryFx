@@ -4656,3 +4656,223 @@ body {
   border-color: rgb(226 232 240 / var(--tw-border-opacity))
 }
 /*Custom Styles Here*/
+
+
+
+/*********** paginatii *****/
+.mt-10 {
+  margin-top: 2.5rem; /* Assuming 1rem is the base font size in your project */
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.isolate {
+  isolation: isolate;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.-space-x-px > :not([hidden]) ~ :not([hidden]) {
+  margin-right: -1px;
+  margin-left: -1px;
+}
+
+.rounded-md {
+  border-radius: 0.375rem; /* Adjust the value based on your design */
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.relative {
+  position: relative;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-1 > :not([hidden]) ~ :not([hidden]) {
+  margin-inline-end: 0.25rem; /* Adjust the value based on your design */
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem; /* Adjust the value based on your design */
+  border-bottom-left-radius: 0.375rem; /* Adjust the value based on your design */
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-gray-300 {
+  border-color: #d1d5db; /* Tailwind uses the color #d1d5db for gray-300 */
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.px-3 {
+  padding-inline-start: 0.75rem; /* Adjust the value based on your design */
+  padding-inline-end: 0.75rem; /* Adjust the value based on your design */
+}
+
+.py-2 {
+  padding-block-start: 0.5rem; /* Adjust the value based on your design */
+  padding-block-end: 0.5rem; /* Adjust the value based on your design */
+}
+
+.pr-4 {
+  padding-inline-end: 1rem; /* Adjust the value based on your design */
+}
+
+.text-sm {
+  font-size: 0.875rem; /* Adjust the value based on your design */
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-gray-500 {
+  color: #6b7280; /* Tailwind uses the color #6b7280 for text-gray-500 */
+}
+
+.hover\:bg-gray-50:hover {
+  background-color: #f9fafb; /* Tailwind uses the color #f9fafb for hover:bg-gray-50 */
+}
+
+.focus\:z-20:focus {
+  z-index: 20;
+}
+
+.disabled\:pointer-events-none:disabled {
+  pointer-events: none;
+}
+
+.disabled\:opacity-40:disabled {
+  opacity: 0.4;
+}
+
+.dark\:border-gray-500 {
+  border-color: #718096; /* Tailwind uses the color #718096 for dark:border-gray-500 */
+}
+
+.dark\:bg-gray-800 {
+  background-color: #2d3748; /* Tailwind uses the color #2d3748 for dark:bg-gray-800 */
+}
+
+.dark\:text-gray-300 {
+  color: #cbd5e0; /* Tailwind uses the color #cbd5e0 for dark:text-gray-300 */
+}
+.relative {
+  position: relative;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-1 > :not([hidden]) ~ :not([hidden]) {
+  margin-inline-end: 0.25rem; /* Adjust the value based on your design */
+}
+
+.rounded-r-md {
+  border-top-right-radius: 0.375rem; /* Adjust the value based on your design */
+  border-bottom-right-radius: 0.375rem; /* Adjust the value based on your design */
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-gray-300 {
+  border-color: #d1d5db; /* Tailwind uses the color #d1d5db for gray-300 */
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.px-3 {
+  padding-inline-start: 0.75rem; /* Adjust the value based on your design */
+  padding-inline-end: 0.75rem; /* Adjust the value based on your design */
+}
+
+.py-2 {
+  padding-block-start: 0.5rem; /* Adjust the value based on your design */
+  padding-block-end: 0.5rem; /* Adjust the value based on your design */
+}
+
+.pl-4 {
+  padding-inline-start: 1rem; /* Adjust the value based on your design */
+}
+
+.text-sm {
+  font-size: 0.875rem; /* Adjust the value based on your design */
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-gray-500 {
+  color: #6b7280; /* Tailwind uses the color #6b7280 for text-gray-500 */
+}
+
+.hover\:bg-gray-50:hover {
+  background-color: #f9fafb; /* Tailwind uses the color #f9fafb for hover:bg-gray-50 */
+}
+
+.focus\:z-20:focus {
+  z-index: 20;
+}
+
+.disabled\:pointer-events-none:disabled {
+  pointer-events: none;
+}
+
+.disabled\:opacity-40:disabled {
+  opacity: 0.4;
+}
+
+.dark\:border-gray-500 {
+  border-color: #718096; /* Tailwind uses the color #718096 for dark:border-gray-500 */
+}
+
+.dark\:bg-gray-800 {
+  background-color: #2d3748; /* Tailwind uses the color #2d3748 for dark:bg-gray-800 */
+}
+
+.dark\:text-gray-300 {
+  color: #cbd5e0; /* Tailwind uses the color #cbd5e0 for dark:text-gray-300 */
+}
+.h-3 {
+  height: 0.75rem; /* Adjust the value based on your design */
+}
+
+.w-3 {
+  width: 0.75rem; /* Adjust the value based on your design */
+}
