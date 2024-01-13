@@ -7,6 +7,7 @@ import Header from "@/components/header";
 //import PostList from "@/components/postlist";
 import Subscribe from "@/components/subscribe";
 import { getPaginatedPosts } from "@/lib/sanity/client";
+import post from "@/lib/sanity/schemas/post";
 
 export default async function Post({ searchParams }) {
   // Fetch the current page from the query parameters, defaulting to 1 if it doesn't exist
@@ -22,8 +23,8 @@ export default async function Post({ searchParams }) {
     limit: pageIndex * POSTS_PER_PAGE
   };
 
-  //const posts = await getPaginatedPosts(params);
-  const quran = await getPaginatedPosts(params).filter(post => post.videoType === 'youtube');
+  const posts = await getPaginatedPosts(params);
+  const quran = posts.filter(post => post.videoType === 'youtube');
  
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
