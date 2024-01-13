@@ -11,7 +11,7 @@ export default function Header() {
     <Link href="/">
                     <a className="is-image w-28">
     <Image
-                          src="https://cdn.sanity.io/images/cwzkjmps/production/0b99b196195486d2660b0667b1453b3384244d52-240x60.png"
+                          src="https://inros.gbjsolution.com/content/images/2021/12/dark-theme-logo.svg"
                           alt="Logo"
                           sizes="(max-width: 640px) 100vw, 200px"
                           priority={true}
