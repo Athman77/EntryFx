@@ -121,7 +121,7 @@ export default function Post({ posts }) {
                 {/*** end blog ***/}
                 <div className="pagination-section">
                   <div className="pagination-wrap">
-                    <Link href="/archive">
+                    <Link href="/tags">
                       <a id="next-page"></a>
 
                       <button className="global-button">Load more</button>
