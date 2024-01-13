@@ -3,10 +3,6 @@ import Header from "@/components/header";
 
 import Link from "next/link";
 export default function Tags({ posts }) {
-
-
-
-
   return (
     <>
       <div className="global-cover"></div>
@@ -19,8 +15,7 @@ export default function Tags({ posts }) {
             <div className="custom-archive-section">
               <h1
                 id="post-title"
-                className="custom-archive-title global-title-big"
-              >
+                className="custom-archive-title global-title-big">
                 Explore our <span>tags</span>
               </h1>
               <div className="custom-archive-wrap loop-wrap">
@@ -35,25 +30,28 @@ export default function Tags({ posts }) {
                     </a>
                   </Link>
                   <h2>
-                  <Link href="/archive">
-                    <a>All Posts</a></Link>
+                    <Link href="/archive">
+                      <a>All Posts</a>
+                    </Link>
                   </h2>
                   <span>{posts?.length} posts</span>
                 </div>
                 <div className="custom-archive-item">
-                <Link href="/archive">
-                  <a className="global-image">
-                    <img
-                      src="https://cdn.sanity.io/images/11ognen8/production/e3b0790ad874f9f0436391aa924b44ee09183a3c-736x1104.jpg"
-                      loading="lazy"
-                      alt="Art"
-                    />{" "}
-                  </a>
+                  <Link href="/archive">
+                    <a className="global-image">
+                      <img
+                        src="https://cdn.sanity.io/images/11ognen8/production/e3b0790ad874f9f0436391aa924b44ee09183a3c-736x1104.jpg"
+                        loading="lazy"
+                        alt="Art"
+                      />{" "}
+                    </a>
                   </Link>
                   <h2>
-                  <Link href="/archive">
-                    <a>Lifestyle</a></Link>
-                  </h2><span>5 posts</span>
+                    <Link href="/archive">
+                      <a>Lifestyle</a>
+                    </Link>
+                  </h2>
+                  <span>5 posts</span>
                 </div>
                 <div className="custom-archive-item">
                   <a href="/tag/lifestyle/" className="global-image">
@@ -98,18 +96,19 @@ export default function Tags({ posts }) {
                   <span>5 posts</span>
                 </div>
                 <div className="custom-archive-item bottom">
-                <Link href="/archive">
-                  <a className="global-image">
-                    <img
-                      src="https://cdn.sanity.io/images/11ognen8/production/4db7c7a7e98225f1b003b93c5bebf6b197493b15-433x639.jpg"
-                      loading="lazy"
-                      alt="Idea"
-                    />{" "}
-                  </a>
+                  <Link href="/quran">
+                    <a className="global-image">
+                      <img
+                        src="https://cdn.sanity.io/images/11ognen8/production/4db7c7a7e98225f1b003b93c5bebf6b197493b15-433x639.jpg"
+                        loading="lazy"
+                        alt="Idea"
+                      />{" "}
+                    </a>
                   </Link>
                   <h2>
-                  <Link href="/quran">
-                    <a>Quran Recitation</a></Link>
+                    <Link href="/quran">
+                      <a>Quran Recitation</a>
+                    </Link>
                   </h2>
                   <span>4 posts</span>
                 </div>
