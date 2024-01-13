@@ -24,42 +24,36 @@ export default async function Post({ searchParams }) {
   };
 
   const posts = await getPaginatedPosts(params);
-  const quran = posts.filter(post => post.videoType === 'youtube');
- 
+  const quran = posts.filter(post => post.tags === "quran");
+
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
   const isLastPage = posts.length < POSTS_PER_PAGE;
 
   return (
     <>
-  <div className="global-cover"></div>
+      <div className="global-cover"></div>
 
       <div className="global-wrap">
         <div className="global-content">
           <Header />
-    
 
-    
- <main className="global-main">
+          <main className="global-main">
             <div className="archive-section">
-              <h1 className="global-title-large">Latest</h1>
+              <h1 className="global-title-large">Quran</h1>
               <span className="archive-counter">Articles & News</span>
-              <p className="archive-description">
-        
-              </p>
+              <p className="archive-description"></p>
             </div>
 
-    
-      {quran && quran?.length === 0 && (
-        <div className="flex h-40 items-center justify-center">
-          <span className="text-lg text-gray-500">
-            End of the result!
-          </span>
-        </div>
-      )}
+            {quran && quran?.length === 0 && (
+              <div className="flex h-40 items-center justify-center">
+                <span className="text-lg text-gray-500">
+                  End of the result!
+                </span>
+              </div>
+            )}
 
-
-       {/** ==.hhd ==**/}
+            {/** ==.hhd ==**/}
             <div className="loop-section">
               <div className="loop-wrap">
                 {/*** blog **/}
@@ -70,40 +64,36 @@ export default async function Post({ searchParams }) {
                     </span>
                   </div>
                 )}
-               {quran.slice(0, 1).map((post) => (
-                      <BlogOne
-                        key={post._id}
-                        post={post}
-                        aspect="landscape"
-                        preloadImage={true}
-                      />
-                    ))}
-                    {quran.slice(1, 5000).map((post) => (
-                      <BlogTwo
-                        key={post._id}
-                        post={post}
-                        aspect="landscape"
-                        preloadImage={true}
-                      />
-                    ))}
-              
+                {quran.slice(0, 1).map(post => (
+                  <BlogOne
+                    key={post._id}
+                    post={post}
+                    aspect="landscape"
+                    preloadImage={true}
+                  />
+                ))}
+                {quran.slice(1, 5000).map(post => (
+                  <BlogTwo
+                    key={post._id}
+                    post={post}
+                    aspect="landscape"
+                    preloadImage={true}
+                  />
+                ))}
               </div>
             </div>
 
-
-      
-
-      <Pagination
-        pageIndex={pageIndex}
-        isFirstPage={isFirstPage}
-        isLastPage={isLastPage}
-        tag="quran"
-      />
-                     <Subscribe />
+            <Pagination
+              pageIndex={pageIndex}
+              isFirstPage={isFirstPage}
+              isLastPage={isLastPage}
+              tag="quran"
+            />
+            <Subscribe />
           </main>
           <Footer />
-                 </div>
-                          </div>
+        </div>
+      </div>
     </>
   );
 }
