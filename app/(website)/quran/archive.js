@@ -28,7 +28,7 @@ export default async function Post({ searchParams }) {
  
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
-  const isLastPage = quran.length < POSTS_PER_PAGE;
+  const isLastPage = posts.length < POSTS_PER_PAGE;
 
   return (
     <>
