@@ -54,7 +54,7 @@ export default function BlogTwo({
             <a>{post?.author?.name}</a>
           </div>
           <div className="item-tags global-tags global-pointer is-image">
-            <a href="/tag/idea/">Forex Trading</a>
+            <a href="/tag/idea/">Islamic</a>
           </div>
         </div>
       </article>

@@ -29,9 +29,9 @@ export default function Post({ posts }) {
                   deny Me.[Quran 2:152]
                 </p>
                 <a
-                  href="https://t.me/techLinkbot"
+                  href="/"
                   className="hero-button global-button">
-                  Join Our Trading Community
+                  Support my work
                 </a>
               </div>
             </div>

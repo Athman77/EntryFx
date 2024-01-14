@@ -60,7 +60,7 @@ export default function BlogPages({
             <a href="/archive">{post?.author?.name}</a>
           </div>
           <div class="item-tags global-tags global-pointer is-image">
-            <a href="">Forex Trading</a>
+            <a href="">Islamic</a>
           </div>
         </div>
       </article>

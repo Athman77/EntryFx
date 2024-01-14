@@ -58,7 +58,7 @@ export default function BlogOne({
             <a></a> <a href="">{post?.author?.name}</a>
           </div>
           <div className="item-tags global-tags global-pointer is-image">
-            <a href="/tag/creative/">Forex Trading</a>
+            <a href="/tag/creative/">Islamic</a>
           </div>
         </div>
       </article>

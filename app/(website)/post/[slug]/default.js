@@ -46,8 +46,8 @@ const cover = post?.videoCover
               <div className="post-header post-full-image">
                 <div className="post-header-content">
                   <div className="post-tags global-tags">
-                    <a href="">Lifestyle</a>
-                    <a href="">Forex Trading</a>
+                    <a href="">Guidance</a>
+                    <a href="">Reminder</a>
                   </div>
                   <h1
                     id="post-title"
