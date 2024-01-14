@@ -96,13 +96,14 @@ const cover = post?.videoCover
                     </div>
                   </div>
                 </div>
-                <figure className="post-imageG">
+                <figure className="post-image">
                 {post.videoType === "upload" ? (
                             <video
                               className="vida"
                               id="my-video"
                               controls
                               poster={cover?.src}
+                    
                               // autoPlay
                               playsInline>
                               <source
@@ -119,12 +120,14 @@ const cover = post?.videoCover
                             <iframe
                               width="100%"
                               height="100%"
-                              // src={post?.youtube}
-                              src={`https://www.youtube.com/embed/${post?.youtube}?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A3000&amp;widgetid=1`}
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowFullscreen
                               title="YouTube video player"
                               frameborder="0"
-                             // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                              allowFullscreen></iframe>
+                              src={`https://www.youtube.com/embed/${post?.youtube}?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A3000&amp;widgetid=1`}
+                             
+                              
+                            ></iframe>
                               )}
                  
                 </figure>
