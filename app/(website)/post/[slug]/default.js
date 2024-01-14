@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/container";
-import ModalVideo from 'react-modal-video';
+
 import { notFound } from "next/navigation";
 import { PortableText } from "@/lib/sanity/plugins/portabletext";
 import { urlForImage } from "@/lib/sanity/image";
@@ -12,6 +12,7 @@ import PostList from "@/components/postlist";
 import Subscribe from "@/components/subscribe";
 import CategoryLabel from "@/components/blog/category";
 import AuthorCard from "@/components/blog/authorCard";
+import Video from "@/components/video";
 
 export default function Post(props) {
   const { loading, post } = props;
@@ -119,13 +120,7 @@ export default function Post(props) {
                       />
                     </video>
                   ) : (
-                    <ModalVideo
-
-                      channel="youtube" // Specify the video hosting platform (e.g., 'youtube', 'vimeo', 'facebook')
-                      isOpen={true}
-                      videoId={post?.youtube}
-                      onClose={() => setOpen(false)}
-                    />
+                    <Video />
                   )}
                 </figure>
               </div>
