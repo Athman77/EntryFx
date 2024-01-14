@@ -96,7 +96,7 @@ const cover = post?.videoCover
                     </div>
                   </div>
                 </div>
-                <figure className="post-image">
+                <figure className="post-imageG">
                 {post.videoType === "upload" ? (
                             <video
                               className="vida"
