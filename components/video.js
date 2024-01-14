@@ -1,3 +1,5 @@
+
+"use client";
 import React, { useState } from 'react';
 import { Container, Box, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
