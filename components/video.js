@@ -2,11 +2,12 @@
 "use client";
 import React, { useState } from 'react';
 import { Container, Box, Heading, Text } from 'theme-ui';
-import Image from 'components/image';
+
 
 import { FaAngleRight, FaPlay } from 'react-icons/fa';
 import ModalVideo from 'react-modal-video';
 import { Link } from './link';
+import Image from './image';
 
 //import videoImg from 'assets/video.png';
 
