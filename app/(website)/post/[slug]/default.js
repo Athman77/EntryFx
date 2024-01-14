@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/container";
-import ReactPlayer from "react-player";
+import ModalVideo from 'react-modal-video';
 import { notFound } from "next/navigation";
 import { PortableText } from "@/lib/sanity/plugins/portabletext";
 import { urlForImage } from "@/lib/sanity/image";
@@ -119,18 +119,13 @@ export default function Post(props) {
                       />
                     </video>
                   ) : (
-                    <iframe
-                    width="100%"
-                    height="500px"
-                   
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullscreen
-                    title="YouTube video player"
-                    frameborder="0"
-                    src={`https://www.youtube.com/embed/${post?.youtube}?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A3000&amp;widgetid=1`}
-                   
-                    
-                  ></iframe>
+                    <ModalVideo
+
+                      channel="youtube" // Specify the video hosting platform (e.g., 'youtube', 'vimeo', 'facebook')
+                      isOpen={true}
+                      videoId={post?.youtube}
+                      onClose={() => setOpen(false)}
+                    />
                   )}
                 </figure>
               </div>
