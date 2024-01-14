@@ -1,22 +1,116 @@
-"use client";
-import React, {useState} from 'react'
-import ModalVideo from 'react-modal-video';
+import React, { useState } from 'react';
+import { Container, Box, Heading, Text } from 'theme-ui';
+import Image from 'components/image';
 
-function Video() {
-    const [videoOpen, setVideoOpen] = useState(true);
-    const handleClick = (e) => {
-      e.preventDefault();
-      setVideoOpen(true);
-    };
+import { FaAngleRight, FaPlay } from 'react-icons/fa';
+import ModalVideo from 'react-modal-video';
+import { Link } from './link';
+
+//import videoImg from 'assets/video.png';
+
+const VideoOne = ({cover, videoId}) => {
+  const [videoOpen, setVideoOpen] = useState(false);
+  const handleClick = (e) => {
+    e.preventDefault();
+    setVideoOpen(true);
+  };
   return (
-    <ModalVideo
+    <Box as="section" sx={styles.video}>
+      <Container>
+        
+        
+        <Box sx={styles.videoBox}>
+          <Image src={cover} alt="" />
+          <Link
+            path="/"
+            aria-label="video btn"
+            onClick={handleClick}
+            sx={styles.videoBtn}
+          >
+            <FaPlay />
+          </Link>
+        </Box>
+      </Container>
+      <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
-//https://youtu.be/ZbsQPAO3890?si=22MwZ7NYnXhFE7QP
-        videoId="B4cnfk27rA4"
+        videoId={videoId}
         onClose={() => setVideoOpen(false)}
       />
-  )
-}
+    </Box>
+  );
+};
 
-export default Video
+export default VideoOne;
+
+const styles = {
+  video: {
+  //  pt: [5, null, null, null, null, null, 5],
+    textAlign: 'center',
+    h3: {
+      margin: 0,
+      color: 'black',
+      fontSize: [5, null, null, '21px', '36px', '32px', 8],
+      letterSpacing: ['-0.5px', null, null, null, null, '-1.5px'],
+      fontWeight: 'bold',
+      lineHeight: [1.6, null, null, 1.25],
+    },
+    p: {
+      fontSize: ['15px', null, null, '17px'],
+      lineHeight: ['26px', null, null, 2],
+      mt: ['10px', null, null, null, '25px'],
+      mb: ['0px', null, null, null, '20px'],
+    },
+    br: {
+      display: ['none', null, null, 'inherit'],
+    },
+  },
+  videoBox: {
+    position: 'relative',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    '>img': {
+      borderRadius: '10px',
+      display: 'flex',
+      width: ['100%', null, null, null, '80%', null, '100%'],
+    },
+  },
+  link: {
+    color: 'primary',
+    fontSize: [1, null, 2],
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    fontWeight: 'bold',
+    mt: ['15px', null, null, null, '0px'],
+    mb: ['20px', null, null, '50px'],
+    svg: {
+      position: 'relative',
+      top: '3px',
+    },
+  },
+  videoBtn: {
+    width: [44, null, 44, 66, 120],
+    height: [44, null, 44, 66, 120],
+    borderRadius: '50%',
+    backgroundColor: '#fff',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%,-50%)',
+    transition: '500ms ease',
+    svg: {
+      fontSize: ['15px', null, '15px', null, '22px', '35px'],
+      color: ['primary'],
+    },
+    '&:hover': {
+      backgroundColor: 'primary',
+      svg: {
+        color: '#fff',
+      },
+    },
+  },
+};
