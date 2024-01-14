@@ -122,7 +122,7 @@ export default function Post(props) {
                     <ReactPlayer
                     className="react-player"
                     controls
-                      url={`https://www.youtube.com/watch?v=${post?.youtube}`}
+                     // url={`https://www.youtube.com/watch?v=${post?.youtube}`}
                      
                     />
                   )}
