@@ -13,7 +13,7 @@ export default function Footer(props) {
           <div className="footer-logo">
             <a href="/" className="is-image">
               <img
-                src="https://cdn.sanity.io/images/cwzkjmps/production/0b99b196195486d2660b0667b1453b3384244d52-240x60.png"
+                src="https://cdn.sanity.io/images/11ognen8/production/4cca0cc34eac7da36fedf0218a086c4d3bcef5f4-300x81.svg"
                 alt="Genki"
               />
             </a>

@@ -9,6 +9,7 @@ import {
   EnvelopeIcon,
   PhoneIcon
 } from "@heroicons/react/24/outline";
+import Link from "next/link";
 export default function Contact({ settings }) {
   const {
     register,
@@ -24,7 +25,7 @@ export default function Contact({ settings }) {
   const [isSuccess, setIsSuccess] = useState(false);
   const [message, setMessage] = useState(false);
   // Please update the Access Key in the Sanity CMS - Site Congig Page
-  const apiKey = settings?.w3ckey || "YOUR_ACCESS_KEY_HERE";
+  const apiKey = settings?.w3ckey || process.env.YOUR_ACCESS_KEY_HERE;
 
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
@@ -47,20 +48,20 @@ export default function Contact({ settings }) {
     <>
       <section className="custom-page global-cover-homepage global-alternative-buttons">
         <div className="global-cover"></div>
-        <div class="custom-wrap">
-          <div class="custom-container">
-            <header class="header-section">
-              <div class="header-wrap">
-                <div class="header-logo">
-                  <a
-                    class="is-image"
-                    href="https://genki-dark.fueko.net">
-                    <img src="images/genki_white.svg" alt="Genki" />
-                  </a>
+        <div className="custom-wrap">
+          <div className="custom-container">
+            <header className="header-section">
+              <div className="header-wrap">
+                <div className="header-logo">
+                  <Link href="/">
+                    <a className="is-image">
+                      <img src="https://cdn.sanity.io/images/11ognen8/production/4cca0cc34eac7da36fedf0218a086c4d3bcef5f4-300x81.svg" alt="Genki" />
+                    </a>
+                  </Link>
                 </div>
               </div>
             </header>
-            <div class="custom-content">
+            <div className="custom-content">
               <form onSubmit={handleSubmit(onSubmit)}>
                 <h1
                   id="post-title"
