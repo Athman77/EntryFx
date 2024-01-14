@@ -96,7 +96,7 @@ const cover = post?.videoCover
                     </div>
                   </div>
                 </div>
-                <figure className="post-image">
+                <figure className="post-image ">
                 {post.videoType === "upload" ? (
                             <video
                               className="vida"
@@ -107,19 +107,21 @@ const cover = post?.videoCover
                               // autoPlay
                               playsInline>
                               <source
+                              type="video/mp4"
+                              data-quality="720p"
+                              title="720p"
+                              label="720p"
+                              res="720"
+                              size="720"
                                 src={post?.videoUrl}
-                                type="video/mp4"
-                                data-quality="720p"
-                                title="720p"
-                                label="720p"
-                                res="720"
-                                size="720"
+                               
                               />
                             </video>
                           ) : (
                             <iframe
                               width="100%"
                               height="100%"
+                              className="vida"
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                               allowFullscreen
                               title="YouTube video player"
