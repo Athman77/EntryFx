@@ -16,7 +16,7 @@ const VideoOne = ({id}) => {
   };
   return (
     <>
-    <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls />
+    <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-playerk vida" controls />
     </>
   );
 };
