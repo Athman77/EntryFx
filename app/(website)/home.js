@@ -31,7 +31,7 @@ export default function Post({ posts }) {
                 <a
                   href="/"
                   className="hero-button global-button">
-                  Support my work
+                  Support our channel
                 </a>
               </div>
             </div>

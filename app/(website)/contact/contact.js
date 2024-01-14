@@ -30,8 +30,8 @@ export default function Contact({ settings }) {
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
-      from_name: "Stablo Template",
-      subject: "New Contact Message from Stablo Website"
+      from_name: "snapIman",
+      subject: "New Contact Message from snapIman"
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true);
