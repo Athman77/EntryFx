@@ -120,7 +120,7 @@ const cover = post?.videoCover
                           ) : (
                             <iframe
                               width="100%"
-                              height="100%"
+                              height="500px"
                               className="vida"
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                               allowFullscreen
