@@ -22,11 +22,13 @@ export default function Post({ posts }) {
             <div className="hero-section">
               <div className="hero-wrap">
                 <h1 className="hero-title global-title-huge global-title-offset">
-                  <span>LEARN, TRADE</span> & EARN
+                  <span>THOSE, WHO</span> DISBELIEVED
                 </h1>
                 <p className="hero-description global-subtitle-excerpt">
-                  NextApp has been providing free and premium trading
-                  education for almost a decade.{" "}
+                  Will be driven to Hell in groups.When they arrive
+                  there, its gates will be opened & its keepers will
+                  ask them: "Did messengers not come to you from among
+                  yourselves"
                 </p>
                 <a
                   href="https://t.me/techLinkbot"
