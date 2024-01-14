@@ -4876,3 +4876,7 @@ body {
 .w-3 {
   width: 0.75rem; /* Adjust the value based on your design */
 }
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+}
