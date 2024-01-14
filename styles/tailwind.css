@@ -4877,6 +4877,12 @@ body {
   width: 0.75rem; /* Adjust the value based on your design */
 }
 .react-player {
-  /*height: 77vh !important;*/
+  height: 100% !important;
   width: 100% !important;
 }
+@media (min-width: 768px) {
+  /* Apply max-height only on screens larger than 768px width */
+  .react-player {
+  max-height: 80vh !important;
+  }
+      }
