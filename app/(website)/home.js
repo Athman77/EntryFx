@@ -22,13 +22,11 @@ export default function Post({ posts }) {
             <div className="hero-section">
               <div className="hero-wrap">
                 <h1 className="hero-title global-title-huge global-title-offset">
-                  <span>THOSE, WHO</span> DISBELIEVED
+                  <span>SO, REMEMBER</span> ME;
                 </h1>
                 <p className="hero-description global-subtitle-excerpt">
-                  Will be driven to Hell in groups.When they arrive
-                  there, its gates will be opened & its keepers will
-                  ask them: "Did messengers not come to you from among
-                  yourselves"
+                  I will remember you.And be grateful to Me & do not
+                  deny Me.[Quran 2:152]
                 </p>
                 <a
                   href="https://t.me/techLinkbot"
