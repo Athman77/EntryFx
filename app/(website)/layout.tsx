@@ -9,6 +9,7 @@ export async function sharedMetaData(params) {
 
   return {
     //metadataBase: new URL(settings.url),
+    manifest: "/manifest.json",
     title: {
       default: settings?.title || "BigTech - Forex Trading Blog & Trading Analysis",
       template: "%s | BigTech",
