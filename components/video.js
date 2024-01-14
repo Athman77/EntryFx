@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Container, Box, Heading, Text } from 'theme-ui';
 
-
+import ReactPlayer from "react-player";
 import { FaAngleRight, FaPlay } from 'react-icons/fa';
 import ModalVideo from 'react-modal-video';
 import { Link } from './link';
@@ -11,36 +11,16 @@ import Image from './image';
 
 //import videoImg from 'assets/video.png';
 
-const VideoOne = ({cover, videoId}) => {
+const VideoOne = ({id}) => {
   const [videoOpen, setVideoOpen] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
     setVideoOpen(true);
   };
   return (
-    <Box as="section" sx={styles.video}>
-      <Container>
-        
-        
-        <Box sx={styles.videoBox}>
-          <Image src={cover} alt="" />
-          <Link
-            path="/"
-            aria-label="video btn"
-            onClick={handleClick}
-            sx={styles.videoBtn}
-          >
-            <FaPlay />
-          </Link>
-        </Box>
-      </Container>
-      <ModalVideo
-        channel="youtube"
-        isOpen={videoOpen}
-        videoId={videoId}
-        onClose={() => setVideoOpen(false)}
-      />
-    </Box>
+    <>
+    <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls />
+    </>
   );
 };
 

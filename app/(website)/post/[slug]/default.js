@@ -121,8 +121,8 @@ export default function Post(props) {
                     </video>
                   ) : (
                     <Video
-                      cover={imageProps.src}
-                      videoId={post.youtube || "Thumbnail"}
+                     
+                      id={post.youtube || "Thumbnail"}
                     />
                   )}
                 </figure>
