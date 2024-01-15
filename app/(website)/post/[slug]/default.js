@@ -100,30 +100,28 @@ export default function Post(props) {
                     </div>
                   </div>
                 </div>
-                <figure className="post-image ">
-                  <div className="global-image global-image-orientation global-radius">
-                    {post.videoType === "upload" ? (
-                      <video
-                        className="vida"
-                        id="my-video"
-                        controls
-                        poster={cover?.src}
-                        // autoPlay
-                        playsInline>
-                        <source
-                          type="video/mp4"
-                          data-quality="720p"
-                          title="720p"
-                          label="720p"
-                          res="720"
-                          size="720"
-                          src={post?.videoUrl}
-                        />
-                      </video>
-                    ) : (
-                      <Video id={post.youtube || "Thumbnail"} />
-                    )}
-                  </div>
+                <figure className="post-imageG post-header-image ">
+                  {post.videoType === "upload" ? (
+                    <video
+                      className="vida"
+                      id="my-video"
+                      controls
+                      poster={cover?.src}
+                      // autoPlay
+                      playsInline>
+                      <source
+                        type="video/mp4"
+                        data-quality="720p"
+                        title="720p"
+                        label="720p"
+                        res="720"
+                        size="720"
+                        src={post?.videoUrl}
+                      />
+                    </video>
+                  ) : (
+                    <Video id={post.youtube || "Thumbnail"} />
+                  )}
                 </figure>
               </div>
 
