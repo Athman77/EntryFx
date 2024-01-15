@@ -15,7 +15,7 @@ const VideoOne = ({ id }) => {
     <>
       <ReactPlayer
         url={`https://www.youtube.com/watch?v=${id}`}
-        className="react-player"
+        className="react-playerG"
         controls
         width="100%"
         height="100%"
