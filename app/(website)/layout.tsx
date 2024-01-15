@@ -11,17 +11,17 @@ export async function sharedMetaData(params) {
     //metadataBase: new URL(settings.url),
     manifest: "/manifest.json",
     title: {
-      default: settings?.title || "BigTech - Forex Trading Blog & Trading Analysis",
-      template: "%s | BigTech",
+      default: settings?.title || "snapIman - Best Islamic App",
+      template: "%s | snapIman",
     },
-    description: "Stay updated with the latest news and analysis in Forex trading. Learn strategies, get insights, and make informed decisions",
-    keywords: ["Trading Blog", "Trading Strategies", "Trading Analysis"],
+    description: " Engage in educational content covering diverse topics such as Islamic history, jurisprudence, and theology, fostering continuous learning and personal growth",
+    keywords: ["Quran", "Islamic Stories", "Dua & Prayer"],
     authors: [{ name: "Gaucho" }],
     canonical: settings.url,
     openGraph: {
       images: [
         {
-          url: "https://cdn.sanity.io/images/cwzkjmps/production/a03cf28eead83f5e47e9a3eb309616d7e1b6fb97-1014x760.png",
+          url: "https://cdn.sanity.io/images/11ognen8/production/43b6dfdd28d8361732c19bfaf576028b20ef7aac-719x842.jpg",
           width: 800,
           height: 600,
         },
