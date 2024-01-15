@@ -2339,7 +2339,7 @@ small.global-question a:hover {
 }
 
 .post-image {
-  line-height: 0;
+ /* line-height: 0;*/
   align-self: flex-start;
   width: 367px;
   margin: 0
