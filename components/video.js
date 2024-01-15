@@ -18,7 +18,7 @@ const VideoOne = ({ id }) => {
         className=""
         controls
         width="100%"
-        height="auto"
+        height="56.25vw"
       />
     </div>
   );
