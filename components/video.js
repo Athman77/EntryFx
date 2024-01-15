@@ -12,15 +12,15 @@ const VideoOne = ({ id }) => {
     setVideoOpen(true);
   };
   return (
-    <>
+    <div className="react-player">
       <ReactPlayer
         url={`https://www.youtube.com/watch?v=${id}`}
-        className="react-playerG"
+        className=""
         controls
         width="100%"
         height="auto"
       />
-    </>
+    </div>
   );
 };
 
