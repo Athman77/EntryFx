@@ -100,7 +100,7 @@ export default function Post(props) {
                     </div>
                   </div>
                 </div>
-                <figure className="post-imageG post-header-image ">
+                <figure className="post-image ">
                   {post.videoType === "upload" ? (
                     <video
                       className="vida"

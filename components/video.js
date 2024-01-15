@@ -18,7 +18,7 @@ const VideoOne = ({ id }) => {
         className="react-playerG"
         controls
         width="100%"
-        height="100%"
+        height="auto"
       />
     </>
   );
