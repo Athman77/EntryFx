@@ -91,7 +91,7 @@ export default function BlogOne({
                     {" "}
                     <img
                       decoding="async"
-                      src="images/tiktok-white.svg"
+                      src="https://cdn.sanity.io/images/wusctyxy/production/cbef3fc6148977d0b715ffa48c5dfcef17b451da-31x36.svg"
                       alt="tiktok-white"
                     />
                     @{post?.author?.name}
