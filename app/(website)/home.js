@@ -370,8 +370,11 @@ export default function Post({ posts }) {
             <div className="bt-elwg-post-grid--style-2">
               <div className="bt-post-grid">
 
-
-                <article className="bt-post post-3580 post type-post status-publish format-standard has-post-thumbnail hentry category-lifestyle category-travel">
+{posts &&
+                          posts
+                            .slice(0, 6)
+                            .map((post) => (
+                <article key={post._id} className="bt-post post-3580 post type-post status-publish format-standard has-post-thumbnail hentry category-lifestyle category-travel">
                   <div className="bt-post--inner">
                     <div className="bt-post--featured"> <a href="">
                         <div className="bt-cover-image"> <img loading="lazy" decoding="async" width="768" height="1155" src="images/post-14-min-768x1155.jpg" className="attachment-medium_large size-medium_large wp-post-image" alt="" /></div>
@@ -388,7 +391,7 @@ export default function Post({ posts }) {
                     </div>
                   </div>
                 </article>
-
+))}
 
 
               </div>
