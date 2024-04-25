@@ -336,6 +336,7 @@ export default function Post({ posts }) {
 
 
               {/*/////blog section////*/}
+<section className="page-template-default page page-id-4695 wp-custom-logo theme-influencers woocommerce-no-js bt-orbit-enable bt-bg-pattern-enable bt-bg-buble-enable bt-bg-scroll-enable bt-img-zoom-enable e-lazyload elementor-default elementor-template-full-width elementor-kit-1850 elementor-page elementor-page-4695">
 <div data-elementor-type="wp-page" data-elementor-id="4695" className="elementor elementor-4695" data-elementor-post-type="page">
 
 
@@ -405,7 +406,7 @@ export default function Post({ posts }) {
     </div>
   </div>
 </div>
-                              
+                      </section>                          
       {/***** end *****/}
     </>
   );
