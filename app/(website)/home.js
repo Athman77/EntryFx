@@ -24,11 +24,10 @@ export default function Post({ posts }) {
             <div className="hero-section">
               <div className="hero-wrap">
                 <h1 className="hero-title global-title-huge global-title-offset">
-                  <span>SO, REMEMBER</span> ME;
+                  <span>HELLO 👋</span> WELCOME;
                 </h1>
                 <p className="hero-description global-subtitle-excerpt">
-                  I will remember you.And be grateful to Me & do not deny
-                  Me.[Quran 2:152]
+                  Get Live Football Scores and Real-Time Football Results with LiveScore! 
                 </p>
                 <a href="/" className="hero-button global-button">
                   Support our channel
