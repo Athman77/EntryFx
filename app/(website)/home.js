@@ -1,4 +1,5 @@
 
+
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -174,7 +175,7 @@ export default function Post({ posts }) {
                             ))}
                       </div>
 
-                      <nav className="bt-pagination" role="navigation">
+                    {/*  <nav className="bt-pagination" role="navigation">
                         {" "}
                         <span
                           aria-current="page"
@@ -201,7 +202,7 @@ export default function Post({ posts }) {
                             <path d="M9.28111 0.217951L8.54638 0.925058C8.37249 1.09242 8.37249 1.36377 8.54638 1.53117L14.3032 7.07149L1.63283 7.07149C1.38691 7.07149 1.18752 7.26338 1.18752 7.50006L1.18752 8.50006C1.18752 8.73674 1.38691 8.92863 1.63283 8.92863L14.3032 8.92863L8.54638 14.469C8.37249 14.6363 8.37249 14.9077 8.54638 15.0751L9.28111 15.7822C9.455 15.9496 9.73696 15.9496 9.91089 15.7822L17.6821 8.30309C17.856 8.13574 17.856 7.86438 17.6821 7.69699L9.91086 0.217952C9.73696 0.0505587 9.455 0.0505586 9.28111 0.217951Z"></path>
                           </svg>
                         </a>
-                      </nav>
+                      </nav>*/}
                     </div>
                   </div>
                 </div>
@@ -264,38 +265,7 @@ export default function Post({ posts }) {
                 </div>
                 <div className="elementor-element elementor-element-8f9a284 elementor-widget__width-initial elementor-widget elementor-widget-text-editor">
                   <div className="elementor-widget-container">
-                    {/* 
-                  .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
-                    background-color: #69727d;
-                    color: #fff
-                  }
-
-                  .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
-                    color: #69727d;
-                    border: 3px solid;
-                    background-color: transparent
-                  }
-
-                  .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
-                    margin-top: 8px
-                  }
-
-                  .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
-                    width: 1em;
-                    height: 1em
-                  }
-
-                  .elementor-widget-text-editor .elementor-drop-cap {
-                    float: left;
-                    text-align: center;
-                    line-height: 1;
-                    font-size: 50px
-                  }
-
-                  .elementor-widget-text-editor .elementor-drop-cap-letter {
-                    display: inline-block
-                  }
-                </style>*/}
+       
                     <p>
                       Alienum phaedrum torquatos nec eu, vis detraxit periculis
                       ex, nihilmei. Mei an pericula euripidis, hinc partem ei
@@ -326,33 +296,7 @@ export default function Post({ posts }) {
           data-element_type="container"
           data-core-v316-plus="true"
         >
-          <div
-            className="elementor-element elementor-element-776a7bd e-flex e-con-boxed e-con e-child"
-            data-id="776a7bd"
-            data-element_type="container"
-          >
-            <div className="e-con-inner">
-              <div
-                className="elementor-element elementor-element-87a590e elementor-widget elementor-widget-heading"
-                data-id="87a590e"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              ></div>
-
-              <div
-                className="elementor-element elementor-element-3f54139 elementor-widget elementor-widget-heading"
-                data-id="3f54139"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              ></div>
-              <div
-                className="elementor-element elementor-element-3f2fddb elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                data-id="3f2fddb"
-                data-element_type="widget"
-                data-widget_type="text-editor.default"
-              ></div>
-            </div>
-          </div>
+         
           <div
             className="elementor-element elementor-element-fcc57a8 e-con-full e-flex e-con e-child"
             data-id="fcc57a8"
