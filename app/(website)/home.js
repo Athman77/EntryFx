@@ -1,4 +1,4 @@
-
+//
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -234,11 +234,7 @@ export default function Post({ posts }) {
                 data-element_type="widget"
                 data-widget_type="heading.default"
               >
-                <div className="elementor-widget-container">
-                  <h6 className="elementor-heading-title elementor-size-default">
-                    Showreel
-                  </h6>
-                </div>
+            
               </div>
 
               <div
@@ -247,11 +243,7 @@ export default function Post({ posts }) {
                 data-element_type="widget"
                 data-widget_type="heading.default"
               >
-                <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default">
-                    My latest <span>videos!</span>
-                  </h2>
-                </div>
+         
               </div>
               <div
                 className="elementor-element elementor-element-3f2fddb elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
@@ -259,12 +251,7 @@ export default function Post({ posts }) {
                 data-element_type="widget"
                 data-widget_type="text-editor.default"
               >
-                <div className="elementor-widget-container">
-                  <p>
-                    Alienum phaedrum torquatos nec eu, vis detraxit periculis
-                    ex, nihilmei. Mei an pericula euripidis, hinc partem ei est.
-                  </p>
-                </div>
+         
               </div>
             </div>
           </div>
@@ -286,133 +273,25 @@ export default function Post({ posts }) {
                   
                    {posts &&
                           posts
-                            .slice(6, 10)
+                            .slice(6, 11)
                             .map((post) => (
-                    <article key={post._id} className="bt-post post-5179 podcast type-podcast status-publish has-post-thumbnail hentry podcast_categories-comedy podcast_categories-humor">
-                      <div className="bt-post--inner">
-                        <div className="bt-post--thumbnail">
-                          <div className="bt-post--featured">
-                            {" "}
-                            <a href="https://influencer.beplusthemes.com/podcast/data-driven-marketing-and-sales-with-dana-cutts-2/">
-                              <div className="bt-cover-image">
-                                {" "}
-                                <img
-                                  loading="lazy"
-                                  decoding="async"
-                                  width="768"
-                                  height="1150"
-                                  src="images/podcast-2-min-768x1150.jpg"
-                                  className="attachment-medium_large size-medium_large wp-post-image"
-                                  alt=""
-                                  sizes="(max-width: 768px) 100vw, 768px"
-                                />
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <div className="bt-post--infor">
-                          <div className="bt-post--pod-link">
-                            {" "}
-                            <a
-                              href="https://www.youtube.com/watch?v=XHOmBV4js_E"
-                              target="_blank"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                height="1em"
-                                viewBox="0 0 512 512"
-                              >
-                                <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"></path>
-                              </svg>
-                            </a>
-                          </div>
-                          <div className="bt-post--infor-inner">
-                            <h3 className="bt-post--title">
-                              {" "}
-                              <a href="https://influencer.beplusthemes.com/podcast/data-driven-marketing-and-sales-with-dana-cutts-2/">
-                                {" "}
-                                Data-driven marketing and sales with Dana Cutts{" "}
-                              </a>
-                            </h3>
-                            <div className="bt-post--prf-link">
-                              {" "}
-                              <a href="#" target="_blank">
-                                {" "}
-                                <img
-                                  decoding="async"
-                                  src="images/tiktok-white.svg"
-                                  alt="tiktok-white"
-                                />
-                                @lindasusan19
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-                    ))}
+                            
+                        <BlogOne
+                                                       key={post._id}
+                                                       post={post}
+                                                       aspect="landscape"
+                                                       preloadImage={true}
+                                                     />))
+                        }     
+                            
+        
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div
-            className="elementor-element elementor-element-5acfc22 e-flex e-con-boxed e-con e-child"
-            data-id="5acfc22"
-            data-element_type="container"
-          >
-            <div className="e-con-inner">
-              <div
-                className="elementor-element elementor-element-43ed41f elementor-widget elementor-widget-button"
-                data-id="43ed41f"
-                data-element_type="widget"
-                data-widget_type="button.default"
-              >
-                <div className="elementor-widget-container">
-                  <div className="elementor-button-wrapper">
-                    {" "}
-                    <a
-                      className="elementor-button elementor-button-link elementor-size-sm"
-                      href="/streaming-videos/"
-                    >
-                      {" "}
-                      <span className="elementor-button-content-wrapper">
-                        {" "}
-                        <span className="elementor-button-text">
-                          View More VIdeos
-                        </span>{" "}
-                      </span>{" "}
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="elementor-element elementor-element-443161c elementor-widget elementor-widget-button"
-                data-id="443161c"
-                data-element_type="widget"
-                data-widget_type="button.default"
-              >
-                <div className="elementor-widget-container">
-                  <div className="elementor-button-wrapper">
-                    {" "}
-                    <a
-                      className="elementor-button elementor-button-link elementor-size-sm"
-                      href="/contact-us/"
-                    >
-                      {" "}
-                      <span className="elementor-button-content-wrapper">
-                        {" "}
-                        <span className="elementor-button-text">
-                          Subscribe Now
-                        </span>{" "}
-                      </span>{" "}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      
         </div>
 
         {/****new one***/}
