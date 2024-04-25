@@ -1,3 +1,4 @@
+//
 
 
 import Link from "next/link";
@@ -105,38 +106,7 @@ export default function Post({ posts }) {
                 </div>
                 <div className="elementor-element elementor-element-8f9a284 elementor-widget__width-initial elementor-widget elementor-widget-text-editor">
                   <div className="elementor-widget-container">
-                    {/* 
-                  .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
-                    background-color: #69727d;
-                    color: #fff
-                  }
-
-                  .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
-                    color: #69727d;
-                    border: 3px solid;
-                    background-color: transparent
-                  }
-
-                  .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
-                    margin-top: 8px
-                  }
-
-                  .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
-                    width: 1em;
-                    height: 1em
-                  }
-
-                  .elementor-widget-text-editor .elementor-drop-cap {
-                    float: left;
-                    text-align: center;
-                    line-height: 1;
-                    font-size: 50px
-                  }
-
-                  .elementor-widget-text-editor .elementor-drop-cap-letter {
-                    display: inline-block
-                  }
-                </style>*/}
+           
                     <p>
                       Alienum phaedrum torquatos nec eu, vis detraxit periculis
                       ex, nihilmei. Mei an pericula euripidis, hinc partem ei
@@ -336,7 +306,15 @@ export default function Post({ posts }) {
 
 
               {/*/////blog section////*/}
-<section>
+    <div
+        data-elementor-type="wp-page"
+        data-elementor-id="4810"
+        className="elementor elementor-4810"
+        data-elementor-post-type="page"
+      >
+        {/* <!------ post card------>*/}
+        <div className="elementor-element elementor-element-510726c e-flex e-con-boxed e-con e-parent">
+          <div className="e-con-inner">
 <div data-elementor-type="wp-page" data-elementor-id="4695" className="elementor elementor-4695" data-elementor-post-type="page">
 
 
@@ -398,7 +376,9 @@ export default function Post({ posts }) {
     </div>
   </div>
 </div>
-                      </section>                          
+     </div>
+     </div>
+     </div>
       {/***** end *****/}
     </>
   );
