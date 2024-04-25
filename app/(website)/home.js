@@ -1,4 +1,4 @@
-//
+
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -145,6 +145,7 @@ export default function Post({ posts }) {
                 </div>
               </div>
             </div>
+            
             <div
               className="elementor-element elementor-element-061914d e-flex e-con-boxed e-con e-child"
               data-id="061914d"
@@ -206,6 +207,106 @@ export default function Post({ posts }) {
                 </div>
               </div>
             </div>
+            
+            
+
+
+  <div className="elementor-element elementor-element-cb5e833 elementor-absolute e-transform elementor-widget elementor-widget-bt-orbit-circle">
+              <div className="elementor-widget-container">
+                <div className="bt-elwg-orbit-circle">
+                  <div className="bt-orbit-wrap">
+                    <div className="bt-orbit red">
+                      <span></span>
+                    </div>
+                    <div className="bt-orbit blue">
+                      <span></span>
+                    </div>
+                    <div className="bt-orbit yellow">
+                      <span></span>
+                    </div>
+                    <div className="bt-orbit purple">
+                      <span></span>
+                    </div>
+                    <div className="bt-orbit green">
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="elementor-element elementor-element-09f894c elementor-absolute e-transform elementor-widget elementor-widget-bt-pattern-background">
+              <div className="elementor-widget-container">
+                <div className="bt-elwg-pattern-background">
+                  <div className="bt-bg-pattern-effect"></div>
+                </div>
+              </div>
+            </div>
+            <div className="elementor-element elementor-element-b28e6c6 e-flex e-con-boxed e-con e-child">
+              <div className="e-con-inner">
+                <div className="elementor-element elementor-element-170057f elementor-widget elementor-widget-heading">
+                  <div className="elementor-widget-container">
+                    <h6 className="elementor-heading-title elementor-size-default">
+                      Podcast Show
+                    </h6>
+                  </div>
+                </div>
+                <div
+                  className="elementor-element elementor-element-bd103a3 elementor-widget elementor-widget-heading"
+                  data-id="bd103a3"
+                  data-element_type="widget"
+                  data-widget_type="heading.default"
+                >
+                  <div className="elementor-widget-container">
+                    <h2 className="elementor-heading-title elementor-size-default">
+                      My recent <span>episodes</span>
+                    </h2>
+                  </div>
+                </div>
+                <div className="elementor-element elementor-element-8f9a284 elementor-widget__width-initial elementor-widget elementor-widget-text-editor">
+                  <div className="elementor-widget-container">
+                    {/* 
+                  .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                    background-color: #69727d;
+                    color: #fff
+                  }
+
+                  .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                    color: #69727d;
+                    border: 3px solid;
+                    background-color: transparent
+                  }
+
+                  .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                    margin-top: 8px
+                  }
+
+                  .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                    width: 1em;
+                    height: 1em
+                  }
+
+                  .elementor-widget-text-editor .elementor-drop-cap {
+                    float: left;
+                    text-align: center;
+                    line-height: 1;
+                    font-size: 50px
+                  }
+
+                  .elementor-widget-text-editor .elementor-drop-cap-letter {
+                    display: inline-block
+                  }
+                </style>*/}
+                    <p>
+                      Alienum phaedrum torquatos nec eu, vis detraxit periculis
+                      ex, nihilmei. Mei an pericula euripidis, hinc partem ei
+                      est.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
           </div>
         </div>
 
