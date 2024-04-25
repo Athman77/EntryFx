@@ -210,13 +210,16 @@ export default function Post({ posts }) {
         </div>
 
         {/*--_-gaucho---**/}
-
-      
       </div>
 
- <div data-elementor-type="wp-page" data-elementor-id="3718" className="elementor elementor-3718" data-elementor-post-type="page">
-{/****section***/}
-  <div
+      <div
+        data-elementor-type="wp-page"
+        data-elementor-id="3718"
+        className="elementor elementor-3718"
+        data-elementor-post-type="page"
+      >
+        {/****section***/}
+        <div
           className="elementor-element elementor-element-8511b5e e-con-full e-flex e-con e-parent"
           data-id="8511b5e"
           data-element_type="container"
@@ -233,26 +236,20 @@ export default function Post({ posts }) {
                 data-id="87a590e"
                 data-element_type="widget"
                 data-widget_type="heading.default"
-              >
-            
-              </div>
+              ></div>
 
               <div
                 className="elementor-element elementor-element-3f54139 elementor-widget elementor-widget-heading"
                 data-id="3f54139"
                 data-element_type="widget"
                 data-widget_type="heading.default"
-              >
-         
-              </div>
+              ></div>
               <div
                 className="elementor-element elementor-element-3f2fddb elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
                 data-id="3f2fddb"
                 data-element_type="widget"
                 data-widget_type="text-editor.default"
-              >
-         
-              </div>
+              ></div>
             </div>
           </div>
           <div
@@ -269,34 +266,26 @@ export default function Post({ posts }) {
               <div className="elementor-widget-container">
                 <div className="bt-elwg-podcast-grid--default">
                   <div className="bt-podcast-grid">
-                  
-                  
-                   {posts &&
-                          posts
-                            .slice(6, 11)
-                            .map((post) => (
-                            
-                        <BlogOne
-                                                       key={post._id}
-                                                       post={post}
-                                                       aspect="landscape"
-                                                       preloadImage={true}
-                                                     />))
-                        }     
-                            
-        
+                    {posts &&
+                      posts
+                        .slice(6, 11)
+                        .map((post) => (
+                          <BlogOne
+                            key={post._id}
+                            post={post}
+                            aspect="landscape"
+                            preloadImage={true}
+                          />
+                        ))}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-      
         </div>
 
         {/****new one***/}
-        </div>
-
+      </div>
 
       {/***** end *****/}
     </>
