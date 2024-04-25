@@ -133,7 +133,7 @@ export default function Post({ posts }) {
         
                    
                    
-                    {posts && posts.slice(0, 8).map((post) => (
+                    {posts && posts.slice(0, 6).map((post) => (
                       <PostList
                         key={post._id}
                         post={post}
@@ -148,9 +148,9 @@ export default function Post({ posts }) {
                   
                   
                   
-                 {/* <nav className="bt-pagination" role="navigation"> <span aria-current="page" className="page-numbers current">1</span> <a className="page-numbers" href="https://influencer.beplusthemes.com/showreel-podcasts-style-03/page/2/">2</a> <a className="page-numbers" href="https://influencer.beplusthemes.com/showreel-podcasts-style-03/page/3/">3</a> <a className="next page-numbers" href="https://influencer.beplusthemes.com/showreel-podcasts-style-03/page/2/">Next<svg width="19" height="16" viewBox="0 0 19 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                 <nav className="bt-pagination" role="navigation"> <span aria-current="page" className="page-numbers current">1</span> <Link href="/archive"><a className="page-numbers">2</a> </Link><a className="page-numbers">3</a> <a className="next page-numbers" href="https://influencer.beplusthemes.com/showreel-podcasts-style-03/page/2/">Next<svg width="19" height="16" viewBox="0 0 19 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.28111 0.217951L8.54638 0.925058C8.37249 1.09242 8.37249 1.36377 8.54638 1.53117L14.3032 7.07149L1.63283 7.07149C1.38691 7.07149 1.18752 7.26338 1.18752 7.50006L1.18752 8.50006C1.18752 8.73674 1.38691 8.92863 1.63283 8.92863L14.3032 8.92863L8.54638 14.469C8.37249 14.6363 8.37249 14.9077 8.54638 15.0751L9.28111 15.7822C9.455 15.9496 9.73696 15.9496 9.91089 15.7822L17.6821 8.30309C17.856 8.13574 17.856 7.86438 17.6821 7.69699L9.91086 0.217952C9.73696 0.0505587 9.455 0.0505586 9.28111 0.217951Z"></path>
-                      </svg></a></nav>*/}
+                      </svg></a></nav>
                 </div>
               </div>
             </div>
