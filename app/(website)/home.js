@@ -1,3 +1,4 @@
+//
 
 import Link from "next/link";
 import Container from "@/components/container";
@@ -37,7 +38,12 @@ export default function Post({ posts }) {
               </div>
             </div>
             {/**** ====== hero section end ===== ***/}
+  {/*  <Subscribe /> */}
+    </main>
 
+  {/*  <Footer / >*/}
+      </div> 
+      </div>
 
         <div data-elementor-type="wp-page" data-elementor-id="4810" className="elementor elementor-4810" data-elementor-post-type="page">
     
@@ -162,128 +168,12 @@ export default function Post({ posts }) {
   
             
 
-            {/*** blog ***/}
-            <div className="loop-section">
-              {/**** section blog ***/}
-              <div className="loop-subtitle global-title-wrap">
-                <h3 className="global-title-large">
-                  See what we’ve <span>written lately</span>
-                </h3>
-                <div className="loop-authors global-authors">
-                  <div className="global-author-item is-image global-image">
-                    <a
-                      href="/author/victoria/"
-                      className="global-link"
-                      title="Victoria West"></a>
-                    <img
-                      src="https://cdn.sanity.io/images/cwzkjmps/production/f271a0e60dc0ec7a41a2992e5ce28a4bb65c0ced-400x400.jpg"
-                      loading="lazy"
-                      alt="Victoria West"
-                    />
-                  </div>
-                  <div className="global-author-item is-image global-image">
-                    <a
-                      href="/author/lauren/"
-                      className="global-link"
-                      title="Lauren Langford"></a>
-                    <img
-                      src="https://cdn.sanity.io/images/cwzkjmps/production/40b4880f4ecf9bd47220684a639d5675679f9071-400x464.jpg"
-                      loading="lazy"
-                      alt="Lauren Langford"
-                    />
-                  </div>
-                  <div className="global-author-item is-image global-image">
-                    <a
-                      href="/author/megan/"
-                      className="global-link"
-                      title="Megan Anderson"></a>
-                    <img
-                      src="https://cdn.sanity.io/images/cwzkjmps/production/4a570f81911531bff2ae40de4bd54fad97f77a77-480x480.jpg"
-                      loading="lazy"
-                      alt="Megan Anderson"
-                    />
-                  </div>
+        
+   
 
-                  <span>Meet our top authors</span>
-                </div>
-              </div>
-              {/*** end ***/}
-              <div className="loop-wrap">
-                {posts &&
-                  posts
-                    .slice(5, 6)
-                    .map(post => (
-                      <BlogOne
-                        key={post._id}
-                        post={post}
-                        aspect="landscape"
-                        preloadImage={true}
-                      />
-                    ))}
-                {posts &&
-                  posts
-                    .slice(6, 13)
-                    .map(post => (
-                      <BlogTwo
-                        key={post._id}
-                        post={post}
-                        aspect="landscape"
-                        preloadImage={true}
-                      />
-                    ))}
-              </div>
-              {/*** blog end here*/}
-            </div>
-            {/*** end blog ***/}
-            <div className="pagination-section">
-              <div className="pagination-wrap">
-                <Link href="/tags">
-                  <a id="next-page"></a>
-
-                  <button className="global-button">Load more</button>
-                </Link>
-              </div>
-            </div>
-            {/*** ======== load more ==== ***/}
-
-            {/****** ====== special ==== ***/}
-            <div className="special-section">
-              <div className="global-title-wrap">
-                <h3 className="global-title-medium">
-                  In case you <span>missed it</span>
-                </h3>
-                <Link href="/archive">
-                  <a>
-                    <svg
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.185 6.08c1.485 1.585 2.733 2.8 3.813 3.643 1.045.843 2.057 1.45 3.002 1.855v.743c-1.08.506-2.16 1.18-3.171 2.024-1.012.81-2.227 1.99-3.644 3.576h-1.282c1.046-2.193 2.26-4.217 3.374-5.432H.014v-.978h19.263a31.274 31.274 0 01-1.855-2.699c-.338-.506-.844-1.417-1.485-2.733h1.248z"></path>
-                    </svg>
-                  </a>
-                </Link>
-              </div>
-              <div className="special-wrap">
-                {posts.slice(13, 17).map(post => (
-                  <PostList
-                    key={post._id}
-                    post={post}
-                    aspect="landscape"
-                    preloadImage={true}
-                  />
-                ))}
-                {/*** ===== content ==== ***/}
-              </div>
-            </div>
-
+          
             {/***** end *****/}
-            <Subscribe />
-          </main>
-
-          <Footer />
-        </div>
-      </div>
-
+        
     
     </>
   );
