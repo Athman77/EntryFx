@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -210,7 +211,12 @@ export default function Post({ posts }) {
 
         {/*--_-gaucho---**/}
 
-        <div
+      
+      </div>
+
+ <div data-elementor-type="wp-page" data-elementor-id="3718" className="elementor elementor-3718" data-elementor-post-type="page">
+{/****section***/}
+  <div
           className="elementor-element elementor-element-8511b5e e-con-full e-flex e-con e-parent"
           data-id="8511b5e"
           data-element_type="container"
@@ -276,7 +282,13 @@ export default function Post({ posts }) {
               <div className="elementor-widget-container">
                 <div className="bt-elwg-podcast-grid--default">
                   <div className="bt-podcast-grid">
-                    <article className="bt-post post-5179 podcast type-podcast status-publish has-post-thumbnail hentry podcast_categories-comedy podcast_categories-humor">
+                  
+                  
+                   {posts &&
+                          posts
+                            .slice(6, 10)
+                            .map((post) => (
+                    <article key={post._id} className="bt-post post-5179 podcast type-podcast status-publish has-post-thumbnail hentry podcast_categories-comedy podcast_categories-humor">
                       <div className="bt-post--inner">
                         <div className="bt-post--thumbnail">
                           <div className="bt-post--featured">
@@ -338,6 +350,7 @@ export default function Post({ posts }) {
                         </div>
                       </div>
                     </article>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -403,7 +416,8 @@ export default function Post({ posts }) {
         </div>
 
         {/****new one***/}
-      </div>
+        </div>
+
 
       {/***** end *****/}
     </>
