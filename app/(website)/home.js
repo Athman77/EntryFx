@@ -74,7 +74,7 @@ export default function Post({ posts }) {
                   <div className="bt-podcast-grid">
                     {posts &&
                       posts
-                        .slice(6, 11)
+                        .slice(0, 5)
                         .map((post) => (
                           <BlogOne
                             key={post._id}
@@ -186,7 +186,7 @@ export default function Post({ posts }) {
                       <div className="bt-podcast-grid">
                         {posts &&
                           posts
-                            .slice(0, 6)
+                            .slice(5, 13)
                             .map((post) => (
                               <PostList
                                 key={post._id}
