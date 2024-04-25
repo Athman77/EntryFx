@@ -306,16 +306,10 @@ export default function Post({ posts }) {
 
 
               {/*/////blog section////*/}
-    <div
-        data-elementor-type="wp-page"
-        data-elementor-id="4810"
-        className="elementor elementor-4810"
-        data-elementor-post-type="page"
-      >
+    
         {/* <!------ post card------>*/}
         <div className="elementor-element elementor-element-510726c e-flex e-con-boxed e-con e-parent">
-          <div className="e-con-inner">
-<div data-elementor-type="wp-page" data-elementor-id="4695" className="elementor elementor-4695" data-elementor-post-type="page">
+        
 
 
   
@@ -376,9 +370,9 @@ export default function Post({ posts }) {
     </div>
   </div>
 </div>
-     </div>
-     </div>
-     </div>
+    
+     
+     
       {/***** end *****/}
     </>
   );
