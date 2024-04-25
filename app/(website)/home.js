@@ -37,7 +37,7 @@ export default function Post({ posts }) {
               </div>
             </div>
             {/**** ====== hero section end ===== ***/}
-</main>
+
 
         <div data-elementor-type="wp-page" data-elementor-id="4810" className="elementor elementor-4810" data-elementor-post-type="page">
     
@@ -158,7 +158,7 @@ export default function Post({ posts }) {
 </div> 
 
 
-<main>
+
   
             
 
