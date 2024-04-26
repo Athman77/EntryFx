@@ -53,7 +53,7 @@ export default function Post(props) {
                   </div>
                   <h1
                     id="post-title"
-                    className="post-title global-title-big global-title-offset">
+                    className="post-title text-white global-title-big global-title-offset">
                     {" "}
                     {post.title}
                   </h1>
@@ -125,7 +125,7 @@ export default function Post(props) {
                 </figure>
               </div>
 
-              <div className="post-content">
+              <div className="post-content text-white">
                 {post.body && <PortableText value={post.body} />}
               </div>
             </article>
