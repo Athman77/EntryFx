@@ -10,7 +10,7 @@ export default function Subscribe() {
   return (
     <div class="subscribe-section">
        <div class="subscribe-wrap global-title-wrap">
-         <h3 class="global-title-medium">Subscribe to <span>new posts</span></h3>
+         <h3 class="global-title-medium text-white">Subscribe to <span>new posts</span></h3>
          <form data-members-form="subscribe" class="subscribe-form">
            <input data-members-email="" type="email" placeholder="Your email address" aria-label="Your email address" required="" />
            <button class="global-button button-clone" type="submit">Subscribe</button><button class="global-button hide" type="submit"  disabled="">Subscribe</button>
