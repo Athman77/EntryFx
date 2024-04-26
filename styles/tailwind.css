@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;*/
 .text-white {
-  color: #fff; /* White color */
+  color: #fff !important; /* White color */
 }
 /*! purgecss start ignore */
 /*@import "prism.css";*/
