@@ -23,10 +23,10 @@ export default function Post({ posts }) {
             {/**** ====== hero section ===== ***/}
             <div className="hero-section">
               <div className="hero-wrap">
-                <h1 className="hero-title global-title-huge global-title-offset">
+                <h1 className="hero-title global-title-huge global-title-offset text-white">
                   <span>HELLO 👋</span> WELCOME;
                 </h1>
-                <p className="hero-description global-subtitle-excerpt">
+                <p className="hero-description global-subtitle-excerpt text-white">
                   Get Live Football Scores and Real-Time Football Results with LiveScore! 
                 </p>
                 <a href="/" className="hero-button global-button">
@@ -152,14 +152,14 @@ export default function Post({ posts }) {
                   data-widget_type="heading.default"
                 >
                   <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default">
+                    <h2 className="elementor-heading-title elementor-size-default text-white">
                       My recent <span>episodes</span>
                     </h2>
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-8f9a284 elementor-widget__width-initial elementor-widget elementor-widget-text-editor">
                   <div className="elementor-widget-container">
-                    <p>
+                    <p className="text-white">
                       Alienum phaedrum torquatos nec eu, vis detraxit periculis
                       ex, nihilmei. Mei an pericula euripidis, hinc partem ei
                       est.
