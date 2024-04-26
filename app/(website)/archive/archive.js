@@ -1,4 +1,4 @@
-//
+
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
 import BlogOne from "@/components/blogone";
@@ -20,7 +20,7 @@ export default async function Post({ searchParams }) {
   // Define the parameters for fetching posts based on the current page
   const params = {
     pageIndex: (pageIndex - 1) * POSTS_PER_PAGE,
-    limit: pageIndex * POSTS_PER_PAGE
+    limit: pageIndex * POSTS_PER_PAGE,
   };
 
   const posts = await getPaginatedPosts(params);
@@ -31,8 +31,35 @@ export default async function Post({ searchParams }) {
 
   return (
     <>
+      <div className="global-cover"></div>
 
- <div
+      <div className="global-wrap">
+        <div className="global-content">
+          <Header />
+
+          <main className="global-main">
+            {posts && posts?.length === 0 && (
+              <div className="flex h-40 items-center justify-center">
+                <span className="text-lg text-gray-500">
+                  End of the result!
+                </span>
+              </div>
+            )}
+
+            {/** ==.hhd ==**/}
+
+            {posts && posts?.length === 0 && (
+              <div className="flex h-40 items-center justify-center">
+                <span className="text-lg text-gray-500">
+                  End of the result!
+                </span>
+              </div>
+            )}
+          </main>
+        </div>
+      </div>
+
+      <div
         data-elementor-type="wp-page"
         data-elementor-id="4810"
         className="elementor elementor-4810"
@@ -121,117 +148,29 @@ export default async function Post({ searchParams }) {
                       <div className="bt-podcast-grid">
                         {posts &&
                           posts.map((post) => (
-                              <PostList
-                                key={post._id}
-                                post={post}
-                                aspect="landscape"
-                                preloadImage={true}
-                              />
-                            ))}
+                            <PostList
+                              key={post._id}
+                              post={post}
+                              aspect="landscape"
+                              preloadImage={true}
+                            />
+                          ))}
                       </div>
 
-                       
+             
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="elementor-element elementor-element-cb5e833 elementor-absolute e-transform elementor-widget elementor-widget-bt-orbit-circle">
-              <div className="elementor-widget-container">
-                <div className="bt-elwg-orbit-circle">
-                  <div className="bt-orbit-wrap">
-                    <div className="bt-orbit red">
-                      <span></span>
-                    </div>
-                    <div className="bt-orbit blue">
-                      <span></span>
-                    </div>
-                    <div className="bt-orbit yellow">
-                      <span></span>
-                    </div>
-                    <div className="bt-orbit purple">
-                      <span></span>
-                    </div>
-                    <div className="bt-orbit green">
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+        
+       
           </div>
         </div>
 
-       
-      </div>
-
-
-
-
-
-    
-  <div className="global-cover"></div>
-
-      <div className="global-wrap">
-        <div className="global-content">
-          <Header />
-    
-
-    
- <main className="global-main">
-            <div className="archive-section">
-              <h1 className="global-title-large">Latest</h1>
-              <span className="archive-counter">Articles & News</span>
-              <p className="archive-description">
         
-              </p>
-            </div>
-
-    
-      {posts && posts?.length === 0 && (
-        <div className="flex h-40 items-center justify-center">
-          <span className="text-lg text-gray-500">
-            End of the result!
-          </span>
-        </div>
-      )}
-
-
-       {/** ==.hhd ==**/}
-            <div className="loop-section">
-              <div className="loop-wrap">
-                {/*** blog **/}
-                {posts && posts?.length === 0 && (
-                  <div className="flex h-40 items-center justify-center">
-                    <span className="text-lg text-gray-500">
-                      End of the result!
-                    </span>
-                  </div>
-                )}
-               {posts.slice(0, 1).map((post) => (
-                      <BlogOne
-                        key={post._id}
-                        post={post}
-                        aspect="landscape"
-                        preloadImage={true}
-                      />
-                    ))}
-                    {posts.slice(1, 5000).map((post) => (
-                      <BlogTwo
-                        key={post._id}
-                        post={post}
-                        aspect="landscape"
-                        preloadImage={true}
-                      />
-                    ))}
-              
-              </div>
-            </div>
-
-
-      
+      </div>
 
       <Pagination
         pageIndex={pageIndex}
@@ -239,11 +178,21 @@ export default async function Post({ searchParams }) {
         isLastPage={isLastPage}
         tag="archive"
       />
-                     <Subscribe />
+
+      <div className="global-wrap">
+        <div className="global-content">
+          <main className="global-main">
+            <Pagination
+              pageIndex={pageIndex}
+              isFirstPage={isFirstPage}
+              isLastPage={isLastPage}
+              tag="archive"
+            />
+            <Subscribe />
           </main>
           <Footer />
-                 </div>
-                          </div>
+        </div>
+      </div>
     </>
   );
 }
