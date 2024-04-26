@@ -172,12 +172,7 @@ export default async function Post({ searchParams }) {
         
       </div>
 
-      <Pagination
-        pageIndex={pageIndex}
-        isFirstPage={isFirstPage}
-        isLastPage={isLastPage}
-        tag="archive"
-      />
+      
 
       <div className="global-wrap">
         <div className="global-content">
