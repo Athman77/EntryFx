@@ -1,7 +1,7 @@
 import "@/styles/tailwind.css";
 import "@/styles/screen.css";
 import "@/styles/cards.min.css";
-//import "@/styles/sportx.css";
+import "@/styles/sportx.css";
 import "@/styles/sport.css";
 import { Analytics } from '@vercel/analytics/react';
 import { Providers } from "./providers";
