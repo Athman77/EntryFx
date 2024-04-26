@@ -1,3 +1,4 @@
+
 /**/
 .slick-slider {
   position: relative;
@@ -22594,7 +22595,7 @@ button.swiper-pagination-bullet {
 
   {}
 
-h1.entry-title {
+.entry-title {
   display: var(--page-title-display);
 }
 
