@@ -159,7 +159,7 @@ export default async function Post({ searchParams }) {
                   <div className="elementor-widget-container">
                     <div className="bt-elwg-podcast-grid--style-2">
                       <div className="bt-podcast-grid">
-                        {posts &&
+                        {filteredProducts &&
                           filteredProducts.map((post) => (
                             <PostList
                               key={post._id}
