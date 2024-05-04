@@ -3,6 +3,7 @@
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
 import BlogOne from "@/components/blogone";
+import { useRouter } from "next/navigation";
 import BlogTwo from "@/components/blogtwo";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -26,9 +27,23 @@ export default async function Post({ searchParams }) {
 
   const posts = await getPaginatedPosts(params);
 
+
+  const { q } = router.query;
+  const filteredProducts = posts?.filter((val) => {
+    if (q === "") {
+      return val;
+    } else if (val?.name?.toLowerCase().includes(q?.toLowerCase())) {
+      return val;
+    }
+  });
+
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
-  const isLastPage = posts.length < POSTS_PER_PAGE;
+  const isLastPage = filteredProducts.length < POSTS_PER_PAGE;
+
+  // Check if the current page is the first or the last
+  const isFirstPage = pageIndex < 2;
+  const isLastPage = filteredProducts.length < POSTS_PER_PAGE;
 
   return (
     <>
@@ -148,7 +163,7 @@ export default async function Post({ searchParams }) {
                     <div className="bt-elwg-podcast-grid--style-2">
                       <div className="bt-podcast-grid">
                         {posts &&
-                          posts.map((post) => (
+                          filteredProducts.map((post) => (
                             <PostList
                               key={post._id}
                               post={post}
