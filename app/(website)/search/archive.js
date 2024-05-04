@@ -119,7 +119,7 @@ export default async function Post({ searchParams }) {
                 <div className="elementor-element elementor-element-170057f elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container">
                     <h6 className="elementor-heading-title elementor-size-default">
-                      Podcast Show
+                      Search Results
                     </h6>
                   </div>
                 </div>
@@ -131,16 +131,14 @@ export default async function Post({ searchParams }) {
                 >
                   <div className="elementor-widget-container">
                     <h2 className="elementor-heading-title elementor-size-default text-white">
-                      My recent <span>episodes</span>
+                      My recent <span>Highlights</span>
                     </h2>
                   </div>
                 </div>
                 <div className="elementor-element elementor-element-8f9a284 elementor-widget__width-initial elementor-widget elementor-widget-text-editor">
                   <div className="elementor-widget-container">
                     <p className="text-white">
-                      Alienum phaedrum torquatos nec eu, vis detraxit periculis
-                      ex, nihilmei. Mei an pericula euripidis, hinc partem ei
-                      est.
+                      Get Live Football Scores and Real-Time Football Results with LiveScore!
                     </p>
                   </div>
                 </div>
