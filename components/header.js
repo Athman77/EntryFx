@@ -20,7 +20,7 @@ export default function Header({data}) {
     const handleSearch = () => {
       // Filter data based on the search query
       const searchData = data.filter(item =>
-        item.name.toLowerCase().includes(searchQuery.toLowerCase())
+        item.title.toLowerCase().includes(searchQuery.toLowerCase())
       );
   
       // Redirect to search results page with filtered data
