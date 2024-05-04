@@ -31,7 +31,7 @@ export default function Header() {
         undefined,
         { shallow: true }
       );
-      onHandler();
+      
     } else if (e.type === "click") {
       const q = param.toLowerCase();
       router.push(
