@@ -1,4 +1,4 @@
-//
+
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -23,6 +23,7 @@ export default function Header() {
 
     if (e.key === "Enter") {
       const q = e.currentTarget.value.toLowerCase();
+      router.push(`/search/${q}`);
       router.push(
         {
           pathname: `/search`,
