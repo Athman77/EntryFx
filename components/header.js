@@ -69,7 +69,7 @@ export default function Header() {
                 </Link>
               </li>
             </ul>{" "}
-            <span onClick={openSearch}  id="search-open">
+            <span onClick={() => setShowSearch(true)}  id="search-open">
               <svg
                 role="img"
                 viewBox="0 0 24 24"
