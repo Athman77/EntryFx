@@ -60,7 +60,7 @@ export default function Header() {
             <Link href="/">
               <a className="is-image w-28">
                 <img
-                  src="https://cdn.sanity.io/images/wusctyxy/production/0c9a03db187311c93c59a970327d79d0f57fa9a8-359x157.png"
+                  src="https://cdn.sanity.io/images/wusctyxy/production/b4db420cffcd9801febb554bb631d08a3dacb58a-224x58.png"
                   alt="Logo"
                   sizes="(max-width: 640px) 100vw, 200px"
                   //priority={true}
@@ -87,13 +87,11 @@ export default function Header() {
                 </li>
                 <li>
                   <Link href="/archive">
-                    <a>Our Blogs</a>
+                    <a>Videos</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/tags">
-                    <a>tags</a>
-                  </Link>
+                  
                 </li>
                 <li>
                   <Link href="/">
