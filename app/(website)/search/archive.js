@@ -27,7 +27,7 @@ export default async function Post({ searchParams }) {
 
   const posts = await getPaginatedPosts(params);
   //const router = useRouter();
-const q  = searchParams.query.q
+const q  = searchParams.query
 //  const { q } = router.query;
   const filteredProducts = posts?.filter((val) => {
     if (q === "") {
@@ -58,7 +58,6 @@ const q  = searchParams.query.q
                 </span>
               </div>
             )}
-<h1>{page}</h1>
             {/** ==.hhd ==**/}
 
             {posts && posts?.length === 0 && (
