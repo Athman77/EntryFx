@@ -1,7 +1,7 @@
 //
 import { Suspense } from "react";
 import Container from "@/components/container";
-import Archive from "./search";
+import Archive from "./archive";
 import Loading from "@/components/loading";
 
 export const dynamic = "force-dynamic";
