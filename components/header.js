@@ -1,15 +1,12 @@
-
+//
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Header({data}) {
+export default function Header({onHandler}) {
   const [showSearch, setShowSearch] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
-  const router = useRouter();
-  
   const openSearch = () => {
     setShowSearch(true);
   };
@@ -17,35 +14,52 @@ export default function Header({data}) {
   
   
   
-    const handleSearch = () => {
-      // Filter data based on the search query
-      const searchData = data.filter(item =>
-        item.title.toLowerCase().includes(searchQuery.toLowerCase())
-      );
+   const router = useRouter();
   
-      // Redirect to search results page with filtered data
-      router.push({
-        pathname: '/search',
-        query: { q: searchQuery },
-        // Pass filtered data as state
-        state: { searchData }
-      });
-    };
-    
-    
-    const searchQueryHandler = (event) => {
-      if (event.key === "Enter") {
-        handleSearch()
-        setTimeout(() => {
-          setShowSearch(false);
-        }, 1000);
-      }
-    };
-    
-    
-  const handleChange = (e) => {
-    setSearchQuery(e.target.value);
+  const [param, setParam] = useState("");
+  
+  const onSearchHandler = (e) => {
+    e.preventDefault();
+
+    if (e.key === "Enter") {
+      const q = e.currentTarget.value.toLowerCase();
+      router.push(
+        {
+          pathname: `/search`,
+          query: q ? { q } : {},
+        },
+        undefined,
+        { shallow: true }
+      );
+      onHandler();
+    } else if (e.type === "click") {
+      const q = param.toLowerCase();
+      router.push(
+        {
+          pathname: `/search`,
+          query: q ? { q } : {},
+        },
+        undefined,
+        { shallow: true }
+      );
+      onHandler();
+    }
   };
+
+  const onChange = (e) => {
+    const target = e.target;
+    const value = target.value;
+    setParam(value);
+
+  };
+
+  useEffect(() => {
+    router.prefetch("/search");
+  }, [router]);
+
+  
+
+
   return (
     <>
     <header className="header-section">
@@ -141,12 +155,12 @@ export default function Header({data}) {
                 type="text"
         autoFocus
                 placeholder="Type your keywords"
-                value = { searchQuery }
-                onChange = { handleChange }
+                onKeyUp={onSearchHandler}
+                  onChange={(e) => onChange(e)}
               //  onChange={(e) => setQuery(e.target.value)}
-                onKeyUp={searchQueryHandler}
+               // onKeyUp={searchQueryHandler}
               />
-              <div className="search-meta text-white">
+              <div className="search-meta">
                 <span id="search-info">Please enter at least 3 characters</span>
                 <span id="search-counter" className="is-hide">
                   <span id="search-counter-results">0</span>
