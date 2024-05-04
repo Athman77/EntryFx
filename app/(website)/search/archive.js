@@ -58,7 +58,7 @@ const q  = searchParams.query
                 </span>
               </div>
             )}
-<h1>{q}</h1>
+<h1>{page}</h1>
             {/** ==.hhd ==**/}
 
             {posts && posts?.length === 0 && (
