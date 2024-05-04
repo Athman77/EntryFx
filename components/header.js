@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Header({onHandler}) {
+export default function Header() {
   const [showSearch, setShowSearch] = useState(false);
   const openSearch = () => {
     setShowSearch(true);
@@ -42,7 +42,7 @@ export default function Header({onHandler}) {
         undefined,
         { shallow: true }
       );
-      onHandler();
+      
     }
   };
 
