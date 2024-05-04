@@ -19,7 +19,7 @@ export default function Header() {
 
     if (e.key === "Enter") {
       const q = e.currentTarget.value.toLowerCase();
-      router.push(`/search/q?${q}`);
+      router.push(`/search/q?${q} : ${{}}`);
       router.push(
         {
           pathname: `/search`,
