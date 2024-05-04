@@ -5,6 +5,10 @@
 .text-white {
   color: #fff !important; /* White color */
 }
+.block {
+
+  display:block !important 
+}
 /*! purgecss start ignore */
 /*@import "prism.css";*/
 /*! purgecss end ignore */
