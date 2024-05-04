@@ -16,7 +16,7 @@ export default function Post({ posts }) {
         <div className="global-content">
           {/*** header ***/}
 
-          <Header data={posts} />
+          <Header  />
           {/*** end ***/}
 
           <main className="global-main">
