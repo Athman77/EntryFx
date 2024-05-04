@@ -41,10 +41,7 @@ export default async function Post({ searchParams }) {
   const isFirstPage = pageIndex < 2;
   const isLastPage = filteredProducts.length < POSTS_PER_PAGE;
 
-  // Check if the current page is the first or the last
-  const isFirstPage = pageIndex < 2;
-  const isLastPage = filteredProducts.length < POSTS_PER_PAGE;
-
+  
   return (
     <>
       <div className="global-cover"></div>
