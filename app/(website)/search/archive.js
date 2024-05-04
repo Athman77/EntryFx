@@ -32,7 +32,7 @@ const q  = searchParams.query || ''
   const filteredProducts = posts?.filter((val) => {
     if (q === "") {
       return val;
-    } else if (val?.name?.toLowerCase().includes(q?.toLowerCase())) {
+    } else if (val?.title?.toLowerCase().includes(q?.toLowerCase())) {
       return val;
     }
   });
