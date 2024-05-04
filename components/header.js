@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Header() {
-  const [showSearch, setShowSearch] = useState("");
+  const [showSearch, setShowSearch] = useState(false);
   const openSearch = () => {
     setShowSearch(true);
   };
