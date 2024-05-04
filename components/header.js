@@ -1,13 +1,50 @@
+
 "use client";
 import { useEffect, useRef, useState } from "react";
-
+import { useRouter } from 'next/router';
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Header() {
+export default function Header({data}) {
   const [showSearch, setShowSearch] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const router = useRouter();
+  
   const openSearch = () => {
     setShowSearch(true);
+  };
+  
+  
+  
+  
+    const handleSearch = () => {
+      // Filter data based on the search query
+      const searchData = data.filter(item =>
+        item.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+  
+      // Redirect to search results page with filtered data
+      router.push({
+        pathname: '/search',
+        query: { q: searchQuery },
+        // Pass filtered data as state
+        state: { searchData }
+      });
+    };
+    
+    
+    const searchQueryHandler = (event) => {
+      if (event.key === "Enter") {
+        handleSearch()
+        setTimeout(() => {
+          setShowSearch(false);
+        }, 1000);
+      }
+    };
+    
+    
+  const handleChange = (e) => {
+    setSearchQuery(e.target.value);
   };
   return (
     <>
@@ -104,10 +141,12 @@ export default function Header() {
                 type="text"
         autoFocus
                 placeholder="Type your keywords"
+                value = { searchQuery }
+                onChange = { handleChange }
               //  onChange={(e) => setQuery(e.target.value)}
-               // onKeyUp={searchQueryHandler}
+                onKeyUp={searchQueryHandler}
               />
-              <div className="search-meta">
+              <div className="search-meta text-white">
                 <span id="search-info">Please enter at least 3 characters</span>
                 <span id="search-counter" className="is-hide">
                   <span id="search-counter-results">0</span>
