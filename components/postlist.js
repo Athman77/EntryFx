@@ -61,7 +61,7 @@ export default function PostList({
                         </div>
                         <div className="bt-post--infor">
                           <div className="bt-post--infor-inner">
-                            <div className="bt-post--category"><a href="/" rel="tag">Comedy</a> - <a href="" rel="tag">Humor</a></div>
+                            <div className="bt-post--category"><a href="/" rel="tag">Football</a> - <a href="" rel="tag">Highlights</a></div>
                             <h3 className="bt-post--title"> 
                             <Link href={`/post/${post.slug.current}`}>
                             <a>  {post.title} </a>
