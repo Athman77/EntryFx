@@ -100,8 +100,9 @@ export default function Header() {
             <div className="search-form">
               <input
                 id="search-input"
-                className="global-title-big"
+                className="global-title-big text-white"
                 type="text"
+        autoFocus
                 placeholder="Type your keywords"
               //  onChange={(e) => setQuery(e.target.value)}
                // onKeyUp={searchQueryHandler}
