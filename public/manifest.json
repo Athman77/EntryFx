@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "SportX",
-    "short_name": "SportX",
-    "description": "Learn Islamic religion",
+    "name": "EXsport",
+    "short_name": "EXsport",
+    "description": "Get Live Football Scores and Real-Time Football Results with LiveScore",
     "icons": [
       {
         "src": "/pwa-192x192.png",
