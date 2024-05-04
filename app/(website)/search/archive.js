@@ -27,7 +27,7 @@ export default async function Post({ searchParams }) {
 
   const posts = await getPaginatedPosts(params);
   //const router = useRouter();
-const { q } = searchParams.query || ''
+const q  = searchParams.query || ''
   //const { q } = router.query;
   const filteredProducts = posts?.filter((val) => {
     if (q === "") {
