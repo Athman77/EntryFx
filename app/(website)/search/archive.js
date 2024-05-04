@@ -4,6 +4,7 @@ import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
 import BlogOne from "@/components/blogone";
 //import { useRouter } from "next/navigation";
+import { useParams } from 'next/navigation';
 import BlogTwo from "@/components/blogtwo";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -27,7 +28,8 @@ export default async function Post({ searchParams }) {
 
   const posts = await getPaginatedPosts(params);
   //const router = useRouter();
-const q  = searchParams.query
+  
+const { q }  = useParams.query
 //  const { q } = router.query;
   const filteredProducts = posts?.filter((val) => {
     if (q === "") {
