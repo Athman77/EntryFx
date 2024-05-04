@@ -4,8 +4,8 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "EXsport",
-    "short_name": "EXsport",
+    "name": "xSport",
+    "short_name": "xSport",
     "description": "Get Live Football Scores and Real-Time Football Results with LiveScore",
     "icons": [
       {
