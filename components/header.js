@@ -153,6 +153,7 @@ export default function Header() {
                 id="search-input"
                 className="global-title-big text-white"
                 type="text"
+        defaultValue={param}
         autoFocus
                 placeholder="Type your keywords"
                 onKeyUp={onSearchHandler}
