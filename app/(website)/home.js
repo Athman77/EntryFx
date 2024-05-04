@@ -160,7 +160,7 @@ export default function Post({ posts }) {
                 <div className="elementor-element elementor-element-8f9a284 elementor-widget__width-initial elementor-widget elementor-widget-text-editor">
                   <div className="elementor-widget-container">
                     <p className="text-white">
-                      See what we’ve written lately.
+                      Get Live Football Scores and Real-Time Football Results with LiveScore!.
                     </p>
                   </div>
                 </div>
