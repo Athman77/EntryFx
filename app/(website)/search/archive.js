@@ -3,7 +3,7 @@
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
 import BlogOne from "@/components/blogone";
-import { useRouter } from "next/navigation";
+//import { useRouter } from "next/navigation";
 //import { useParams } from 'next/navigation';
 import BlogTwo from "@/components/blogtwo";
 import Footer from "@/components/footer";
@@ -15,6 +15,7 @@ import { getPaginatedPosts } from "@/lib/sanity/client";
 export default async function Post({ searchParams }) {
   // Fetch the current page from the query parameters, defaulting to 1 if it doesn't exist
   const page = searchParams.page;
+  const search = searchParams.search;
   const pageIndex = parseInt(page, 10) || 1;
 
   // Set the number of posts to be displayed per page
@@ -33,9 +34,9 @@ export default async function Post({ searchParams }) {
   
  const { q } = router.q;
   const filteredProducts = posts?.filter((val) => {
-    if (q === "") {
+    if (search === "") {
       return val;
-    } else if (val?.title?.toLowerCase().includes(q?.toLowerCase())) {
+    } else if (val?.title?.toLowerCase().includes(search?.toLowerCase())) {
       return val;
     }
   });
