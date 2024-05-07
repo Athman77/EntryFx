@@ -29,7 +29,7 @@ export default function Post({ posts }) {
                 <p className="hero-description global-subtitle-excerpt text-white">
                   Get Live Football Scores and Real-Time Football Results with LiveScore! 
                 </p>
-                <a href="/" className="hero-button global-button">
+                <a href="https://paystack.com/pay/9o5zytnrlk" className="hero-button global-button">
                   Support our channel
                 </a>
               </div>
