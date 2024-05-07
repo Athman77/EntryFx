@@ -11,17 +11,17 @@ export async function sharedMetaData(params) {
     //metadataBase: new URL(settings.url),
     manifest: "/manifest.json",
     title: {
-      default: settings?.title || "snapIman - Best Islamic App",
-      template: "%s | snapIman",
+      default: settings?.title || "Exsport - Get Live Football Scores and Real-Time Football Results with LiveScore!",
+      template: "%s | exSport",
     },
-    description: " Engage in educational content covering diverse topics such as Islamic history, jurisprudence, and theology, fostering continuous learning and personal growth",
-    keywords: ["Quran", "Islamic Stories", "Dua & Prayer"],
+    description: " Get Live Football Scores and Real-Time Football Results with LiveScore!",
+    keywords: ["Highlights", "Football", "Champions League"],
     authors: [{ name: "Gaucho" }],
     canonical: settings.url,
     openGraph: {
       images: [
         {
-          url: "https://cdn.sanity.io/images/11ognen8/production/43b6dfdd28d8361732c19bfaf576028b20ef7aac-719x842.jpg",
+          url: "https://cdn.sanity.io/images/wusctyxy/production/862609bc9723a18d494f3d85f26a10cfb94df443-1440x1781.jpg",
           width: 800,
           height: 600,
         },
