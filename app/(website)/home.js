@@ -17,7 +17,7 @@ export default function Post({ posts }) {
             <div className="rounded-3xl md:rounded-[40px] relative aspect-w-16 aspect-h-9 lg:aspect-h-5 overflow-hidden z-0">
               <div className="absolute inset-0">
                 <img
-                  src="https://images.pexels.com/photos/2138922/pexels-photo-2138922.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                  src="https://cdn.sanity.io/images/wusctyxy/production/862609bc9723a18d494f3d85f26a10cfb94df443-1440x1781.jpg"
                   alt="search"
                   sizes="(max-width: 1280px) 100vw, 1536px"
                   className="object-cover w-full h-full object-cover absolute inset-0 w-full h-full"
@@ -50,13 +50,13 @@ export default function Post({ posts }) {
                     >
                       <span className="sr-only">Search all icons</span>
                       <input
-                        type="search"
+                        type="text"
                         className="block w-full border-neutral-200 focus:border-primary-300 focus:ring focus:ring-primary-200/50 bg-white dark:border-neutral-500 dark:focus:ring-primary-500/30 dark:bg-neutral-900 rounded-full text-sm font-normal pl-14 py-5 pr-5 md:pl-16 "
                         id="search-input"
                         placeholder="Type and press enter"
-                        value="Technology"
+                       // value="Technology"
                       />
-                      <button
+                          {/*   <button
                         className="ttnc-ButtonCircle flex items-center justify-center rounded-full !leading-none disabled:bg-opacity-70 bg-slate-900 hover:bg-slate-800 
         text-slate-50 absolute right-2.5 top-1/2 transform -translate-y-1/2  w-11 h-11 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-6000 dark:focus:ring-offset-0"
                         type="submit"
@@ -93,7 +93,7 @@ export default function Post({ posts }) {
                             d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"
                           ></path>
                         </svg>
-                      </span>
+                      </span>*/}
                     </label>
                   </form>
                   <div className="w-full text-sm text-left mt-4 text-neutral-500 dark:text-neutral-300">
@@ -131,7 +131,7 @@ export default function Post({ posts }) {
           </div>
         </div>
 
-        {/*******/}
+        {/*******
         <div className="nc-PageHomeDemo3 relative">
           <div className="container relative">
             <div className="nc-SectionHero relative pt-10 pb-16 md:py-16 lg:pb-28 lg:pt-20">
