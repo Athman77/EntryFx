@@ -227,7 +227,7 @@ export default function Post({ posts }) {
                     ></div>
                     <span className="absolute inset-0 bg-neutral-900 bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   </a>
-                  <div className="absolute bottom-3 inset-x-3 p-4 bg-white dark:bg-neutral-900 flex flex-col flex-grow rounded-3xl group-hover:shadow-2xl transition-shadow">
+                  <div className="absolute bottom-3 inset-x-3 p-4 bg-white dark:bg-neutral-900/40 backdrop-filter backdrop-blur-lg shadow-lg dark:shadow-2xl flex flex-col flex-grow rounded-3xl group-hover:shadow-2xl transition-shadow">
                     <a
                       className="absolute inset-0"
                       href="/single/this-is-single-slug"
