@@ -60,8 +60,8 @@ export default function Post({ posts }) {
                       loading="lazy"
                       decoding="async"
                       data-nimg="fill"
-                      className="object-cover rounded-3xl"
-                      style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                      className="object-cover full-screen-transparent rounded-3xl"
+                     // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                       sizes="(max-width: 600px) 480px, 800px"
                       src="image_4"
                     />
@@ -98,10 +98,10 @@ export default function Post({ posts }) {
                               loading="lazy"
                               decoding="async"
                               data-nimg="fill"
-                              className="absolute inset-0 w-full h-full object-cover"
-                              style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                              className="absolute full-screen-transparent inset-0 w-full h-full object-cover"
+                             // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                               sizes="100px"
-                              srcset="image_124 16w, image_122 32w, image_128 48w, image_125 64w, image_129 96w, image_154 128w, image_133 256w, image_135 384w, image_132 640w, image_134 750w, image_138 828w, image_136 1080w, image_139 1200w, image_145 1920w, image_141 2048w, image_3 3840w"
+                           //   srcset="image_124 16w, image_122 32w, image_128 48w, image_125 64w, image_129 96w, image_154 128w, image_133 256w, image_135 384w, image_132 640w, image_134 750w, image_138 828w, image_136 1080w, image_139 1200w, image_145 1920w, image_141 2048w, image_3 3840w"
                               src="image_3"
                             />
                             <span className="wil-avatar__name">P</span>
@@ -266,10 +266,10 @@ export default function Post({ posts }) {
                                 loading="lazy"
                                 decoding="async"
                                 data-nimg="fill"
-                                className="absolute inset-0 w-full h-full object-cover"
-                                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                className="absolute full-screen-transparent inset-0 w-full h-full object-cover"
+                               // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="100px"
-                                srcset="image_124 16w, image_122 32w, image_128 48w, image_125 64w, image_129 96w, image_154 128w, image_133 256w, image_135 384w, image_132 640w, image_134 750w, image_138 828w, image_136 1080w, image_139 1200w, image_145 1920w, image_141 2048w, image_3 3840w"
+                               // srcset="image_124 16w, image_122 32w, image_128 48w, image_125 64w, image_129 96w, image_154 128w, image_133 256w, image_135 384w, image_132 640w, image_134 750w, image_138 828w, image_136 1080w, image_139 1200w, image_145 1920w, image_141 2048w, image_3 3840w"
                                 src="image_3"
                               />
                               <span className="wil-avatar__name">P</span>
@@ -386,10 +386,10 @@ export default function Post({ posts }) {
                         loading="lazy"
                         decoding="async"
                         data-nimg="fill"
-                        className="object-cover w-full h-full"
-                        style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                        className="object-cover full-screen-transparent w-full h-full"
+                      //  style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                         sizes="(max-width: 600px) 180px, 400px"
-                        srcset="image_140 16w, image_144 32w, image_142 48w, image_143 64w, image_146 96w, image_148 128w, image_147 256w, image_152 384w, image_158 640w, image_151 750w, image_166 828w, image_160 1080w, image_169 1200w, image_155 1920w, image_164 2048w, image_8 3840w"
+                       // srcset="image_140 16w, image_144 32w, image_142 48w, image_143 64w, image_146 96w, image_148 128w, image_147 256w, image_152 384w, image_158 640w, image_151 750w, image_166 828w, image_160 1080w, image_169 1200w, image_155 1920w, image_164 2048w, image_8 3840w"
                         src="image_8"
                       />
                       <span className="absolute bottom-1 start-1">
@@ -439,10 +439,10 @@ export default function Post({ posts }) {
                                 loading="lazy"
                                 decoding="async"
                                 data-nimg="fill"
-                                className="absolute inset-0 w-full h-full object-cover"
-                                style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                className="absolute full-screen-transparent inset-0 w-full h-full object-cover"
+                               // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                 sizes="100px"
-                                srcset="image_118 16w, image_82 32w, image_116 48w, image_83 64w, image_86 96w, image_80 128w, image_114 256w, image_113 384w, image_94 640w, image_98 750w, image_97 828w, image_89 1080w, image_108 1200w, image_92 1920w, image_102 2048w, image_1 3840w"
+                              //  srcset="image_118 16w, image_82 32w, image_116 48w, image_83 64w, image_86 96w, image_80 128w, image_114 256w, image_113 384w, image_94 640w, image_98 750w, image_97 828w, image_89 1080w, image_108 1200w, image_92 1920w, image_102 2048w, image_1 3840w"
                                 src="image_1"
                               />
                               <span className="wil-avatar__name">F</span>
@@ -559,10 +559,10 @@ export default function Post({ posts }) {
                         loading="lazy"
                         decoding="async"
                         data-nimg="fill"
-                        className="object-cover w-full h-full"
-                        style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                        className="object-cover full-screen-transparent w-full h-full"
+                     //   style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                         sizes="(max-width: 600px) 180px, 400px"
-                        srcset="image_150 16w, image_153 32w, image_157 48w, image_161 64w, image_156 96w, image_159 128w, image_162 256w, image_163 384w, image_165 640w, image_167 750w, image_168 828w, image_179 1080w, image_178 1200w, image_174 1920w, image_183 2048w, image_6 3840w"
+                      //  srcset="image_150 16w, image_153 32w, image_157 48w, image_161 64w, image_156 96w, image_159 128w, image_162 256w, image_163 384w, image_165 640w, image_167 750w, image_168 828w, image_179 1080w, image_178 1200w, image_174 1920w, image_183 2048w, image_6 3840w"
                         src="image_6"
                       />
                       <span className="absolute bottom-1 start-1">
@@ -750,8 +750,8 @@ export default function Post({ posts }) {
                         loading="lazy"
                         decoding="async"
                         data-nimg="fill"
-                        className="object-cover w-full h-full"
-                        style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                        className="object-cover full-screen-transparent w-full h-full"
+                       // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                         sizes="(max-width: 600px) 180px, 400px"
                         src="image_14"
                       />
