@@ -1,4 +1,5 @@
 
+
 import Image from "next/image";
 import Link from "next/link";
 import { cx } from "@/utils/all";
@@ -88,7 +89,17 @@ export default function PostList({
                 <a className="line-clamp-1" >{post.title} </a>
                 </Link>
                 </h2>
-                    <a className="flex mt-1.5" href="/author/the-demo-author-slug"><span className="block text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white font-medium">Gaucho</span><span className="text-neutral-500 dark:text-neutral-400 mx-[6px] font-medium">·</span><span className="text-neutral-500 dark:text-neutral-400 font-normal">May 20, 2021</span></a>
+                    <a className="flex mt-1.5" href="/author/the-demo-author-slug"><span className="block text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white font-medium">Gaucho</span><span className="text-neutral-500 dark:text-neutral-400 mx-[6px] font-medium">·</span><span className="text-neutral-500 dark:text-neutral-400 font-normal"> <time datetime="2021-01-13">
+                                                                             
+                                                                               {" "}
+                                                                               {format(
+                                                                                 parseISO(
+                                                                                   post?.publishedAt ||
+                                                                                     post._createdAt
+                                                                                 ),
+                                                                                 "MMMM dd, yyyy"
+                                                                               )}{" "}
+                                                                                                          </time></span></a>
                   </div>
                 </div>
               </div>
