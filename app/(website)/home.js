@@ -4,6 +4,8 @@ import Container from "@/components/container";
 import PostList from "@/components/postlist";
 import BlogOne from "@/components/blogone";
 import BlogTwo from "@/components/blogtwo";
+
+import BlogPages from "@/components/blogpage";
 import Subscribe from "@/components/subscribe";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -129,6 +131,9 @@ export default function Post({ posts }) {
             {/**end**/}
           </div>
         </div>
+
+  <BlogPages />
+            
       </div>
 
       {/* <!------ post card------>*/}
