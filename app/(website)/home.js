@@ -101,6 +101,10 @@ export default function Post({ posts }) {
 
         <BlogPages />
 
+
+
+                      <div className="nc-PageHome relative">
+          <div className="container relative">
         <div className="nc-SectionLatestPosts relative pb-16 lg:pb-28">
           <div className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-3/5 xl:w-2/3 xl:pr-14">
@@ -285,7 +289,8 @@ export default function Post({ posts }) {
             </div>
           </div>
         </div>
-
+                            </div>
+                            </div>
         {/*****/}
       </div>
 
