@@ -12,41 +12,7 @@ import Header from "@/components/header";
 export default function Post({ posts }) {
   return (
     <>
-      <div className="global-cover"></div>
-      <div className="global-wrap">
-        <div className="global-content">
-          {/*** header ***/}
 
-          <Header />
-          {/*** end ***/}
-
-          <main className="global-main">
-            {/**** ====== hero section ===== ***/}
-            <div className="hero-section">
-              <div className="hero-wrap">
-                <h1 className="hero-title global-title-huge global-title-offset text-white">
-                  <span>HELLO 👋</span> WELCOME;
-                </h1>
-                <p className="hero-description global-subtitle-excerpt text-white">
-                  Get Live Football Scores and Real-Time Football Results with
-                  LiveScore!
-                </p>
-                <a
-                  href="https://paystack.com/pay/9o5zytnrlk"
-                  className="hero-button global-button"
-                >
-                  Support our channel
-                </a>
-              </div>
-            </div>
-            {/**** ====== hero section end ===== ***/}
-            {/*  <Subscribe /> */}
-          </main>
-
-          {/*  <Footer / >*/}
-        </div>
-      </div>
-      {/*****/}
 
       <div className="bg-[#f8f8f8]   text-base dark:bg-neutral-900/95 text-neutral-900 dark:text-neutral-200">
         <div className="nc-PageHome relative">
