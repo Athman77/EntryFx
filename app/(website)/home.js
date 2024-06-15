@@ -1,5 +1,3 @@
-//
-//
 
 import Link from "next/link";
 import Container from "@/components/container";
@@ -15,7 +13,25 @@ export default function Post({ posts }) {
   return (
     <>
       <div className="bg-[#f8f8f8]   text-base dark:bg-neutral-900/95 text-neutral-900 dark:text-neutral-200">
-        <div className="nc-PageHome relative">
+    {/*******/}
+  <div className="nc-PageHomeDemo3 relative">
+  <div className="container relative">
+    <div className="nc-SectionHero relative pt-10 pb-16 md:py-16 lg:pb-28 lg:pt-20">
+      <div className="flex flex-col lg:flex-row space-y-14 lg:space-y-0 lg:space-x-10 items-center relative text-center lg:text-left">
+        <div className="w-screen max-w-full xl:max-w-lg space-y-5 lg:space-y-7">
+          <h2 className="text-3xl !leading-tight font-semibold text-neutral-900 md:text-4xl xl:text-5xl dark:text-neutral-100"><span>Far from face <br /> but not from <span className="relative pr-3"><img src="" className="w-full absolute top-1/2 -left-1 transform -translate-y-1/2" alt=""><span className="relative">heart</span></span></span></h2>
+          <span className="block text-base xl:text-lg text-neutral-6000 dark:text-neutral-400">Let stay at home and share with everyone the most beautiful stories in your hometown 🎈</span>
+          <a className="nc-Button flex-shrink-0 relative h-auto inline-flex items-center justify-center rounded-full transition-colors border-transparent bg-primary-700 hover:bg-primary-6000 text-primary-50 text-sm sm:text-base font-medium py-3 px-4 sm:py-3.5 sm:px-6   " href="/">Getting started</a>
+        </div>
+        <div className="flex-grow">
+          <img src="/static/media/hero-right.8e5a74e5612b59faa521.png" className="w-full" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  {/*********/}
+    <div className="nc-PageHome relative">
           <div className="container relative">
             {/*******/}
             <div className="nc-SectionMagazine1 py-16 lg:py-28">
