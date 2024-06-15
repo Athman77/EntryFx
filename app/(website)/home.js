@@ -28,7 +28,7 @@ export default function Post({ posts }) {
               <div className=" bg-white dark:bg-neutral-900 dark:border dark:border-neutral-700 p-5 lg:p-16 rounded-[40px] shadow-2xl flex items-center">
                 <header className="w-full max-w-3xl mx-auto text-center flex flex-col items-center">
                   <h2 className="text-2xl sm:text-4xl font-semibold">
-                    Technology
+                    Welcome
                   </h2>
                   <span className="block text-xs sm:text-sm mt-4 text-neutral-500 dark:text-neutral-300">
                     We found{" "}
@@ -51,7 +51,7 @@ export default function Post({ posts }) {
                       <span className="sr-only">Search all icons</span>
                       <input
                         type="text"
-                        className="block w-full border-neutral-200 focus:border-primary-300 focus:ring focus:ring-primary-200/50 bg-white dark:border-neutral-500 dark:focus:ring-primary-500/30 dark:bg-neutral-900 rounded-full text-sm font-normal pl-14 py-5 pr-5 md:pl-16 "
+                        className="block w-full border-neutral-200 border-primary-300 ring ring-primary-200/50 bg-white dark:border-neutral-500 dark:ring-primary-500/30 dark:bg-neutral-900 rounded-full text-sm font-normal pl-14 py-5 pr-5 md:pl-16 "
                         id="search-input"
                         placeholder="Type and press enter"
                        // value="Technology"
