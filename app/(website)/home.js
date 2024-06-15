@@ -24,7 +24,7 @@ export default function Post({ posts }) {
           <a className="nc-Button flex-shrink-0 relative h-auto inline-flex items-center justify-center rounded-full transition-colors border-transparent bg-primary-700 hover:bg-primary-6000 text-primary-50 text-sm sm:text-base font-medium py-3 px-4 sm:py-3.5 sm:px-6   " href="/">Getting started</a>
         </div>
         <div className="flex-grow">
-          <img src="/static/media/hero-right.8e5a74e5612b59faa521.png" className="w-full" alt="" />
+          <img src="https://cdn.sanity.io/images/wusctyxy/production/e2c799c0e66021c125f5195a2e777ef8d17c3779-1450x638.png" className="w-full" alt="" />
         </div>
       </div>
     </div>
