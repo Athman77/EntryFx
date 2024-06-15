@@ -174,7 +174,12 @@ export default function BlogTwo({
                 //data-nimg="fill"
                 className="object-cover full-screen-transparent w-full h-full"
                 sizes="(max-width: 600px) 180px, 400px"
-                src={imageProps.src}
+              //  src={imageProps.src}
+               src={imageProps.src}
+              {...(post.mainImage.blurDataURL && {
+                placeholder: "blur",
+                blurDataURL: post.mainImage.blurDataURL
+              })}
               />
             ) : (
               <span className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 text-gray-200">
