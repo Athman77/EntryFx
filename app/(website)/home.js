@@ -63,7 +63,7 @@ export default function Post({ posts }) {
                       className="object-cover full-screen-transparent rounded-3xl"
                      // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                       sizes="(max-width: 600px) 480px, 800px"
-                      src="image_4"
+                      src="https://exsport.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwusctyxy%2Fproduction%2F7a1ce14448e93e0ed31aa673e0cc74daa16717ba-720x900.jpg%3Fw%3D720%26auto%3Dformat&w=750&q=75"
                     />
                     <div
                       className="nc-PostTypeFeaturedIcon absolute bottom-2 left-2"
@@ -390,7 +390,7 @@ export default function Post({ posts }) {
                       //  style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                         sizes="(max-width: 600px) 180px, 400px"
                        // srcset="image_140 16w, image_144 32w, image_142 48w, image_143 64w, image_146 96w, image_148 128w, image_147 256w, image_152 384w, image_158 640w, image_151 750w, image_166 828w, image_160 1080w, image_169 1200w, image_155 1920w, image_164 2048w, image_8 3840w"
-                        src="image_8"
+                        src="https://exsport.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwusctyxy%2Fproduction%2F7a1ce14448e93e0ed31aa673e0cc74daa16717ba-720x900.jpg%3Fw%3D720%26auto%3Dformat&w=750&q=75"
                       />
                       <span className="absolute bottom-1 start-1">
                         <div
