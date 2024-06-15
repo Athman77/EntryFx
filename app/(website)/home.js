@@ -262,7 +262,7 @@ export default function Post({ posts }) {
                       <div className="wil-avatar relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden text-neutral-100 uppercase font-semibold shadow-inner rounded-full h-10 w-10 text-base flex-shrink-0 mr-3">
                         <img
                           sizes="100px"
-                          src=" ="
+                          src="https://cdn.sanity.io/images/wusctyxy/production/f271a0e60dc0ec7a41a2992e5ce28a4bb65c0ced-400x400.jpg"
                           className="absolute inset-0 w-full h-full object-cover object-cover absolute inset-0 w-full h-full"
                           alt="Pillifant Vern"
                         />
@@ -270,7 +270,7 @@ export default function Post({ posts }) {
                       </div>
                       <div>
                         <h2 className="text-sm text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white font-medium">
-                          Pillifant Vern
+                          Gaucho
                         </h2>
                         <span className="flex items-center mt-1 text-xs text-neutral-500 dark:text-neutral-400">
                           <span>May 20, 2021</span>
