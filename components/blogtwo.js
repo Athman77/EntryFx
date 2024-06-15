@@ -172,7 +172,7 @@ export default function BlogTwo({
                 loading="lazy"
                 decoding="async"
                 //data-nimg="fill"
-                className="object-cover full-screen-transparent w-full h-full"
+                className="object-cover full-screen-transparentT w-full h-full"
                 sizes="(max-width: 600px) 180px, 400px"
               //  src={imageProps.src}
                src={imageProps.src}
