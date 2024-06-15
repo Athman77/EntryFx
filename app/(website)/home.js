@@ -79,7 +79,7 @@ export default function Post({ posts }) {
             <div className="nc-PageArchiveVideo">
               <div className="dark bg-neutral-900/95 text-white">
                 <div className="container py-16 lg:py-28 ">
-                  <div className="mt-10 flex flex-col sm:items-center sm:justify-between sm:flex-row">
+                  <div className="mt-5 flex flex-col sm:items-center sm:justify-between sm:flex-row">
                     <div className="block my-4 border-b w-full border-neutral-500 sm:hidden"></div>
                     <div className="flex justify-end">
                       <div className="nc-ArchiveFilterListBox flex-shrink-0 ">
