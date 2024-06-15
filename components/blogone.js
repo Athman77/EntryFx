@@ -100,7 +100,7 @@ export default function BlogOne({
                       "MMMM dd, yyyy"
                     )}{" "}
                   </span>
-                  minutes read
+                  
                 </time>
               </span>
             </div>
