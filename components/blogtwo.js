@@ -1,4 +1,4 @@
-//
+
 import Image from "next/image";
 import Link from "next/link";
 import { cx } from "@/utils/all";
@@ -33,31 +33,36 @@ export default function BlogTwo({
                 
                 
                    <div className="nc-Card6 relative flex group flex-row items-center sm:p-4 sm:rounded-3xl sm:bg-white sm:dark:bg-neutral-900 sm:border border-neutral-200 dark:border-neutral-700 h-full">
+                    <Link href={`/post/${post.slug.current}`}> 
                     <a
                       className="absolute inset-0 z-0"
-                      href="/single-video/this-is-single-slug"
-                    ></a>
+                      
+                    ></a></Link>
                     <div className="flex flex-col flex-grow">
                       <div className="space-y-3 mb-4">
                         <div
                           className="nc-CategoryBadgeList flex flex-wrap space-x-2"
                           //data-nc-id="CategoryBadgeList"
                         >
+                         <Link href={`/post/${post.slug.current}`}> 
                           <a
                             className="transition-colors hover:text-white duration-300 nc-Badge  inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative text-yellow-800 bg-yellow-100 hover:bg-yellow-800"
-                            href="/archive/the-demo-archive-slug"
+                          
                           >
                             Highlights
                           </a>
+                          </Link>
                         </div>
                         <h2 className="block font-semibold text-sm sm:text-base">
+                         <Link href={`/post/${post.slug.current}`}> 
                           <a
                             className="line-clamp-2"
                             title="To cool datacenter servers, Microsoft turns to boiling liquid Donec quis"
-                            href="/single-video/this-is-single-slug"
+                         
                           >
                           {post.title}
                           </a>
+                          </Link>
                         </h2>
                         <div className="nc-PostCardMeta inline-flex items-center flex-wrap text-neutral-800 dark:text-neutral-200 leading-none text-xs">
                           <a
@@ -192,9 +197,10 @@ export default function BlogTwo({
                         </div>
                       </div>
                     </div>
+                     <Link href={`/post/${post.slug.current}`}> 
                     <a
                       className="block relative flex-shrink-0 w-24 h-24 sm:w-40 sm:h-full ms-3 sm:ms-5 rounded-2xl overflow-hidden z-0"
-                      href="/single-video/this-is-single-slug"
+                     
                     >
                       {imageProps ? (
                       <img
@@ -237,7 +243,7 @@ export default function BlogTwo({
                           </span>
                         </div>
                       </span>
-                    </a>
+                    </a></Link>
                   </div>
          
     </>
