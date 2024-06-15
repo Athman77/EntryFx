@@ -1,3 +1,4 @@
+//
 
 import Link from "next/link";
 import Container from "@/components/container";
@@ -44,7 +45,12 @@ export default function Post({ posts }) {
               </div>
             </div>
             {/*********/}
-            <div className="nc-PageArchiveVideo">
+      
+            {/**end**/}
+          </div>
+        </div>
+
+      <div className="nc-PageArchiveVideo">
               <div className="dark bg-neutral-900/95 text-white">
                 <div className="container py-16 lg:py-28 ">
                   <div className="mt-5 flex flex-col sm:items-center sm:justify-between sm:flex-row">
@@ -94,9 +100,7 @@ export default function Post({ posts }) {
                 </div>
               </div>
             </div>
-            {/**end**/}
-          </div>
-        </div>
+
 
   <BlogPages />
             
@@ -104,15 +108,7 @@ export default function Post({ posts }) {
 
       {/* <!------ post card------>*/}
 
-      <div className="global-wrap">
-        <div className="global-content">
-          <main className="global-main">
-            <Subscribe />
-          </main>
-
-          <Footer />
-        </div>
-      </div>
+   
       {/***** end *****/}
     </>
   );
