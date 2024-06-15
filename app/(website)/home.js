@@ -54,9 +54,8 @@ export default function Post({ posts }) {
             {/*******/}
             <div className="nc-SectionMagazine1 py-16 lg:py-28">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-              
-              {/*******card one ***/}
-       {posts.slice(0, 1).map(post => (
+                {/*******card one ***/}
+                {posts.slice(0, 1).map((post) => (
                   <BlogOne
                     key={post._id}
                     post={post}
@@ -65,71 +64,71 @@ export default function Post({ posts }) {
                   />
                 ))}
                 {/******/}
-                
-                
-                
+
                 <div className="grid gap-6 md:gap-8">
-                
-           
-                  
-               {posts.slice(2, 5).map(post => (
-                  <BlogTwo
-                    key={post._id}
-                    post={post}
-                    aspect="landscape"
-                    preloadImage={true}
-                  />
-                ))}
-                  
-                  
-             
-                  
+                  {posts.slice(2, 5).map((post) => (
+                    <BlogTwo
+                      key={post._id}
+                      post={post}
+                      aspect="landscape"
+                      preloadImage={true}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
             {/*********/}
-    <div className="nc-PageArchiveVideo">
-    <div className="dark bg-neutral-900/95 text-white">
-      <div className="container py-16 lg:py-28 ">
+            <div className="nc-PageArchiveVideo">
+              <div className="dark bg-neutral-900/95 text-white">
+                <div className="container py-16 lg:py-28 ">
+                  <div className="mt-16 flex flex-col sm:items-center sm:justify-between sm:flex-row">
+                    <div className="block my-4 border-b w-full border-neutral-500 sm:hidden"></div>
+                    <div className="flex justify-end">
+                      <div className="nc-ArchiveFilterListBox flex-shrink-0 ">
+                        <div className="relative">
+                          <div
+                            id="headlessui-listbox-button-:ra:"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            data-headlessui-state=""
+                          >
+                            <button className="nc-Button flex-shrink-0 relative h-auto inline-flex items-center justify-center rounded-full transition-colors border-transparent bg-white dark:bg-neutral-900 ring-1 ring-neutral-300 hover:ring-neutral-400 dark:ring-neutral-700 dark:hover:ring-neutral-500 text-sm font-medium py-3 px-4 sm:py-3.5 sm:px-6  ">
+                              Most Recent
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewbox="0 0 24 24"
+                                fill="currentColor"
+                                aria-hidden="true"
+                                data-slot="icon"
+                                className="w-4 h-4 ml-2 -mr-1"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                  clip-rule="evenodd"
+                                ></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-        <div className="mt-16 flex flex-col sm:items-center sm:justify-between sm:flex-row">
-
-          <div className="block my-4 border-b w-full border-neutral-500 sm:hidden"></div>
-          <div className="flex justify-end">
-            <div className="nc-ArchiveFilterListBox flex-shrink-0 ">
-              <div className="relative">
-                <div id="headlessui-listbox-button-:ra:" aria-haspopup="listbox" aria-expanded="false" data-headlessui-state="">
-                  <button className="nc-Button flex-shrink-0 relative h-auto inline-flex items-center justify-center rounded-full transition-colors border-transparent bg-white dark:bg-neutral-900 ring-1 ring-neutral-300 hover:ring-neutral-400 dark:ring-neutral-700 dark:hover:ring-neutral-500 text-sm font-medium py-3 px-4 sm:py-3.5 sm:px-6  ">Most Recent
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" className="w-4 h-4 ml-2 -mr-1">
-                      <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd"></path>
-                    </svg></button>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8 md:gap-x-8 md:gap-y-10 mt-8 lg:mt-10">
+                    {posts.slice(5, 10).map((post) => (
+                      <PostList
+                        key={post._id}
+                        post={post}
+                        aspect="landscape"
+                        preloadImage={true}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8 md:gap-x-8 md:gap-y-10 mt-8 lg:mt-10">
-
-{posts.slice(5, 10).map(post => (
-                  <PostList
-                    key={post._id}
-                    post={post}
-                    aspect="landscape"
-                    preloadImage={true}
-                  />
-                ))}
-          
-        </div>
-      </div>
-      </div>
-      </div>
-  {/**end**/}
-
-
-                          
+            {/**end**/}
           </div>
         </div>
       </div>
