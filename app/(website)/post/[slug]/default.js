@@ -157,6 +157,25 @@ export default function Post(props) {
         <div id="single-entry-content" class="prose lg:prose-lg !max-w-screen-md mx-auto dark:prose-invert">
          {post.body && <PortableText value={post.body} />}
          </div>
+                    <div className="max-w-screen-md mx-auto border-b border-t border-neutral-100 dark:border-neutral-700"></div> <
+div className = "max-w-screen-md mx-auto " >
+<div className="nc-SingleAuthor flex">
+          <a href="/author/the-demo-author-slug">
+           <div className="wil-avatar relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden text-neutral-100 uppercase font-semibold shadow-inner rounded-full h-12 w-12 text-lg sm:text-xl sm:h-24 sm:w-24 ring-1 ring-white dark:ring-neutral-900">
+           {AuthorimageProps && 
+            <img sizes="100px" src={AuthorimageProps.src}  className="absolute inset-0 w-full h-full object-cover object-cover absolute inset-0 w-full h-full" alt="Birrell Chariot" />}
+            <span className="wil-avatar__name">B</span>
+           </div></a>
+          <div className="flex flex-col ml-3 max-w-lg sm:ml-5">
+           <span className="text-xs text-neutral-400 uppercase tracking-wider">WRITTEN BY</span>
+           <h2 className="text-lg font-semibold text-neutral-900 dark:text-neutral-200"><a href="/author/the-demo-author-slug">{post.author.name}</a></h2>
+           <span className="block mt-1 text-sm text-neutral-500 sm:text-base dark:text-neutral-300">
+           {post.author.bio && <PortableText value={post.author.bio} />}
+           <a className="text-primary-6000 font-medium ml-1" href="/author/the-demo-author-slug">Read more</a></span>
+          </div>
+         </div> 
+         </div>
+    
          </div>
          </div>
          </div>
