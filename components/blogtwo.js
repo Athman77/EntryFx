@@ -37,7 +37,7 @@ export default function BlogTwo({
                 </a>
               </Link>
             </div>
-            <h2 className="block font-semibold text-sm sm:text-base">
+            <h2 className="block text-neutral-900 font-semibold text-sm sm:text-base">
               <Link href={`/post/${post.slug.current}`}>
                 <a
                   className="line-clamp-2"
