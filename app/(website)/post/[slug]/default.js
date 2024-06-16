@@ -39,7 +39,7 @@ export default function Post(props) {
 
       <div className="global-wrap">
         <div className="global-content">
-          <Header />
+          
 
           <main className="global-main">
             <progress className="post-progress"></progress>
@@ -162,6 +162,15 @@ export default function Post(props) {
             <Subscribe />
           </main>
           <Footer />
+                        <Header
+        account="css-ta1yzo"
+        tv="css-ta1yzo"
+        explore="css-ta1yzo"
+        home="css-ta1yzo"
+        search="css-ta1yzo"
+      />
+      {/***** end *****/}
+    </>
         </div>
       </div>
     </>
