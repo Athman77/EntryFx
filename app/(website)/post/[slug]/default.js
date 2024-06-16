@@ -39,7 +39,7 @@ export default function Post(props) {
     <>
 
 <div className="global-cover"></div>
-
+<div className="global-wrap">
      <div className="bg-[#f8f8f8] text-base dark:bg-neutral-900/95 text-neutral-900 dark:text-neutral-200 font-body">
     
     {/**** ***/}
@@ -184,7 +184,7 @@ div className = "max-w-screen-md mx-auto " >
      {/*****end***/}
    </div>
 
-    
+     </div>
     
          
                         <Header
