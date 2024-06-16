@@ -170,7 +170,7 @@ export default function Post(props) {
         search="css-ta1yzo"
       />
       {/***** end *****/}
-    </>
+    
         </div>
       </div>
     </>
