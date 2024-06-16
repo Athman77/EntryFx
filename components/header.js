@@ -249,7 +249,7 @@ export default function Header({home, search, explore, tv, account}) {
             <div className="search-form">
               <input
                 id="search-input"
-                className="global-title-big text-white"
+                className="global-title-big bg-none text-white"
                 type="text"
                 defaultValue={param}
                 autoFocus
