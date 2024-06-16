@@ -51,7 +51,7 @@ export default function BlogPages() {
                </div></a>
               <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
                <div className="relative flex-shrink-0 w-20 h-20 rounded-full shadow-lg overflow-hidden z-0">
-                <img src="https://images.unsplash.com/photo-1512686096451-a15c19314d59?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
+                <img src="https://cdn.sanity.io/images/wusctyxy/production/76ec97f5f6104a9a972b340c1e0aed93e9704700-540x960.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
                 <h2 className="text-base text-neutral-900 font-semibold">Real Madrid</h2>
@@ -59,7 +59,7 @@ export default function BlogPages() {
                </div></a>
               <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
                <div className="relative flex-shrink-0 w-20 h-20 rounded-full shadow-lg overflow-hidden z-0">
-                <img src="https://images.unsplash.com/photo-1546015018-8f2e2f225773?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
+                <img src="https://cdn.sanity.io/images/wusctyxy/production/02eb21feb5a7284c6f9d8fe6d46c594eadb5f4f8-375x750.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
                 <h2 className="text-base text-neutral-900 font-semibold">Man City</h2>
@@ -67,7 +67,7 @@ export default function BlogPages() {
                </div></a>
               <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
                <div className="relative flex-shrink-0 w-20 h-20 rounded-full shadow-lg overflow-hidden z-0">
-                <img src="https://images.unsplash.com/photo-1512658740823-0ebb97b3b86e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
+                <img src="https://cdn.sanity.io/images/wusctyxy/production/c1bf3800552b2947d22ab83d952cc71f35fc112d-414x736.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
                 <h2 className="text-base text-neutral-900 font-semibold">Chelsea</h2>
