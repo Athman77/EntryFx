@@ -311,7 +311,7 @@ export default function Post({ posts }) {
       </div>
 
       {/* <!------ post card------>*/}
-<Bottom
+<Header
         account="css-ta1yzo"
         tv="css-ta1yzo"
         explore="css-ta1yzo"
