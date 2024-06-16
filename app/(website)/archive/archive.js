@@ -189,7 +189,7 @@ export default async function Post({ searchParams }) {
              <Header
         account="css-ta1yzo"
         tv="css-ta1yzo"
-        explore="css-ta1yzo"
+        explore="css-t8d8hp"
         home="css-ta1yzo"
         search="css-ta1yzo"
       />
