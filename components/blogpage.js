@@ -27,7 +27,7 @@ export default function BlogPages() {
             
               <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
                <div className="relative flex-shrink-0 w-20 h-20 rounded-full shadow-lg overflow-hidden z-0">
-                <img src="https://cdn.sanity.io/images/wusctyxy/production/3a7b126d47f69635c7cbd4acc9a65d154823b018-736x1030.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
+                <img src="https://cdn.sanity.io/images/wusctyxy/production/df8086457a8ac050bc8bcbe1e913e17fc89990ab-736x736.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
                 <h2 className="text-base font-semibold">Liverpool</h2>
@@ -35,7 +35,7 @@ export default function BlogPages() {
                </div></a>
                 <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
                <div className="relative flex-shrink-0 w-20 h-20 rounded-full shadow-lg overflow-hidden z-0">
-                <img src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
+                <img src="https://cdn.sanity.io/images/wusctyxy/production/a1ec28f1e65f4050d5f8ccd3e3da11d094849695-387x689.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
                 <h2 className="text-base font-semibold">Arsenal</h2>
@@ -43,7 +43,7 @@ export default function BlogPages() {
                </div></a>
               <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
                <div className="relative flex-shrink-0 w-20 h-20 rounded-full shadow-lg overflow-hidden z-0">
-                <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
+                <img src="https://cdn.sanity.io/images/wusctyxy/production/224657f681cd46365c894aaaa130f68221dd10d8-720x1280.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
                 <h2 className="text-base font-semibold">Man United</h2>
