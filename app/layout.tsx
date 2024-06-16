@@ -28,7 +28,7 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable)}>
-      <body className="antialiased dark dark-mode home page-template page-template-homepage page-template-homepage-php page page-id-32 theme-voiceful woocommerce-js page-template-default page page-id-4810 wp-custom-logo theme-influencers woocommerce-no-js bt-orbit-enable bt-bg-pattern-enable bt-bg-buble-enable bt-bg-scroll-enable bt-img-zoom-enable e-lazyload elementor-default elementor-template-full-width elementor-kit-1850 page-template-default page page-id-4695 wp-custom-logo theme-influencers woocommerce-no-js bt-orbit-enable bt-bg-pattern-enable bt-bg-buble-enable bt-bg-scroll-enable bt-img-zoom-enable e-lazyload elementor-default elementor-template-full-width elementor-kit-1850 elementor-page elementor-page-4695">
+      <body className="antialiased darkF dark-mode home page-template page-template-homepage page-template-homepage-php page page-id-32 theme-voiceful woocommerce-js page-template-default page page-id-4810 wp-custom-logo theme-influencers woocommerce-no-js bt-orbit-enable bt-bg-pattern-enable bt-bg-buble-enable bt-bg-scroll-enable bt-img-zoom-enable e-lazyload elementor-default elementor-template-full-width elementor-kit-1850 page-template-default page page-id-4695 wp-custom-logo theme-influencers woocommerce-no-js bt-orbit-enable bt-bg-pattern-enable bt-bg-buble-enable bt-bg-scroll-enable bt-img-zoom-enable e-lazyload elementor-default elementor-template-full-width elementor-kit-1850 elementor-page elementor-page-4695">
         <Providers>
           {children}
         <Analytics />
