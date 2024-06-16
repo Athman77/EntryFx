@@ -30,7 +30,7 @@ export default function BlogPages() {
                 <img src="https://cdn.sanity.io/images/wusctyxy/production/df8086457a8ac050bc8bcbe1e913e17fc89990ab-736x736.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
-                <h2 className="text-base font-semibold">Liverpool</h2>
+                <h2 className="text-base text-neutral-900 font-semibold">Liverpool</h2>
                 <span className="block mt-1 text-sm text-neutral-500 dark:text-neutral-400">25 Articles</span>
                </div></a>
                 <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
@@ -38,7 +38,7 @@ export default function BlogPages() {
                 <img src="https://cdn.sanity.io/images/wusctyxy/production/a1ec28f1e65f4050d5f8ccd3e3da11d094849695-387x689.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
-                <h2 className="text-base font-semibold">Arsenal</h2>
+                <h2 className="text-base text-neutral-900 font-semibold">Arsenal</h2>
                 <span className="block mt-1 text-sm text-neutral-500 dark:text-neutral-400">25 Articles</span>
                </div></a>
               <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
@@ -46,7 +46,7 @@ export default function BlogPages() {
                 <img src="https://cdn.sanity.io/images/wusctyxy/production/224657f681cd46365c894aaaa130f68221dd10d8-720x1280.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
-                <h2 className="text-base font-semibold">Man United</h2>
+                <h2 className="text-base text-neutral-900 font-semibold">Man United</h2>
                 <span className="block mt-1 text-sm text-neutral-500 dark:text-neutral-400">14 Articles</span>
                </div></a>
               <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
@@ -54,7 +54,7 @@ export default function BlogPages() {
                 <img src="https://images.unsplash.com/photo-1512686096451-a15c19314d59?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
-                <h2 className="text-base font-semibold">Real Madrid</h2>
+                <h2 className="text-base text-neutral-900 font-semibold">Real Madrid</h2>
                 <span className="block mt-1 text-sm text-neutral-500 dark:text-neutral-400">4 Articles</span>
                </div></a>
               <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
@@ -62,7 +62,7 @@ export default function BlogPages() {
                 <img src="https://images.unsplash.com/photo-1546015018-8f2e2f225773?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
-                <h2 className="text-base font-semibold">Man City</h2>
+                <h2 className="text-base text-neutral-900 font-semibold">Man City</h2>
                 <span className="block mt-1 text-sm text-neutral-500 dark:text-neutral-400">7 Articles</span>
                </div></a>
               <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
@@ -70,7 +70,7 @@ export default function BlogPages() {
                 <img src="https://images.unsplash.com/photo-1512658740823-0ebb97b3b86e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
-                <h2 className="text-base font-semibold">Chelsea</h2>
+                <h2 className="text-base text-neutral-900 font-semibold">Chelsea</h2>
                 <span className="block mt-1 text-sm text-neutral-500 dark:text-neutral-400">26 Articles</span>
                </div></a>
              </div>
