@@ -51,7 +51,7 @@ export default function Post(props) {
            <a className="transition-colors hover:text-white duration-300 nc-Badge  inline-flex px-2.5 py-1 rounded-full font-medium text-xs !px-3 text-red-800 bg-red-100 hover:bg-red-800" href="/archive/the-demo-archive-slug">Highlights</a>
           </div>
           <h1 className=" text-neutral-900 font-semibold text-3xl md:text-4xl md:!leading-[120%] lg:text-5xl dark:text-neutral-100 max-w-4xl " title="Trending web &amp; landing page designs in 2023">{post.title}</h1>
-          <span className="block text-base text-neutral-500 md:text-lg dark:text-neutral-400 pb-1">{post?.exerpt}.</span>
+          <span className="block text-base text-neutral-500 md:text-lg dark:text-neutral-400 pb-1">{post?.excerpt}.</span>
           <div className="w-full border-b border-neutral-200 dark:border-neutral-700"></div>
           <div className="flex flex-col sm:flex-row justify-between sm:items-end space-y-5 sm:space-y-0 sm:space-x-5">
            <div className="nc-PostMeta2 flex items-center flex-wrap text-neutral-700 text-left dark:text-neutral-200 text-sm leading-none flex-shrink-0">
