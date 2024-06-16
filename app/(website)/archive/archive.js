@@ -194,7 +194,7 @@ export default async function Post({ searchParams }) {
         search="css-ta1yzo"
       />
       {/***** end *****/}
-    </>   
+    
     </>
   );
 }
