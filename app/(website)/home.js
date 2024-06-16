@@ -1,4 +1,5 @@
 //
+//
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -269,10 +270,11 @@ export default function Post({ posts }) {
           <button className="nc-Button flex-shrink-0 relative h-auto inline-flex items-center justify-center rounded-full transition-colors border-transparent bg-primary-700 hover:bg-primary-6000 text-primary-50 text-sm sm:text-base font-medium py-3 px-4 sm:py-3.5 sm:px-6  ">Show me more</button>
         </div>
       </main>
+        <BlogPages />
     </div>
   </div>
 
-        <BlogPages />
+      {/***** end *******/}
 
         <div className="nc-PageHome relative">
           <div className="container relative">
