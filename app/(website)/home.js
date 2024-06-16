@@ -29,7 +29,7 @@ export default function Post({ posts }) {
             <div className="relative container -mt-20 lg:-mt-48">
               <div className=" bg-white dark:bg-neutral-900 dark:border dark:border-neutral-700 p-5 lg:p-16 rounded-[40px] shadow-2xl flex items-center">
                 <header className="w-full max-w-3xl mx-auto text-center flex flex-col items-center">
-                  <h2 className="text-2xl sm:text-4xl font-semibold">
+                  <h2 className="text-2xl text-neutral-900 sm:text-4xl font-semibold">
                     Welcome
                   </h2>
                   <span className="block text-xs sm:text-sm mt-4 text-neutral-500 dark:text-neutral-300">
@@ -243,7 +243,7 @@ export default function Post({ posts }) {
 
 
 
-             {posts.slice(6, 15).map((post) => (
+             {posts.slice(5, 13).map((post) => (
                       <PostList
                         key={post._id}
                         post={post}
@@ -283,7 +283,7 @@ export default function Post({ posts }) {
                 <div className="w-full lg:w-3/5 xl:w-2/3 xl:pr-14">
                   <div className="nc-Section-Heading relative flex flex-col sm:flex-row sm:items-end justify-between mb-10 md:mb-12 text-neutral-900 dark:text-neutral-50">
                     <div className="max-w-2xl">
-                      <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+                      <h2 className="text-2xl text-neutral-900 md:text-3xl lg:text-4xl font-semibold">
                         Latest Articles 🎈
                       </h2>
                       <span className="mt-2 md:mt-3 font-normal block text-base sm:text-xl text-neutral-500 dark:text-neutral-400">
@@ -293,7 +293,7 @@ export default function Post({ posts }) {
                     </div>
                   </div>
                   <div className="grid gap-6 md:gap-8 sm:grid-cols-2">
-                    {posts.slice(6, 15).map((post) => (
+                    {posts.slice(13, 19).map((post) => (
                       <BlogLast
                         key={post._id}
                         post={post}
