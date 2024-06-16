@@ -186,6 +186,15 @@ export default async function Post({ searchParams }) {
           <Footer />
         </div>
       </div>
+             <Header
+        account="css-ta1yzo"
+        tv="css-ta1yzo"
+        explore="css-ta1yzo"
+        home="css-ta1yzo"
+        search="css-ta1yzo"
+      />
+      {/***** end *****/}
+    </>   
     </>
   );
 }
