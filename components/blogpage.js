@@ -27,7 +27,7 @@ export default function BlogPages() {
             
               <a className="nc-CardCategory2 relative flex flex-col items-center justify-center text-center px-3 py-5 sm:p-6 bg-white dark:bg-neutral-900 rounded-3xl transition-colors " href="/archive/the-demo-archive-slug">
                <div className="relative flex-shrink-0 w-20 h-20 rounded-full shadow-lg overflow-hidden z-0">
-                <img src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
+                <img src="https://cdn.sanity.io/images/wusctyxy/production/3a7b126d47f69635c7cbd4acc9a65d154823b018-736x1030.jpg" alt="categories" sizes="80px" className="object-cover  object-cover absolute inset-0 w-full h-full" />
                </div>
                <div className="mt-3">
                 <h2 className="text-base font-semibold">Liverpool</h2>
