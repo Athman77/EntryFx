@@ -308,6 +308,7 @@ export default function Post({ posts }) {
           </div>
         </div>
         {/*****/}
+<Footer />
       </div>
 
       {/* <!------ post card------>*/}
