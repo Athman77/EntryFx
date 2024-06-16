@@ -1,4 +1,4 @@
-//
+
 import Image from "next/image";
 import Link from "next/link";
 import { cx } from "@/utils/all";
@@ -18,7 +18,7 @@ export default function BlogPages() {
             <div className="nc-SectionGridCategoryBox relative ">
              <div className="nc-Section-Heading relative flex flex-col sm:flex-row sm:items-end justify-between mb-10 md:mb-12 text-neutral-900 dark:text-neutral-50">
               <div className="text-center w-full max-w-2xl mx-auto ">
-               <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">Top trending topics</h2>
+               <h2 className="text-2xl text-neutral-900 md:text-3xl lg:text-4xl font-semibold">Top trending topics</h2>
                <span className="mt-2 md:mt-3 font-normal block text-base sm:text-xl text-neutral-500 dark:text-neutral-400">Discover over 100 topics</span>
               </div>
              </div>
