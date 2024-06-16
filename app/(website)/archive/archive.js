@@ -35,7 +35,7 @@ export default async function Post({ searchParams }) {
 
       <div className="global-wrap">
         <div className="global-content">
-          <Header />
+          
 
           <main className="global-main">
             {posts && posts?.length === 0 && (
