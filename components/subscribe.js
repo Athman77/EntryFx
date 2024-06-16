@@ -13,7 +13,7 @@ export default function Subscribe() {
          <h3 class="global-title-medium text-white">Subscribe to <span>new posts</span></h3>
          <form data-members-form="subscribe" class="subscribe-form">
            <input data-members-email="" type="email" placeholder="Your email address" aria-label="Your email address" required="" />
-           <button class="global-button button-clone" type="submit">Subscribe</button><button class="global-button hide" type="submit"  disabled="">Subscribe</button>
+           <button className="global-button bg-secondary-500 button-clone" type="submit">Subscribe</button><button class="global-button hide" type="submit"  disabled="">Subscribe</button>
          </form>
          <div class="subscribe-alert">
            <small class="alert-loading global-alert">Processing your application</small>
