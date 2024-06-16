@@ -1,4 +1,5 @@
 //
+//
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/container";
@@ -47,26 +48,36 @@ export default function Post(props) {
         <div className="nc-SingleHeader ">
          <div className="space-y-5">
           <div className="nc-CategoryBadgeList flex flex-wrap space-x-2" data-nc-id="CategoryBadgeList">
-           <a className="transition-colors hover:text-white duration-300 nc-Badge  inline-flex px-2.5 py-1 rounded-full font-medium text-xs !px-3 text-red-800 bg-red-100 hover:bg-red-800" href="/archive/the-demo-archive-slug">Jewelry</a>
+           <a className="transition-colors hover:text-white duration-300 nc-Badge  inline-flex px-2.5 py-1 rounded-full font-medium text-xs !px-3 text-red-800 bg-red-100 hover:bg-red-800" href="/archive/the-demo-archive-slug">Highlights</a>
           </div>
-          <h1 className=" text-neutral-900 font-semibold text-3xl md:text-4xl md:!leading-[120%] lg:text-5xl dark:text-neutral-100 max-w-4xl " title="Trending web &amp; landing page designs in 2023">Trending web &amp; landing page designs in 2023</h1>
+          <h1 className=" text-neutral-900 font-semibold text-3xl md:text-4xl md:!leading-[120%] lg:text-5xl dark:text-neutral-100 max-w-4xl " title="Trending web &amp; landing page designs in 2023">{post.title}</h1>
           <span className="block text-base text-neutral-500 md:text-lg dark:text-neutral-400 pb-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tempora obcaecati error ipsum voluptatibus sed adipisci ut maiores nesciunt quam.</span>
           <div className="w-full border-b border-neutral-200 dark:border-neutral-700"></div>
           <div className="flex flex-col sm:flex-row justify-between sm:items-end space-y-5 sm:space-y-0 sm:space-x-5">
            <div className="nc-PostMeta2 flex items-center flex-wrap text-neutral-700 text-left dark:text-neutral-200 text-sm leading-none flex-shrink-0">
             <a className="flex items-center space-x-2" href="/author/the-demo-author-slug">
              <div className="wil-avatar relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden text-neutral-100 uppercase font-semibold shadow-inner rounded-full shadow-inner h-10 w-10 sm:h-11 sm:w-11 text-xl ring-1 ring-white dark:ring-neutral-900">
-              <img sizes="100px" src="data: /Z" className="absolute inset-0 w-full h-full object-cover object-cover absolute inset-0 w-full h-full" alt="Foulcher Nathanil" />
+               {AuthorimageProps && 
+              <img sizes="100px"    src={AuthorimageProps.src} className="absolute inset-0 w-full h-full object-cover object-cover absolute inset-0 w-full h-full" alt="Foulcher Nathanil" />
+              }
               <span className="wil-avatar__name">F</span>
              </div></a>
             <div className="ml-3">
              <div className="flex items-center">
-              <a className="block font-semibold" href="/author/the-demo-author-slug">Foulcher Nathanil</a>
+              <a className="block font-semibold" href="/author/the-demo-author-slug">        {post.author.name}</a>
              </div>
              <div className="text-xs mt-[6px]">
-              <span className="text-neutral-700 dark:text-neutral-300">May 20, 2021</span>
+              <span className="text-neutral-700 dark:text-neutral-300">  <time>
+                        {format(
+                          parseISO(
+                            post?.publishedAt || post._createdAt
+                          ),
+                          "MMMM dd, yyyy"
+                        )}{" "}
+                       
+                      </time></span>
               <span className="mx-2 font-semibold">·</span>
-              <span className="text-neutral-700 dark:text-neutral-300">2 min read</span>
+              <span className="text-neutral-700 dark:text-neutral-300"> {post.estReadingTime || "5"} minutes read</span>
              </div>
             </div>
            </div>
@@ -116,80 +127,8 @@ export default function Post(props) {
        </div>
       </header>
       <div className="container my-10 sm:my-12">
-       <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg" width="1260" height="750" alt="single" sizes="(max-width: 1024px) 100vw, 1280px" className="w-full rounded-xl" />
-      </div>
-     </div>
-     {/*****end***/}
-   </div>
-
-    
-      <div className="global-cover"></div>
-
-      <div className="global-wrap">
-        <div className="global-content">
-          
-
-          <main className="global-main">
-            <progress className="post-progress"></progress>
-
-            <article className="post-section">
-              <div className="post-header post-full-image">
-                <div className="post-header-content">
-                  <div className="post-tags global-tags">
-                    <a href="">Guidance</a>
-                    <a href="">Reminder</a>
-                  </div>
-                  <h1
-                    id="post-title"
-                    className="post-title text-white global-title-big global-title-offset">
-                    {" "}
-                    {post.title}
-                  </h1>
-                  <div className="post-authors global-authors">
-                    <div className="post-author-item global-author-item global-image is-image">
-                      <a
-                        href="/author/victoria/"
-                        className="global-link"
-                        aria-label="Victoria West"></a>
-                      {AuthorimageProps && (
-                        <img
-                          src={AuthorimageProps.src}
-                          loading="lazy"
-                          alt="Victoria West"
-                        />
-                      )}
-                    </div>
-                    <div className="post-author-item global-author-item global-image is-image is-last">
-                      <a
-                        href="/author/hannah/"
-                        className="global-link"
-                        aria-label="Hannah Weastell"></a>
-                      <img
-                        src="https://cdn.sanity.io/images/cwzkjmps/production/f271a0e60dc0ec7a41a2992e5ce28a4bb65c0ced-400x400.jpg"
-                        loading="lazy"
-                        alt="Hannah Weastell"
-                      />
-                    </div>
-                    <div className="post-meta global-meta">
-                      <a href="/author/victoria/"></a>
-                      <a href="/author/hannah/">
-                        {" "}
-                        {post.author.name}
-                      </a>
-                      <time>
-                        {format(
-                          parseISO(
-                            post?.publishedAt || post._createdAt
-                          ),
-                          "MMMM dd, yyyy"
-                        )}{" "}
-                        · {post.estReadingTime || "5"} minutes read
-                      </time>
-                    </div>
-                  </div>
-                </div>
-                <figure className="post-image ">
-                  {post.videoType === "upload" ? (
+     {/*  <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg" width="1260" height="750" alt="single" sizes="(max-width: 1024px) 100vw, 1280px" className="w-full rounded-xl" />*/}
+       {post.videoType === "upload" ? (
                     <video
                       className="vida"
                       id="my-video"
@@ -210,46 +149,24 @@ export default function Post(props) {
                   ) : (
                     <Video id={post.youtube || "Thumbnail"} />
                   )}
-                </figure>
-              </div>
+      </div>
+     </div>
+      <div class="container mt-10">
+      <div class="relative">
+       <div class="nc-SingleContent space-y-10">
+        <div id="single-entry-content" class="prose lg:prose-lg !max-w-screen-md mx-auto dark:prose-invert">
+         {post.body && <PortableText value={post.body} />}
+         </div>
+         </div>
+         </div>
+         </div>
+         
+     {/*****end***/}
+   </div>
 
-              <div className="post-content text-white">
-                {post.body && <PortableText value={post.body} />}
-              </div>
-            </article>
-
-            <div className="special-section">
-              <div className="global-title-wrap">
-                <h3 className="global-title-medium">
-                  Explore More<span>Blogs</span>
-                </h3>
-                <Link href="/archive">
-                  <a>
-                    <svg
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.185 6.08c1.485 1.585 2.733 2.8 3.813 3.643 1.045.843 2.057 1.45 3.002 1.855v.743c-1.08.506-2.16 1.18-3.171 2.024-1.012.81-2.227 1.99-3.644 3.576h-1.282c1.046-2.193 2.26-4.217 3.374-5.432H.014v-.978h19.263a31.274 31.274 0 01-1.855-2.699c-.338-.506-.844-1.417-1.485-2.733h1.248z"></path>
-                    </svg>
-                  </a>
-                </Link>
-              </div>
-
-              <div class="special-wrap">
-                {/* {templateBlog.slice(0, 4).map((post) => (
-                      <PostList
-                        key={post._id}
-                        post={post}
-                        aspect="landscape"
-                        preloadImage={true}
-                      />
-                    ))}*/}
-              </div>
-            </div>
-
-            <Subscribe />
-          </main>
-          <Footer />
+    
+    
+         
                         <Header
         account="css-ta1yzo"
         tv="css-ta1yzo"
@@ -259,8 +176,7 @@ export default function Post(props) {
       />
       {/***** end *****/}
     
-        </div>
-      </div>
+        
     </>
   );
 }
