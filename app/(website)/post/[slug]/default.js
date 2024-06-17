@@ -179,7 +179,7 @@ div className = "max-w-screen-md mx-auto " >
          </div>
          </div>
          </div>
-         
+  <Footer />
      {/*****end***/}
    </div>
 
