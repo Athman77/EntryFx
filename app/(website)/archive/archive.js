@@ -93,7 +93,7 @@ export default async function Post({ searchParams }) {
     
     
     
-            <div className="flex flex-col mt-12 lg:mt-16 space-y-5 sm:space-y-0 sm:space-x-3 sm:flex-row sm:justify-between sm:items-center">
+{/**  <div className="flex flex-col mt-12 lg:mt-16 space-y-5 sm:space-y-0 sm:space-x-3 sm:flex-row sm:justify-between sm:items-center">
               <nav className="nc-Pagination inline-flex space-x-1 text-base font-medium ">
                 <span className="inline-flex w-11 h-11 items-center justify-center rounded-full bg-primary-6000 text-white focus:outline-none">1</span>
                 <a className="inline-flex w-11 h-11 items-center justify-center rounded-full bg-white hover:bg-neutral-100 border border-neutral-200 text-neutral-6000 dark:text-neutral-400 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:border-neutral-700 focus:outline-none" href="/">2</a>
@@ -101,7 +101,7 @@ export default async function Post({ searchParams }) {
                 <a className="inline-flex w-11 h-11 items-center justify-center rounded-full bg-white hover:bg-neutral-100 border border-neutral-200 text-neutral-6000 dark:text-neutral-400 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:border-neutral-700 focus:outline-none" href="/">4</a>
               </nav>
               <button className="nc-Button flex-shrink-0 relative h-auto inline-flex items-center justify-center rounded-full transition-colors border-transparent bg-primary-700 hover:bg-primary-6000 text-primary-50 text-sm sm:text-base font-medium py-3 px-4 sm:py-3.5 sm:px-6  ">Show me more</button>
-            </div>
+            </div>**/}
           </main>
          {/*   <BlogPages />*/}
         </div>
@@ -116,14 +116,14 @@ export default async function Post({ searchParams }) {
               </div>
             )}
     
-    
+    <div className="mb-5">
       <Pagination
                   pageIndex={pageIndex}
                   isFirstPage={isFirstPage}
                   isLastPage={isLastPage}
                   tag="archive"
                 />
-    
+                    </div>
     <Footer />
     
     </div>
