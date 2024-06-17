@@ -124,7 +124,7 @@ export default async function Post({ searchParams }) {
                   tag="archive"
                 />
     
-    
+    <Footer />
     
     </div>
      
