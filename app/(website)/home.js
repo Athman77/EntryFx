@@ -1,5 +1,6 @@
 //
 //
+//
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -19,14 +20,14 @@ export default function Post({ posts }) {
             <div className="w-full">
               <div className="relative w-full h-40 md:h-60 2xl:h-72">
                 <div className="absolute inset-0">
-                  <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" sizes="(max-width: 1280px) 100vw, 1536px" className="object-cover w-full h-full object-cover absolute inset-0 w-full h-full" />
+                  <img src="https://cdn.sanity.io/images/wusctyxy/production/862609bc9723a18d494f3d85f26a10cfb94df443-1440x1781.jpg" alt="" sizes="(max-width: 1280px) 100vw, 1536px" className="object-cover w-full h-full object-cover absolute inset-0 w-full h-full" />
                 </div>
               </div>
               <div className="container -mt-10 lg:-mt-16">
                 <div className="relative bg-white dark:bg-neutral-900 dark:border dark:border-neutral-700 p-5 lg:p-8 rounded-3xl md:rounded-[40px] shadow-xl flex flex-col md:flex-row">
                   <div className="w-32 lg:w-40 flex-shrink-0 mt-12 sm:mt-0">
                     <div className="wil-avatar relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden text-neutral-100 uppercase font-semibold rounded-full w-20 h-20 text-xl lg:text-2xl lg:w-36 lg:h-36 ring-4 ring-white dark:ring-0 shadow-2xl z-0">
-                      <img src="=" className="object-cover object-cover absolute inset-0 w-full h-full" alt="Avatar" />
+                      <img src="https://cdn.sanity.io/images/wusctyxy/production/862609bc9723a18d494f3d85f26a10cfb94df443-1440x1781.jpg" className="object-cover object-cover absolute inset-0 w-full h-full" alt="Avatar" />
                     </div>
                   </div>
                   <div className="pt-5 md:pt-1 lg:ml-6 xl:ml-12 flex-grow">
@@ -36,7 +37,7 @@ export default function Post({ posts }) {
                             <path d="M7.66691 2.62178C8.12691 2.22845 8.88025 2.22845 9.34691 2.62178L10.4002 3.52845C10.6002 3.70178 10.9736 3.84178 11.2402 3.84178H12.3736C13.0802 3.84178 13.6602 4.42178 13.6602 5.12845V6.26178C13.6602 6.52178 13.8002 6.90178 13.9736 7.10178L14.8802 8.15512C15.2736 8.61512 15.2736 9.36845 14.8802 9.83512L13.9736 10.8884C13.8002 11.0884 13.6602 11.4618 13.6602 11.7284V12.8618C13.6602 13.5684 13.0802 14.1484 12.3736 14.1484H11.2402C10.9802 14.1484 10.6002 14.2884 10.4002 14.4618L9.34691 15.3684C8.88691 15.7618 8.13358 15.7618 7.66691 15.3684L6.61358 14.4618C6.41358 14.2884 6.04025 14.1484 5.77358 14.1484H4.62025C3.91358 14.1484 3.33358 13.5684 3.33358 12.8618V11.7218C3.33358 11.4618 3.19358 11.0884 3.02691 10.8884L2.12691 9.82845C1.74025 9.36845 1.74025 8.62178 2.12691 8.16178L3.02691 7.10178C3.19358 6.90178 3.33358 6.52845 3.33358 6.26845V5.12178C3.33358 4.41512 3.91358 3.83512 4.62025 3.83512H5.77358C6.03358 3.83512 6.41358 3.69512 6.61358 3.52178L7.66691 2.62178Z" fill="#38BDF8" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M6.08691 8.98833L7.69358 10.6017L10.9136 7.375" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg></span></h2>
-                      <span className="block text-sm text-neutral-500 dark:text-neutral-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro autem totam iure quibusdam asperiores numquam quae animi assumenda necessitatibus consectetur.</span>
+                      <span className="block text-sm text-neutral-500 dark:text-neutral-400">Get Live Football Scores and Real-Time Football Results with LiveScore!.</span>
                       <a href="##" className="flex items-center text-xs font-medium space-x-2.5 cursor-pointer text-neutral-500 dark:text-neutral-400 truncate">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" className="flex-shrink-0 w-4 h-4">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"></path>
@@ -114,167 +115,8 @@ export default function Post({ posts }) {
   {/*****/}
     
     
-        <div className="nc-PageSearch">
-          <div className="w-screen px-2 xl:max-w-screen-2xl mx-auto">
-            <div className="rounded-3xl md:rounded-[40px] relative aspect-w-16 aspect-h-9 lg:aspect-h-5 overflow-hidden z-0">
-              <div className="absolute inset-0">
-                <img
-                  src="https://cdn.sanity.io/images/wusctyxy/production/862609bc9723a18d494f3d85f26a10cfb94df443-1440x1781.jpg"
-                  alt="search"
-                  sizes="(max-width: 1280px) 100vw, 1536px"
-                  className="object-cover w-full h-full object-cover absolute inset-0 w-full h-full"
-                />
-              </div>
-            </div>
-            <div className="relative container -mt-20 lg:-mt-48">
-              <div className=" bg-white dark:bg-neutral-900 dark:border dark:border-neutral-700 p-5 lg:p-16 rounded-[40px] shadow-2xl flex items-center">
-                <header className="w-full max-w-3xl mx-auto text-center flex flex-col items-center">
-                  <h2 className="text-2xl text-neutral-900 sm:text-4xl font-semibold">
-                    Welcome
-                  </h2>
-                  <span className="block text-xs sm:text-sm mt-4 text-neutral-500 dark:text-neutral-300">
-                    We found{" "}
-                    <strong className="font-medium text-neutral-800 dark:text-neutral-100">
-                      1135
-                    </strong>{" "}
-                    results for{" "}
-                    <strong className="font-medium text-neutral-800 dark:text-neutral-100">
-                      Technology
-                    </strong>
-                  </span>
-                  <form
-                    className="relative w-full mt-8 sm:mt-11 text-left"
-                    method="post"
-                  >
-                    <label
-                      for="search-input"
-                      className="text-neutral-500 dark:text-neutral-300"
-                    >
-                      <span className="sr-only">Search all icons</span>
-                      <input
-                        type="text"
-                        className="block w-full border-neutral-200 border-primary-300 ring ring-primary-200/50 bg-white dark:border-neutral-500 dark:ring-primary-500/30 dark:bg-neutral-900 rounded-full text-sm font-normal pl-14 py-5 pr-5 md:pl-16 "
-                        id="search-input"
-                        placeholder="Type and press enter"
-                       // value="Technology"
-                      />
-                          {/*   <button
-                        className="ttnc-ButtonCircle flex items-center justify-center rounded-full !leading-none disabled:bg-opacity-70 bg-slate-900 hover:bg-slate-800 
-        text-slate-50 absolute right-2.5 top-1/2 transform -translate-y-1/2  w-11 h-11 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-6000 dark:focus:ring-offset-0"
-                        type="submit"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewbox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                          data-slot="icon"
-                          className="w-6 h-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M4.5 12h15m0 0-6.75-6.75M19.5 12l-6.75 6.75"
-                          ></path>
-                        </svg>
-                      </button>
-                      <span className="absolute left-5 top-1/2 transform -translate-y-1/2 text-2xl md:left-6">
-                        <svg
-                          width="24"
-                          height="24"
-                          fill="none"
-                          viewbox="0 0 24 24"
-                        >
-                          <path
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"
-                          ></path>
-                        </svg>
-                      </span>*/}
-                    </label>
-                  </form>
-                  <div className="w-full text-sm text-left mt-4 text-neutral-500 dark:text-neutral-300">
-                    <div className="inline-block space-x-1.5 sm:space-x-2.5">
-                      <span className="">Related:</span>
-                      <a
-                        className="nc-NcLink text-primary-6000 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-6000 inline-block font-normal"
-                        href="/search"
-                      >
-                        Design
-                      </a>
-                      <a
-                        className="nc-NcLink text-primary-6000 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-6000 inline-block font-normal"
-                        href="/search"
-                      >
-                        Photo
-                      </a>
-                      <a
-                        className="nc-NcLink text-primary-6000 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-6000 inline-block font-normal"
-                        href="/search"
-                      >
-                        Vector
-                      </a>
-                      <a
-                        className="nc-NcLink text-primary-6000 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-6000 inline-block font-normal"
-                        href="/search"
-                      >
-                        Frontend
-                      </a>
-                    </div>
-                  </div>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        {/*******
-        <div className="nc-PageHomeDemo3 relative">
-          <div className="container relative">
-            <div className="nc-SectionHero relative pt-10 pb-16 md:py-16 lg:pb-28 lg:pt-20">
-              <div className="flex flex-col lg:flex-row space-y-14 lg:space-y-0 lg:space-x-10 items-center relative text-center lg:text-left">
-                <div className="w-screen max-w-full xl:max-w-lg space-y-5 lg:space-y-7">
-                  <h2 className="text-3xl !leading-tight font-semibold text-neutral-900 md:text-4xl xl:text-5xl dark:text-neutral-100">
-                    <span>
-                      Far from face <br /> but not from{" "}
-                      <span className="relative pr-3">
-                        <img
-                          src=""
-                          className="w-full absolute top-1/2 -left-1 transform -translate-y-1/2"
-                          alt=""
-                        />
-                        <span className="relative">heart</span>
-                      </span>
-                    </span>
-                  </h2>
-                  <span className="block text-base xl:text-lg text-neutral-6000 dark:text-neutral-400">
-                    Let stay at home and share with everyone the most beautiful
-                    stories in your hometown 🎈
-                  </span>
-                  <a
-                    className="nc-Button flex-shrink-0 relative h-auto inline-flex items-center justify-center rounded-full transition-colors border-transparent bg-primary-700 hover:bg-primary-6000 text-primary-50 text-sm sm:text-base font-medium py-3 px-4 sm:py-3.5 sm:px-6   "
-                    href="/"
-                  >
-                    Getting started
-                  </a>
-                </div>
-                <div className="flex-grow">
-                  <img
-                    src="https://cdn.sanity.io/images/wusctyxy/production/e2c799c0e66021c125f5195a2e777ef8d17c3779-1450x638.png"
-                    className="w-full"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*********/}
+ 
         <div className="nc-PageHome relative">
           <div className="container relative">
             {/*******/}
