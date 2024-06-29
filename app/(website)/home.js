@@ -35,7 +35,7 @@ export default function Post({ posts }) {
                     </svg></span>
                   <div className="text-left"><span className="block font-display text-3xl text-green">3x</span><span className="block font-display text-sm text-jacarta-600">Increased Profits</span></div>
                 </div>
-              </div><img alt="crypto consultant hero" loading="lazy" width="524" height="670" decoding="async" data-nimg="1" className="inline-block bg-transparent rounded-2.5xl"  src="image_5" />
+              </div><img alt="crypto consultant hero" loading="lazy" width="524" height="670" decoding="async" data-nimg="1" className="inline-block bg-transparent rounded-2.5xl"  src="https://cdn.sanity.io/images/wusctyxy/production/862609bc9723a18d494f3d85f26a10cfb94df443-1440x1781.jpg" />
               <div className="absolute bottom-0 -right-[5%] inline-block animate-fly rounded-2lg bg-white p-8 shadow-2xl sm:bottom-28 sm:right-[5%] lg:-right-[17%]">
                 <div className="text-left"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="absolute right-6 top-6 fill-red">
                     <path fill="none" d="M0 0H24V24H0z"></path>
