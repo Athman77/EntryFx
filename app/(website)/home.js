@@ -13,7 +13,7 @@ import Header from "@/components/header";
 export default function Post({ posts }) {
   return (
     <>
-   <main>
+   <main className="overflow-x-hidden font-body text-jacarta-500 dark:bg-jacarta-900">
 
   <section className="relative pb-32 pt-20 lg:pt-48">
       <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden"><img alt="gradient" loading="lazy" width="1920" height="900" decoding="async" data-nimg="1" className="w-full" className="bg-transparent" src="image_2" /></picture>
