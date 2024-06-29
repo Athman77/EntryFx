@@ -1,3 +1,4 @@
+//
 
 import Link from "next/link";
 import Container from "@/components/container";
@@ -12,8 +13,7 @@ import Header from "@/components/header";
 export default function Post({ posts }) {
   return (
     <>
-      <div className="bg-[#f8f8f8]   text-base dark:bg-neutral-900/95 text-neutral-900 dark:text-neutral-200">
-
+   <main>
 
   <section className="relative pb-32 pt-20 lg:pt-48">
       <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden"><img alt="gradient" loading="lazy" width="1920" height="900" decoding="async" data-nimg="1" className="w-full" className="bg-transparent" src="image_2" /></picture>
@@ -47,58 +47,13 @@ export default function Post({ posts }) {
         </div>
       </div>
     </section>
-    
+    </main>
   {/****/}
-  <div className="nc-PageAuthor ">
-            <div className="w-full">
-              <div className="relative w-full h-40 md:h-60 2xl:h-72">
-                <div className="absolute inset-0">
-                  <img src="https://cdn.sanity.io/images/wusctyxy/production/862609bc9723a18d494f3d85f26a10cfb94df443-1440x1781.jpg" alt="" sizes="(max-width: 1280px) 100vw, 1536px" className="object-cover w-full h-full object-cover absolute inset-0 w-full h-full" />
-                </div>
-              </div>
-              <div className="container -mt-10 lg:-mt-16">
-                <div className="relative bg-white dark:bg-neutral-900 dark:border dark:border-neutral-700 p-5 lg:p-8 rounded-3xl md:rounded-[40px] shadow-xl flex flex-col md:flex-row">
-                  <div className="w-32 lg:w-40 flex-shrink-0 mt-12 sm:mt-0">
-                    <div className="wil-avatar relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden text-neutral-100 uppercase font-semibold rounded-full w-20 h-20 text-xl lg:text-2xl lg:w-36 lg:h-36 ring-4 ring-white dark:ring-0 shadow-2xl z-0">
-                      <img src="https://cdn.sanity.io/images/wusctyxy/production/862609bc9723a18d494f3d85f26a10cfb94df443-1440x1781.jpg" className="object-cover object-cover absolute inset-0 w-full h-full" alt="Avatar" />
-                    </div>
-                  </div>
-                  <div className="pt-5 md:pt-1 lg:ml-6 xl:ml-12 flex-grow">
-                    <div className="max-w-screen-sm space-y-3.5 ">
-            
-                      <span className="block text-sm text-neutral-500 dark:text-neutral-400">Get Live Football Scores and Real-Time Football Results with LiveScore!.</span>
-                      
-                      
-                      <a href="##" className="flex items-center text-xs font-medium space-x-2.5 cursor-pointer text-neutral-500 dark:text-neutral-400 truncate">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" className="flex-shrink-0 w-4 h-4">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"></path>
-                        </svg><span className="text-neutral-700 dark:text-neutral-300 truncate">https://example.com/me</span></a>
-                        
-               
-                      
-                    </div>
-                  </div>
-                  <div className="absolute md:static left-5 right-5 top-4 sm:left-auto sm:top-5 sm:right-5 flex justify-end">
-                 
-                    <div className="mx-2">
-                      <div className="relative inline-block text-left" data-headlessui-state="">
-                       
-                      </div>
-                    </div>
-                    <div>
-                  
-                      <div className="nc-NcModal"></div>
-                      <div className="nc-NcModal"></div>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            </div>
+
   {/*****/}
     
     
+   <div className="bg-[#f8f8f8]   text-base dark:bg-neutral-900/95 text-neutral-900 dark:text-neutral-200">
 
  
         <div className="nc-PageHome relative">
