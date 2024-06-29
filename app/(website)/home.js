@@ -1,5 +1,3 @@
-//
-//
 
 import Link from "next/link";
 import Container from "@/components/container";
@@ -29,7 +27,7 @@ export default function Post({ posts }) {
               src="https://cdn.sanity.io/images/wusctyxy/production/9a5d1ac92a4c12fa88b0dddac466a453a6838b65-1920x900.jpg"
             />
           </picture>
-          <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden dark:block">
+          <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 hiddeTn dark:block">
             <img
               alt="gradient dark"
               loading="lazy"
@@ -38,7 +36,7 @@ export default function Post({ posts }) {
               decoding="async"
               data-nimg="1"
               className="w-full"
-              className="bg-transparent"
+              className="text-transparent"
               src="https://cdn.sanity.io/images/wusctyxy/production/1b24858e8dd6796e4bb1e08af384835cedc9d1ca-1920x900.jpg"
             />
           </picture>
@@ -49,7 +47,7 @@ export default function Post({ posts }) {
             height="415"
             decoding="async"
             data-nimg="1"
-            className="absolute bg-transparent right-0 top-0 -z-10"
+            className="absolute text-transparent right-0 top-0 -z-10"
             src="https://cdn.sanity.io/images/wusctyxy/production/d20e718d1ece1ad46331db061d8a22dc74cf0f42-613x415.png"
           />
           <div className="ml-auto mr-auto h-full max-w-[91rem] px-4">
