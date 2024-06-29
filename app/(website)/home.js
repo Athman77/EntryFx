@@ -58,7 +58,7 @@ export default function Post({ posts }) {
                 <p className="mb-10 text-xs font-bold uppercase text-jacarta-500 dark:text-jacarta-200">
                   Discover How To Earn More
                 </p>
-                <h1 className="mb-6 text-center font-display text-5xl text-jacarta-700 dark:text-white lg:text-left lg:text-6xl">
+                <h1 className="mb-6 text-center text-5xl text-jacarta-700 dark:text-white lg:text-left lg:text-6xl">
                   We Ensure &amp; Transform NFT Business Growing
                 </h1>
                 <p className="mb-8 max-w-md text-center text-lg dark:text-jacarta-200 lg:text-left">
