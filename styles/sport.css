@@ -3559,53 +3559,6 @@ select {
   -webkit-text-fill-color: transparent
 }
 
-@font-face {
-  font-family: CalSans-SemiBold;
-  src: url(../fonts/CalSans-SemiBold.woff) format("woff"), url(../fonts/CalSans-SemiBold.otf) format("opentype");
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal
-}
-
-@font-face {
-  font-family: DM Sans;
-  src: url(../fonts/DMSans-Regular.ttf) format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal
-}
-
-@font-face {
-  font-family: DM Sans;
-  src: url(../fonts/DMSans-Italic.ttf) format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: italic
-}
-
-@font-face {
-  font-family: DM Sans;
-  src: url(../fonts/DMSans-Medium.ttf) format("truetype");
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal
-}
-
-@font-face {
-  font-family: DM Sans;
-  src: url(../fonts/DMSans-Bold.ttf) format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal
-}
-
-@font-face {
-  font-family: DM Sans;
-  src: url(../fonts/DMSans-BoldItalic.ttf) format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: italic
-}
 
 input[type=search]::-ms-clear,
 input[type=search]::-ms-reveal {
