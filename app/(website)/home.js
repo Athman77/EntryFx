@@ -1,3 +1,4 @@
+//
 
 import Link from "next/link";
 import Container from "@/components/container";
@@ -12,6 +13,30 @@ import Header from "@/components/header";
 export default function Post({ posts }) {
   return (
     <>
+    <div className="bg-[#f8f8f8] text-base darkG:bg-neutral-900/95G text-neutral-900 dark:text-neutral-200 font-body">
+         <div className="container ">
+   <div className="nc-SectionMagazine8 relative py-16 lg:py-28">
+     <div className="nc-Section-Heading relative flex flex-col sm:flex-row sm:items-end justify-between mb-14 text-neutral-900 darkG:text-neutral-50">
+       <div className="max-w-2xl">
+         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">Listen to podcasts live</h2>
+         <span className="mt-2 md:mt-3 font-normal block text-base sm:text-xl text-neutral-500 darkG:text-neutral-400">Click on music icon and enjoy music or podcast</span>
+       </div>
+     </div>
+
+     <div className="grid grid-cols-1 sm:grid-cols-6 gap-6 md:gap-8">
+       {posts.slice(0, 10).map((post) => (
+                  <BlogOne
+                    key={post._id}
+                    post={post}
+                    aspect="landscape"
+                    preloadImage={true}
+                  />
+                ))}
+                </div>
+                </div>
+                </div>
+                </div>
+                
       
                   
 
