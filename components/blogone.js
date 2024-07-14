@@ -1,4 +1,6 @@
 //
+//.
+//
 //
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +30,7 @@ export default function BlogOne({
      
        <div className="nc-Card16Podcast relative flex flex-col sm:col-span-3 lg:col-span-2">
        
-           {post.videoType === "youtube" ? (
+    {/*    {post?.videoType === "youtube" ? (
        <Link
               href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
                 post.slug.current
@@ -36,13 +38,13 @@ export default function BlogOne({
             >
          <a className="block flex-shrink-0 relativeT w-full rounded-3xl overflow-hidden aspect-w-3 xl:aspect-w-4 aspect-h-3">
           <ReactPlayer
-        url={post.youtube || "Thumbnail"}
-       // className="h-64 xs:h-[400px] lg:h-[450px] w-full rounded-[24px] object-cover mb-5 rounded-xl object-cover"
+        url={post?.youtube || "Thumbnail"}
+       
         controls
               className="object-cover object-cover absolute inset-0 w-full h-full"
-            //   className="object-cover object-cover absolute inset-0 w-full h-full"
+            
         width="100%"
-       // height="56.25vw"
+    
       />
            <span className="bg-neutral-900G bg-opacity-30G"></span></a>
            </Link>
@@ -54,18 +56,19 @@ export default function BlogOne({
             >
          <a className="block flex-shrink-0 relativeT w-full rounded-3xl overflow-hidden aspect-w-3 xl:aspect-w-4 aspect-h-3">
            <video 
-                               // id={`video-${post.id}`}
-                                //loop
-                               // controls
+                               
                  className="object-cover object-cover absolute inset-0 w-full h-full"
-                       //   className="object-covercover object-cover absolute inset-0 w-full h-full"
-                                //className="h-64 xs:h-[400px] lg:h-[450px] w-full rounded-[24px] object-cover mb-5 rounded-xl object-cover" 
-                                src={post?.videoUrl}
+                       
+src={post?.videoUrl}
                             />
            <span className="bg-neutral-900G bg-opacity-30G"></span></a>
            </Link>
-    )}
-           {/* <img sizes="(max-width: 600px) 480px, 800px" src="https://images.pexels.com/photos/6843304/pexels-photo-6843304.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" className="object-cover object-cover absolute inset-0 w-full h-full" alt="" />*/}
+    )}  */}
+           <img 
+    sizes="(max-width: 600px) 480px, 800px"
+      src="https://images.pexels.com/photos/6843304/pexels-photo-6843304.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+      className="object-cover object-cover absolute inset-0 w-full h-full"
+      alt="" />
            
          
          <Link
