@@ -27,14 +27,19 @@ export default function BlogOne({
       <article className="default classNameic-large primary-cat-4 ctag-nature ">
         <div className="post-format-image epcl-flex">
           <div className="featured-image">
+    <Link
+              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                post.slug.current
+              }`}
+            >
             <a
-              href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/"
+              
               className="thumb epcl-loader"
             >
               {post.videoType === "upload" ? (
                 <video
                   className="fullimage cover"
-                  controls
+                  
                   src={post?.videoUrl}
                 />
               ) : (
@@ -48,24 +53,37 @@ export default function BlogOne({
                 Modern and colorful style of caricatures created by AI
               </span>
             </a>
+                </Link>
             <div className="meta absolute hide-on-mobile hide-on-tablet">
+                <Link
+              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                post.slug.current
+              }`}
+            >
               <a
-                href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/#comments"
+                
                 className="comments icon mobile tooltip"
                 data-title="Go to comments"
               >
                 <svg className="icon large"></svg>{" "}
                 <span className="comment-count"></span>
               </a>
+                  </Link>
             </div>
           </div>
 
           <div className="info">
             <header>
               <h1 className="main-title title underline-effect">
-                <a href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/">
+                  <Link
+              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                post.slug.current
+              }`}
+            >
+                <a>
                   {post.title}
                 </a>
+              </Link>
               </h1>
               <div className="meta">
                 <a href="/wavy/author/jonathan-doe/" className="author">
@@ -74,7 +92,7 @@ export default function BlogOne({
                     data-src="/wavy/content/images/size/w120h120/2023/11/Untitled--12--1.jpeg"
                   ></span>
                   <span className="author-name">
-                    <span>By</span> Adriana Martins
+                    <span>By</span> Gaucho
                   </span>
                 </a>
                 <time className="meta-info" datetime="2023-10-21">
@@ -91,8 +109,13 @@ export default function BlogOne({
             </div>
             <footer className="bottom">
               <div className="meta bottom epcl-flex">
+                      <Link
+              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                post.slug.current
+              }`}
+            >
                 <a
-                  href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/"
+                  
                   className="continue-reading epcl-button gradient-button wave-button"
                 >
                   Read More{" "}
@@ -100,6 +123,7 @@ export default function BlogOne({
                     {post.title}
                   </span>
                 </a>
+                    </Link>
                 <div className="min-read">
                   <svg></svg> 2 min read
                 </div>
