@@ -52,7 +52,7 @@ export default function Navbar(props) {
 
     <div className="menu-mobile">
       <svg className="icon ularge open">
-     <use xlink:href="#menu-icon"></use>
+    {/*<use xlink:href="#menu-icon"></use>*/}
       </svg>
       <svg className="icon ularge close">
     
