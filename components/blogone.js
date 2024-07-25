@@ -24,71 +24,95 @@ export default function BlogOne({
     : null;
   return (
     <>
+      <article className="default classNameic-large primary-cat-4 ctag-nature ">
+        <div className="post-format-image epcl-flex">
+          <div className="featured-image">
+            <a
+              href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/"
+              className="thumb epcl-loader"
+            >
+              {post.videoType === "upload" ? (
+                <video
+                  className="fullimage cover"
+                  controls
+                  src={post?.videoUrl}
+                />
+              ) : (
+                <Vid
+                  className="fullimage cover"
+                  id={post.youtube || "Thumbnail"}
+                />
+              )}
+              {/*<img className="fullimage cover" loading="eager" src="images/Untitled-3.webp" alt="Image of: Modern and colorful style of caricatures created by AI" />*/}
+              <span className="screen-reader-text">
+                Modern and colorful style of caricatures created by AI
+              </span>
+            </a>
+            <div className="meta absolute hide-on-mobile hide-on-tablet">
+              <a
+                href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/#comments"
+                className="comments icon mobile tooltip"
+                data-title="Go to comments"
+              >
+                <svg className="icon large"></svg>{" "}
+                <span className="comment-count"></span>
+              </a>
+            </div>
+          </div>
 
-  <article className="default classNameic-large primary-cat-4 ctag-nature ">
-   
-       <div className="post-format-image epcl-flex">
-         <div className="featured-image">
-           <a href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/" className="thumb epcl-loader">
-             {post.videoType === "upload" ? (
-                      <video className="fullimage cover" controls src={post?.videoUrl} />
-                    ) : (
-                      <Vid
-                        className="fullimage cover"
-                        id={post.youtube || "Thumbnail"}
-                      />
-                    )}
-{/*<img className="fullimage cover" loading="eager" src="images/Untitled-3.webp" alt="Image of: Modern and colorful style of caricatures created by AI" />*/}
-             <span className="screen-reader-text">Modern and colorful style of caricatures created by AI</span>
-           </a>
-           <div className="meta absolute hide-on-mobile hide-on-tablet">
-             <a href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/#comments" className="comments icon mobile tooltip" data-title="Go to comments"><svg className="icon large">
-                
-               </svg> <span className="comment-count">
-           
-               </span></a>
-           </div>
-   
-         </div>
-   
-         <div className="info">
-           <header>
-             <h1 className="main-title title underline-effect"><a href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/">Modern and colorful style of caricatures created by AI</a></h1>
-             <div className="meta">
-               <a href="/wavy/author/jonathan-doe/" className="author">
-                 <span className="author-image cover lazy epcl-loader" data-src="/wavy/content/images/size/w120h120/2023/11/Untitled--12--1.jpeg"></span>
-                 <span className="author-name"><span>By</span> Adriana Martins</span>
-               </a>
-               <time className="meta-info" datetime="2023-10-21">
-                 <span className="dot"></span>October 21, 2023
-               </time>
-               <div className="clear"></div>
-             </div>
-           </header>
-           <div className="post-excerpt">
-             <p>AI-powered tools and algorithms have redefined caricature creation in novel....</p>
-             <div className="clear"></div>
-           </div>
-           <footer className="bottom">
-             <div className="meta bottom epcl-flex">
-               <a href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/" className="continue-reading epcl-button gradient-button wave-button">Read More <span className="screen-reader-text">Modern and colorful style of caricatures created by AI</span></a>
-               <div className="min-read">
-                 <svg>
-                   
-                 </svg> 2 min read
-               </div>
-             </div>
-           </footer>
-         </div>
-   
-       </div>
-   
-       <div className="clear"></div>
-   
-     </article>
+          <div className="info">
+            <header>
+              <h1 className="main-title title underline-effect">
+                <a href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/">
+                  Modern and colorful style of caricatures created by AI
+                </a>
+              </h1>
+              <div className="meta">
+                <a href="/wavy/author/jonathan-doe/" className="author">
+                  <span
+                    className="author-image cover lazy epcl-loader"
+                    data-src="/wavy/content/images/size/w120h120/2023/11/Untitled--12--1.jpeg"
+                  ></span>
+                  <span className="author-name">
+                    <span>By</span> Adriana Martins
+                  </span>
+                </a>
+                <time className="meta-info" datetime="2023-10-21">
+                  <span className="dot"></span>October 21, 2023
+                </time>
+                <div className="clear"></div>
+              </div>
+            </header>
+            <div className="post-excerpt">
+              <p>
+                AI-powered tools and algorithms have redefined caricature
+                creation in novel....
+              </p>
+              <div className="clear"></div>
+            </div>
+            <footer className="bottom">
+              <div className="meta bottom epcl-flex">
+                <a
+                  href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/"
+                  className="continue-reading epcl-button gradient-button wave-button"
+                >
+                  Read More{" "}
+                  <span className="screen-reader-text">
+                    Modern and colorful style of caricatures created by AI
+                  </span>
+                </a>
+                <div className="min-read">
+                  <svg></svg> 2 min read
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
 
-    
-  {/*<article className="post-card post tag-science tag-hash-import-2024-04-21-17-09 tag-hash-import-2024-07-05-06-08 featured">
+        <div className="clear"></div>
+      </article>
+
+      {/*<article className="post-card post tag-science tag-hash-import-2024-04-21-17-09 tag-hash-import-2024-07-05-06-08 featured">
      <div className="entry-thumbnail box-wrap box-thumbnail">
        <a className="thumb-link" href="/what-we-think-we-become/" title="What We Think, We Become">
          <div className="thumb-container thumb-75">
