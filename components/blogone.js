@@ -29,7 +29,7 @@ export default function BlogOne({
        <a className="thumb-link" href="/what-we-think-we-become/" title="What We Think, We Become">
          <div className="thumb-container thumb-75">
    {post.videoType === "upload" ? (
-                      <video className="thumb-image img" src={post?.videoUrl} />
+                      <video className="thumb-image img" controll src={post?.videoUrl} />
                     ) : (
                       <Vid
                         className="thumb-image img"
@@ -59,7 +59,7 @@ export default function BlogOne({
          <div className="entry-header">
            <h2 className="entry-title head3">
              <a className="title-text" href="/what-we-think-we-become/">
-               What We Think, We Become
+           {post.title}
              </a>
            </h2>
          </div>
@@ -74,7 +74,7 @@ export default function BlogOne({
                    <path d="M28 4C21 4 11 9.89 8 16c-1.96 3.99-2.89 7.25-2.99 12H5v4l7 28h8l-7-28v-7.5C13 15.4 20.4 8 29.5 8 40.61 8 50 17.62 50 29l4 16h4l-4-16C54 15.21 43.01 4 29.5 4H28zm21 41v3c0 3.31-2.69 6-6 6h-7v6h4v-2h3c5.51 0 10-4.49 10-10v-3h-4z"></path>
                  </svg>
                </span></span>
-             <span className="info-text">By�&nbsp;<a href="/author/eileen/">Eileen Dover</a></span>
+             <span className="info-text">By�&nbsp;<a href="/author/eileen/">Gaucho</a></span>
            </div>
          </div>
   
