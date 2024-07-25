@@ -28,7 +28,7 @@ export default function BlogOne({
      <div className="entry-thumbnail box-wrap box-thumbnail">
        <a className="thumb-link" href="/what-we-think-we-become/" title="What We Think, We Become">
          <div className="thumb-container thumb-75">
-    {/*   {post.videoType === "upload" ? (
+   {post.videoType === "upload" ? (
                       <video className="thumb-image img" src={post?.videoUrl} />
                     ) : (
                       <Vid
@@ -36,8 +36,8 @@ export default function BlogOne({
                         id={post.youtube || "Thumbnail"}
                       />
                     )}
-*/}
-       <img className="thumb-image"  sizes="(max-width: 767px) 100vw, (max-width: 880px) 50vw, (max-width: 1024px) 33vw, 600px" src="https://vozzy.tmrwstudio.net/content/images/size/w800/format/webp/2024/02/v15.jpeg" alt="Good Things Come in Good Time" loading="lazy" />
+
+{/*   <img className="thumb-image"  sizes="(max-width: 767px) 100vw, (max-width: 880px) 50vw, (max-width: 1024px) 33vw, 600px" src="https://vozzy.tmrwstudio.net/content/images/size/w800/format/webp/2024/02/v15.jpeg" alt="Good Things Come in Good Time" loading="lazy" />*/}
          </div>
        </a>
        <div className="thumb-info info-center">
