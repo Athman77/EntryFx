@@ -319,8 +319,15 @@ export default function Post({ posts }) {
                 <div className="grid-col grid-col--1"></div>
                 <div className="grid-col grid-col--2"></div>
                 
+                {posts.slice(0, 10).map((post) => (
+                  <BlogOne
+                    key={post._id}
+                    post={post}
+                    aspect="landscape"
+                    preloadImage={true}
+                  />
+                ))}
                 
-                {}
               </div>
             </div>
           </div>
