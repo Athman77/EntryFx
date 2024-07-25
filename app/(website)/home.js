@@ -316,8 +316,9 @@ export default function Post({ posts }) {
           <div className="container">
             <div className="site-content fullwidth">
               <div className="post-feed latest-posts posts-grid grid3">
-                <div className="grid-col grid-col--1"></div>
-                <div className="grid-col grid-col--1">
+                   <div className="grid-col grid-col--1">
+                                <div className="grid-col grid-col--2">
+              <div className="grid-col grid-col--3">
                 
                 {posts.slice(0, 10).map((post) => (
                   <BlogOne
@@ -327,6 +328,8 @@ export default function Post({ posts }) {
                     preloadImage={true}
                   />
                 ))}
+                      </div>
+                      </div>
                       </div>
               </div>
             </div>
