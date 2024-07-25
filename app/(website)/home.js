@@ -8,12 +8,14 @@ import BlogPages from "@/components/blogpage";
 import Subscribe from "@/components/subscribe";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Navbar from "@/components/navbar";
 export default function Post({ posts }) {
   return (
     <>
       <div className="menu-overlay hide-on-desktop-lg"></div>
 
       <div id="wrapper">
+       <Navbar />
         <main id="home" className="main grid-container">
           <div className="content-wrapper">
             {/*-- start: .intro-text --*/}
