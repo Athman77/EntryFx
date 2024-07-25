@@ -60,7 +60,7 @@ export default function Post({ posts }) {
         <h2 className="title large white">Subscribe to our Newsletter</h2>
         <p className="description">Subscribe to our email newsletter and unlock access to <b>members-only</b> content and <b>exclusive updates.</b></p>
         <div className="form-group">
-          <input type="email" name="email" className="inputbox large" required="" placeholder="Enter your email address" data-members-email="">
+          <input type="email" name="email" className="inputbox large" required="" placeholder="Enter your email address" data-members-email="" />
           <button className="epcl-button submit absolute wave-button" type="submit">Get Started<span className="loader"></span></button>
         </div>
         <p className="error-detail" data-members-error=""></p>
