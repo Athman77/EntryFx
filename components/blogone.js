@@ -64,7 +64,7 @@ export default function BlogOne({
             <header>
               <h1 className="main-title title underline-effect">
                 <a href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/">
-                  Modern and colorful style of caricatures created by AI
+                  {post.title}
                 </a>
               </h1>
               <div className="meta">
@@ -85,8 +85,7 @@ export default function BlogOne({
             </header>
             <div className="post-excerpt">
               <p>
-                AI-powered tools and algorithms have redefined caricature
-                creation in novel....
+                ....
               </p>
               <div className="clear"></div>
             </div>
@@ -98,7 +97,7 @@ export default function BlogOne({
                 >
                   Read More{" "}
                   <span className="screen-reader-text">
-                    Modern and colorful style of caricatures created by AI
+                    {post.title}
                   </span>
                 </a>
                 <div className="min-read">
