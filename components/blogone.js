@@ -1,7 +1,4 @@
-//
-//.
-//
-//
+
 import Image from "next/image";
 import Link from "next/link";
 import { cx } from "@/utils/all";
@@ -26,140 +23,110 @@ export default function BlogOne({
     : null;
   return (
     <>
-   
+    
+      <article className="post-card post tag-science tag-hash-import-2024-04-21-17-09 tag-hash-import-2024-07-05-06-08 featured">
+                    <div className="box-wrap box-post space-more">
+                      <div className="post-list wide-thumb post-vertical-center">
+                        <div className="post-list-thumbnail">
+                          <div className="entry-thumbnail">
+                            <a className="thumb-link" href="/what-we-think-we-become/" title="What We Think, We Become">
+                              <div className="thumb-container thumb-75">
+                              
+                              {post?.videoType === "youtube" ? (
      
-       <div className="nc-Card16Podcast relative flex flex-col sm:col-span-3 lg:col-span-2">
-       
-    {/*    {post?.videoType === "youtube" ? (
-       <Link
-              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                post.slug.current
-              }`}
-            >
-         <a className="block flex-shrink-0 relativeT w-full rounded-3xl overflow-hidden aspect-w-3 xl:aspect-w-4 aspect-h-3">
           <ReactPlayer
         url={post?.youtube || "Thumbnail"}
        
         controls
-              className="object-cover object-cover absolute inset-0 w-full h-full"
+              className="thumb-image"
             
         width="100%"
     
       />
-           <span className="bg-neutral-900G bg-opacity-30G"></span></a>
-           </Link>
+          
     ) : (
-      <Link
-              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                post.slug.current
-              }`}
-            >
-         <a className="block flex-shrink-0 relativeT w-full rounded-3xl overflow-hidden aspect-w-3 xl:aspect-w-4 aspect-h-3">
+      
+        
            <video 
                                
-                 className="object-cover object-cover absolute inset-0 w-full h-full"
+                 className="thumb-image"
                        
 src={post?.videoUrl}
                             />
-           <span className="bg-neutral-900G bg-opacity-30G"></span></a>
-           </Link>
-    )}  */}
-           <img 
-    sizes="(max-width: 600px) 480px, 800px"
-      src="https://images.pexels.com/photos/6843304/pexels-photo-6843304.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-      className="object-cover object-cover absolute inset-0 w-full h-full"
-      alt="" />
-           
-         
-         <Link
-              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                post.slug.current
-              }`}
-            >
-         <a className="absolute inset-0" ></a></Link>
-         <span className="absolute top-3 inset-x-3">
-           <div className="nc-CategoryBadgeList flex flex-wrap space-x-2" data-nc-id="CategoryBadgeList">
-            <Link
-              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                post.slug.current
-              }`}
-            >
-             <a className="transition-colors hover:text-white duration-300 nc-Badge  inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative text-yellow-800 bg-yellow-100 hover:bg-yellow-800">StreamLab</a>
-             </Link>
-           </div>
-         </span>
-         <div className="w-11/12 transform -mt-32 ">
-           <div className="px-5 flex items-center space-x-4 ">
-             <div className="flex-grow ">
-                 
-               
-             </div>
-             <Link
-              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                post.slug.current
-              }`}
-            >
-
-             <div className="nc-ButtonPlayMusicPlayer select-none ">
-               <div className="w-14 h-14 flex items-center justify-center rounded-full bg-neutral-50 text-primary-500 cursor-pointer">
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" className="ml-0.5 w-8 h-8">
-                   <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd"></path>
-                 </svg>
-               </div>
-             </div>
-             </Link>
-           </div>
-           <div className="shadow-lg dark:shadow-2xl p-5 mt-5 bg-white darkT:bg-neutral-900 shadow-xl dark:shadow-2xl rounded-3xl rounded-tl-none flex flex-col flex-grow ">
-             <h2 className="nc-card-title block sm:text-lg lg:text-xl font-semibold text-neutral-900 darkT:text-neutral-100 ">
-              <Link
-              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                post.slug.current
-              }`}
-            >
-
-             <a className="line-clamp-1" title="Lenovo’s smarter devices ">{post.title} </a>
-             </Link>
-             </h2>
-             <span className="block text-sm text-neutral-500 darkT:text-neutral-400 mt-3 mb-5"><span className="line-clamp-2">Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.</span></span>
-             <div className="flex items-end justify-between mt-auto">
-               <div className="nc-PostCardLikeAndComment flex items-center space-x-2 relative">
-               
-               
-               
-                   
-                    {/*<PostMainLikes post={post} />*/}
-                 <a className="nc-PostCardCommentBtn relative items-center min-w-[68px] rounded-full text-neutral-6000 bg-neutral-50 transition-colors dark:text-neutral-200 dark:bg-neutral-800 hover:bg-teal-50 dark:hover:bg-teal-100 hover:text-teal-600 dark:hover:text-teal-500 hidden sm:flex  px-3 h-8 text-xs " title="Comments" href="/single/demo-slug#comments">
-                   <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"></path>
-                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"></path>
-                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"></path>
-                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"></path>
-                   </svg><span className="ml-1 text-neutral-900 dark:text-neutral-200">110</span></a>
-               </div>
-               <div className="nc-PostCardSaveAction flex items-center space-x-2 text-xs text-neutral-700 dark:text-neutral-300 relative">
-               
-             
-                        <button className="nc-NcBookmark relative rounded-full flex items-center justify-center h-8 w-8 bg-neutral-50 hover:bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-700" title="Save to reading list">
-                                             
+          
+    )} 
                               
-                                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="currentColor" className="w-[18px] h-[18px]">
-                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path>
-                                               </svg></button>
-                       
-                  
-               
-                 
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
+                                 {/* <img className="thumb-image" srcset="images/v16_3.jpeg 300w, images/v16_2.jpeg 400w, images/v16_1.jpeg 600w, images/v16_4.jpeg 800w" sizes="(max-width: 767px) 100vw, (max-width: 880px) 50vw, 33vw" src="images/v16_1.jpeg" alt="What We Think, We Become">*/}
+                              
+    
+                              </div>
+                            </a>
+                            <div className="thumb-info info-center">
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div className="post-list-desc">
+                          <div className="post-desc-inner">
+                            <div className="entry-meta meta-top">
+                              <a href="https://vozzy.tmrwstudio.net/featured/" className="meta-featured meta-item" aria-label="Featured">
+                                <span className="info-icon"><span className="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                      <path d="M12 6.99999C16.4183 6.99999 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 6.99999 12 6.99999ZM12 8.99999C8.68629 8.99999 6 11.6863 6 15C6 18.3137 8.68629 21 12 21C15.3137 21 18 18.3137 18 15C18 11.6863 15.3137 8.99999 12 8.99999ZM12 10.5L13.3225 13.1797L16.2798 13.6094L14.1399 15.6953L14.645 18.6406L12 17.25L9.35497 18.6406L9.86012 15.6953L7.72025 13.6094L10.6775 13.1797L12 10.5ZM18 1.99999V4.99999L16.6366 6.13755C15.5305 5.5577 14.3025 5.17884 13.0011 5.04948L13 1.99899L18 1.99999ZM11 1.99899L10.9997 5.04939C9.6984 5.17863 8.47046 5.55735 7.36441 6.13703L6 4.99999V1.99999L11 1.99899Z"></path>
+                                    </svg>
+                                  </span></span>
+                                <span className="info-text">Featured</span>
+                              </a>
+                            </div>
+    
+                            <div className="entry-header">
+                              <h2 className="entry-title head3">
+                                <a className="title-text" href="/what-we-think-we-become/">
+                                {post.title}
+                                </a>
+                              </h2>
+                            </div>
+    
+                            <div className="entry-excerpt">
+                              I don’t want to leave this planet until I achieve everything that I was put here to do.
+                            </div>
+    
+                            <div className="entry-meta meta-bottom">
+                              <div className="meta-author meta-item">
+                                <span className="info-icon"><span className="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                      <path d="M28 4C21 4 11 9.89 8 16c-1.96 3.99-2.89 7.25-2.99 12H5v4l7 28h8l-7-28v-7.5C13 15.4 20.4 8 29.5 8 40.61 8 50 17.62 50 29l4 16h4l-4-16C54 15.21 43.01 4 29.5 4H28zm21 41v3c0 3.31-2.69 6-6 6h-7v6h4v-2h3c5.51 0 10-4.49 10-10v-3h-4z"></path>
+                                    </svg>
+                                  </span></span>
+                                <span className="info-text">By�&nbsp;<a href="/author/eileen/">Eileen Dover</a></span>
+                              </div>
+                            </div>
+    
+                          </div>
+                        </div>
+                      </div>
+                      <div className="read-more-icon">
+                        <a href="/what-we-think-we-become/" title="What We Think, We Become" className="post-more-icon button btn-content_icon btn-white">
+                          <span className="icon-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path d="M5 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-7 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
     
     
     
     
     
     
+    
+    
+    
+    
+   
+     
     
     
       
