@@ -54,6 +54,40 @@ export default function Post({ posts }) {
                     preloadImage={true}
                   />
                 ))}
+                        <div className="epcl-subscribe epcl-gradient">
+    <div className="grid-container grid-usmall grid-parent np-mobile textcenter">
+      <form className="subscribe-form" data-members-form="subscribe">
+        <h2 className="title large white">Subscribe to our Newsletter</h2>
+        <p className="description">Subscribe to our email newsletter and unlock access to <b>members-only</b> content and <b>exclusive updates.</b></p>
+        <div className="form-group">
+          <input type="email" name="email" className="inputbox large" required="" placeholder="Enter your email address" data-members-email="">
+          <button className="epcl-button submit absolute wave-button" type="submit">Get Started<span className="loader"></span></button>
+        </div>
+        <p className="error-detail" data-members-error=""></p>
+        <p className="success-message">Subscription was sent successfully, check your email <i className="fa fa-envelope-o"></i></p>
+      </form>
+    </div>
+    <svg className="epcl-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      {/*<g className="epcl-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="2" fill="rgba(252, 255, 255,0.1)"></use>
+        <use xlink:href="#gentle-wave" x="48" y="4" fill="rgba(252, 255, 255,0.15)"></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(252, 255, 255,0.1)"></use>
+      </g>*/}
+    </svg>
+  </div>
+                      {}
+{posts.slice(2, 12).map((post) => (
+                  <BlogOne
+                    key={post._id}
+                    post={post}
+                    aspect="landscape"
+                    preloadImage={true}
+                  />
+                ))}
+                      
                   </div>
                 </div>
               </div>
