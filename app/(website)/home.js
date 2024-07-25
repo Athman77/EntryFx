@@ -308,6 +308,24 @@ export default function Post({ posts }) {
           </div>
         </div>
       </header>
+
+
+                        <main id="site-main" className="site-main">
+  
+        <div className="site-section blog-section is-skin bg-light bg-transparent">
+          <div className="container">
+            <div className="site-content fullwidth">
+              <div className="post-feed latest-posts posts-grid">
+                <div className="grid-col grid-col--1"></div>
+                <div className="grid-col grid-col--2"></div>
+                
+                
+                {}
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
                                 </div>
 
       {/*  <div className="bg-[#f8f8f8] text-base darkG:bg-neutral-900/95G text-neutral-900 dark:text-neutral-200 font-body">
