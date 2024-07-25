@@ -6,34 +6,8 @@ html {
 }
 
 
- @font-face {
-   font-family: 'Lexend Exa';
-   font-style: normal;
-   font-weight: normal;
-   font-display: swap;
-   font-weight: 800;
- /*  src: url('fonts/lexendexa-800.woff2') format('woff2');*/
- }
+ 
 
- @font-face {
-   font-family: 'Prompt';
-   font-style: normal;
-   font-display: swap;
-   font-weight: 400;
- /*  src: url('fonts/prompt-400.woff2') format('woff2');*/
- }
-
- @font-face {
-   font-family: 'Prompt';
-   font-style: normal;
-   font-display: swap;
-   font-weight: 700;
-   /*src: url('fonts/prompt-700.woff2') format('woff2');*/
- }
-
-  :root {
-    --ghost-accent-color: #ff6565;
-  }
   :root {
     --light-bg-color: #ffffff;
     --light-text-color: #000;
