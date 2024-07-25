@@ -37,6 +37,20 @@ export default function Post({ posts }) {
               </p>
             </div>
             {/******* into ***/}
+   <div className="sticky-container section np-bottom">
+                <h2 className="title bordered large">Latest Articles<svg class="decoration">
+                    
+                  </svg></h2>
+                <div className="center left-content grid-70">
+           
+                  
+                  <div className="articles classic">
+                    
+                    {}
+                  </div>
+                </div>
+              </div>
+  
           </div>
         </main>
       </div>
