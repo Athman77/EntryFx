@@ -46,7 +46,14 @@ export default function Post({ posts }) {
                   
                   <div className="articles classic">
                     
-                    {}
+                    {posts.slice(0, 2).map((post) => (
+                  <BlogOne
+                    key={post._id}
+                    post={post}
+                    aspect="landscape"
+                    preloadImage={true}
+                  />
+                ))}
                   </div>
                 </div>
               </div>
