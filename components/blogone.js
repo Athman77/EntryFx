@@ -147,7 +147,7 @@ export default function BlogOne({
          </div>
        </div>
      </div>
-   </article>
+   </article>*/}
     </>
   );
 }
