@@ -29,7 +29,7 @@ export default function BlogOne({
        <a className="thumb-link" href="/what-we-think-we-become/" title="What We Think, We Become">
          <div className="thumb-container thumb-75">
    {post.videoType === "upload" ? (
-                      <video className="thumb-image img" controll src={post?.videoUrl} />
+                      <video className="thumb-image img" controls src={post?.videoUrl} />
                     ) : (
                       <Vid
                         className="thumb-image img"
