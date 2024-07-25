@@ -1,5 +1,89 @@
 /**/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+ :root {
+      --light-bg-color: #ffffff;
+      --light-text-color: #000;
+      --light-text-color-heavier: #000;
+      --light-line-color: #000;
+
+      --dark-bg-color: #111111;
+      --dark-text-color: #fff;
+      --dark-text-color-heavier: #fff;
+      --dark-line-color: #fff;
+
+      --color-accent: #ff6565;
+      --color-accent-text: #000;
+
+      --primary-font-family: 'Prompt', sans-serif;
+      --primary-font-weight: 400;
+      --primary-font-size: 17px;
+      --primary-line-height: 1.7;
+
+      --second-font-family: 'Lexend Exa', sans-serif;
+      --second-font-weight: 800;
+      --second-text-transform: uppercase;
+      --second-font-size: 13px;
+      --second-line-height: 1.5;
+      --second-letter-spacing: 0.07em;
+      --menu_font_size: 14px;
+
+      --heading-font-family: 'Lexend Exa', sans-serif;
+      --heading-font-weight: 800;
+      --heading-line-height: 1.23;
+      --heading-letter-spacing: -0.04em;
+
+      --h1_desktop-size: 59px;
+      --h2_desktop-size: 46px;
+      --h3_desktop-size: 35px;
+      --h4_desktop-size: 27px;
+      --h5_desktop-size: 21px;
+      --h6_desktop-size: 17px;
+
+      --h1_tablet-size: 54px;
+      --h2_tablet-size: 42px;
+      --h3_tablet-size: 32px;
+      --h4_tablet-size: 26px;
+      --h5_tablet-size: 27px;
+      --h6_tablet-size: 17px;
+
+      --h1_mobile-size: 50px;
+      --h2_mobile-size: 40px;
+      --h3_mobile-size: 32px;
+      --h4_mobile-size: 26px;
+      --h5_mobile-size: 21px;
+      --h6_mobile-size: 17px;
+
+      --site_bg: #673ab7;
+      --cover_img: url(https://cdn.sanity.io/images/wusctyxy/production/1ab3d4076319a3ae488d93b0e5fc7f164d3be907-1250x875.jpg);
+      --decor_size: 50%;
+
+      --max_site_width: 1200px;
+      --sitemain_width: calc(70% - 50px);
+      --sitebar_width: calc(30% + 50px);
+      --sitemain_one_width: 80%;
+      --primary_space: 50px;
+      --line_size: 2px;
+      --vspace: 60px;
+
+      --box-radius: 15px;
+      --box-line-size: 2px;
+      --box-radius: 40px;
+      --box-padding: 30px;
+      --box-padding-small: 20px;
+      --shadow-size: 3px;
+
+      --btn_line_size: 2px;
+      --button_radius: 20px;
+      --btn-line-size: 2px;
+      --button-radius: 20px;
+      --button-shadow-size: 2px;
+
+      --logo_size: 240px;
+
+      --logo_size_mobile: 180px;
+
+    }
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%
