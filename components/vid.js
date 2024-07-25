@@ -16,7 +16,7 @@ const Vid = ({ id }) => {
     <div className="">
       <ReactPlayer
         url={`https://www.youtube.com/watch?v=${id}`}
-        className="object-cover object-cover absolute inset-0 w-full h-full"
+        className="img"
             
         controls
         width="100%"
