@@ -13,6 +13,14 @@ import Header from "@/components/header";
 export default function Post({ posts }) {
   return (
     <>
+      <h1 class="screen-reader-text">Vozzy</h1>
+
+  <div className="site-bg">
+    <div className="site-decor"></div>
+
+  </div>
+
+  <div className="site">
       <header className="site-header header2">
         <div className="site-section header-section is-skin bg-dark bg-transparent">
           <div className="container">
@@ -76,7 +84,7 @@ export default function Post({ posts }) {
                 <div className="site-logo">
                   <a href="https://vozzy.tmrwstudio.net" aria-label="Vozzy">
                     <img
-                      src="images/vozzy.svg"
+                      src="https://cdn.sanity.io/images/wusctyxy/production/0c9a03db187311c93c59a970327d79d0f57fa9a8-359x157.png"
                       alt="Vozzy"
                       fetchpriority="high"
                       className="light-logo"
@@ -85,7 +93,7 @@ export default function Post({ posts }) {
                     />
 
                     <img
-                      src="images/vozzy-1.svg"
+                      src="https://cdn.sanity.io/images/wusctyxy/production/0c9a03db187311c93c59a970327d79d0f57fa9a8-359x157.png"
                       alt="Vozzy"
                       fetchpriority="high"
                       className="dark-logo"
@@ -300,6 +308,7 @@ export default function Post({ posts }) {
           </div>
         </div>
       </header>
+                                </div>
 
       {/*  <div className="bg-[#f8f8f8] text-base darkG:bg-neutral-900/95G text-neutral-900 dark:text-neutral-200 font-body">
          <div className="container ">
