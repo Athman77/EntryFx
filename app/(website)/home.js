@@ -316,11 +316,8 @@ export default function Post({ posts }) {
           <div className="container">
             <div className="site-content fullwidth">
               <div className="post-feed latest-posts posts-grid grid3">
-                   <div className="grid-col grid-col--1"></div>
-                                <div className="grid-col grid-col--2"></div>
-              <div className="grid-col grid-col--3"></div>
-                
-                {posts.slice(0, 10).map((post) => (
+                   <div className="grid-col grid-col--1">
+                                {posts.slice(0, 10).map((post) => (
                   <BlogOne
                     key={post._id}
                     post={post}
@@ -328,6 +325,20 @@ export default function Post({ posts }) {
                     preloadImage={true}
                   />
                 ))}
+                                </div>
+                                <div className="grid-col grid-col--2">
+                      {posts.slice(0, 10).map((post) => (
+                  <BlogOne
+                    key={post._id}
+                    post={post}
+                    aspect="landscape"
+                    preloadImage={true}
+                  />
+                ))}
+                      </div>
+              <div className="grid-col grid-col--3"></div>
+                
+                
                       
               </div>
             </div>
