@@ -317,7 +317,7 @@ export default function Post({ posts }) {
             <div className="site-content fullwidth">
               <div className="post-feed latest-posts posts-grid">
                 <div className="grid-col grid-col--1"></div>
-                <div className="grid-col grid-col--2">
+                <div className="grid-col grid-col--1">
                 
                 {posts.slice(0, 10).map((post) => (
                   <BlogOne
