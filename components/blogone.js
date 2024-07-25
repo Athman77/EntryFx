@@ -67,7 +67,7 @@ export default function BlogOne({
                <a href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/" className="continue-reading epcl-button gradient-button wave-button">Read More <span className="screen-reader-text">Modern and colorful style of caricatures created by AI</span></a>
                <div className="min-read">
                  <svg>
-                   <use xlink:href="#reading-icon"></use>
+                   
                  </svg> 2 min read
                </div>
              </div>
