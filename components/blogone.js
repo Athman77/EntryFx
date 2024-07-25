@@ -30,8 +30,15 @@ export default function BlogOne({
        <div className="post-format-image epcl-flex">
          <div className="featured-image">
            <a href="/wavy/modern-and-colorful-style-of-caricatures-created-by-ai/" className="thumb epcl-loader">
-             
-             <img className="fullimage cover" loading="eager" src="images/Untitled-3.webp" alt="Image of: Modern and colorful style of caricatures created by AI" />
+             {post.videoType === "upload" ? (
+                      <video className="fullimage cover" controls src={post?.videoUrl} />
+                    ) : (
+                      <Vid
+                        className="fullimage cover"
+                        id={post.youtube || "Thumbnail"}
+                      />
+                    )}
+{/*<img className="fullimage cover" loading="eager" src="images/Untitled-3.webp" alt="Image of: Modern and colorful style of caricatures created by AI" />*/}
              <span className="screen-reader-text">Modern and colorful style of caricatures created by AI</span>
            </a>
            <div className="meta absolute hide-on-mobile hide-on-tablet">
