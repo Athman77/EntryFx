@@ -96,7 +96,11 @@ export default function BlogOne({
                   </span>
                 </a>
                 <time className="meta-info" datetime="2023-10-21">
-                  <span className="dot"></span>October 21, 2023
+                  <span className="dot"></span>
+                      {format(
+                                              parseISO(post?.publishedAt || post._createdAt),
+                                              "MMMM dd, yyyy"
+                                            )}
                 </time>
                 <div className="clear"></div>
               </div>
