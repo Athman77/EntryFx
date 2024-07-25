@@ -1,6 +1,6 @@
 //
 //import "@/styles/tailwind.css"; 
-//import "@/styles/screen.css";
+import "@/styles/screen.css";
 import "@/styles/cards.min.css";
 //import "@/styles/sportx.css";
 //import "@/styles/sport.css";
