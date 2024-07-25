@@ -315,7 +315,7 @@ export default function Post({ posts }) {
         <div className="site-section blog-section is-skin bg-light bg-transparent">
           <div className="container">
             <div className="site-content fullwidth">
-              <div className="post-feed latest-posts posts-grid">
+              <div className="post-feed latest-posts posts-grid grid3">
                 <div className="grid-col grid-col--1"></div>
                 <div className="grid-col grid-col--1">
                 
