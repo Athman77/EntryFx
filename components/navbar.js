@@ -52,7 +52,7 @@ export default function Navbar(props) {
 
     <div className="menu-mobile">
       <svg className="icon ularge open">
-    {/* <use xlink:href="#menu-icon"></use>*/}
+     <use xlink:href="#menu-icon"></use>
       </svg>
       <svg className="icon ularge close">
     
@@ -64,7 +64,7 @@ export default function Navbar(props) {
 
       <div className="grid-container">
         <div className="epcl-flex">
-          <div className="logo"><a href="https://ghost.estudiopatagon.com/wavy"><img src="images/logo-wave7.svg" alt="Wavy" width="180" height="60" /></a></div>
+          <div className="logo"><a href="https://ghost.estudiopatagon.com/wavy"><img src="https://cdn.sanity.io/images/wusctyxy/production/0c9a03db187311c93c59a970327d79d0f57fa9a8-359x157.png" alt="Wavy" width="180" height="60" /></a></div>
 
           <span data-ghost-search="" className="epcl-search-button epcl-button gradient-button circle"><svg className="icon large">
              
