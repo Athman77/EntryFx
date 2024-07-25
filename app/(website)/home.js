@@ -1,5 +1,3 @@
-
-
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -13,30 +11,37 @@ import Header from "@/components/header";
 export default function Post({ posts }) {
   return (
     <>
-       <div className="menu-overlay hide-on-desktop-lg"></div>
-  
-    
-    <div id="wrapper">
-      <main id="home" className="main grid-container">
-  
-      
-        <div className="content-wrapper">
-          
-          
-    {/*-- start: .intro-text --*/}
-              <div className="intro-text textcenter section np-bottom grid-container grid-medium np-mobile np-tablet">
-                <h1 className="title ularge">Welcome to Wavy, a fast 🚀and modern theme fully compatible with Ghost!</h1>
-                <p>Rich right us federal alone degree issue professor. Form crime tough effect least store day. Deep range they modern.</p>
-                <p><a href="https://ghost.estudiopatagon.com/wavy/membership" className="epcl-button gradient-button wave-button icon"><svg className="icon large">
-                      <use xlink:href="#credit-icon"></use>
-                    </svg> View Plans</a></p>
-              </div>
-              {/******* into ***/}
-        </div>
-      </main>
-    </div>
-              
- 
+      <div className="menu-overlay hide-on-desktop-lg"></div>
+
+      <div id="wrapper">
+        <main id="home" className="main grid-container">
+          <div className="content-wrapper">
+            {/*-- start: .intro-text --*/}
+            <div className="intro-text textcenter section np-bottom grid-container grid-medium np-mobile np-tablet">
+              <h1 className="title ularge">
+                Welcome to Wavy, a fast 🚀and modern theme fully compatible with
+                Ghost!
+              </h1>
+              <p>
+                Rich right us federal alone degree issue professor. Form crime
+                tough effect least store day. Deep range they modern.
+              </p>
+              <p>
+                <a
+                  href="https://ghost.estudiopatagon.com/wavy/membership"
+                  className="epcl-button gradient-button wave-button icon"
+                >
+                  <svg className="icon large">
+                    <use xlink:href="#credit-icon"></use>
+                  </svg>{" "}
+                  View Plans
+                </a>
+              </p>
+            </div>
+            {/******* into ***/}
+          </div>
+        </main>
+      </div>
 
       {/*  <div className="bg-[#f8f8f8] text-base darkG:bg-neutral-900/95G text-neutral-900 dark:text-neutral-200 font-body">
          <div className="container ">
