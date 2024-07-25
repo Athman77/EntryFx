@@ -31,9 +31,7 @@ export default function Post({ posts }) {
                   href="https://ghost.estudiopatagon.com/wavy/membership"
                   className="epcl-button gradient-button wave-button icon"
                 >
-                  <svg className="icon large">
-                    <use xlink:href="#credit-icon"></use>
-                  </svg>{" "}
+                  
                   View Plans
                 </a>
               </p>
