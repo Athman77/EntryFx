@@ -1,7 +1,9 @@
+//
 import Image from "next/image";
 import Link from "next/link";
 import { cx } from "@/utils/all";
 import ReactPlayer from "react-player";
+import Vid from "@/components/vid";
 import { urlForImage } from "@/lib/sanity/image";
 import { parseISO, format } from "date-fns";
 import { PhotoIcon } from "@heroicons/react/24/outline";
@@ -33,15 +35,13 @@ export default function BlogOne({
                   title="What We Think, We Become"
                 >
                   <div className="thumb-container thumb-75">
-                    {post?.videoType === "youtube" ? (
-                      <ReactPlayer
-                        url={post?.youtube || "Thumbnail"}
-                        controls
-                        className="thumb-image"
-                        width="100%"
-                      />
-                    ) : (
+                    {post.videoType === "upload" ? (
                       <video className="thumb-image" src={post?.videoUrl} />
+                    ) : (
+                      <Vid
+                        className="thumb-image"
+                        id={post.youtube || "Thumbnail"}
+                      />
                     )}
 
                     {/* <img className="thumb-image" srcset="images/v16_3.jpeg 300w, images/v16_2.jpeg 400w, images/v16_1.jpeg 600w, images/v16_4.jpeg 800w" sizes="(max-width: 767px) 100vw, (max-width: 880px) 50vw, 33vw" src="images/v16_1.jpeg" alt="What We Think, We Become">*/}
