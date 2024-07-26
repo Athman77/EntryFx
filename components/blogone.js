@@ -65,9 +65,7 @@ export default function BlogOne({
                </h2>
      
      
-               <div className="item-excerpt global-excerpt text-italic">
-                 
-               </div>
+               
      
                <div className="item-tags global-tags global-pointer is-image">
                <Link
