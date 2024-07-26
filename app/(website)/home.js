@@ -1,4 +1,4 @@
-//.
+//
 //
 import Link from "next/link";
 import Container from "@/components/container";
@@ -67,6 +67,33 @@ export default function Post({ posts }) {
 	  
 	  </header>
 	  
+	  <div className="right-content grid-80">
+	  <main id="home" className="main grid-container" role="main">
+	  
+	         <div className="">
+	           
+	             {/***  <!-- start: .latest-post --> ***/}
+	               <div className="latest-post section">
+	           
+	                 <div className="featured-posts bg-white grid-40 grid-parent hide-on-mobile hide-on-tablet">
+	                   <h2 className="title small no-margin">Featured Articles</h2>
+	                   {}
+	                 </div>
+	               </div>
+	               {/******* end ****/}
+	         </div>
+	         
+	           
+	           
+	        
+	 
+	  </main>
+	  </div>
+	  
+	  
+	  
+	  
+	  
 	  
   </div>
    
@@ -81,4 +108,4 @@ export default function Post({ posts }) {
       {/***** end *****/}
     </>
   );
-}
+} 
