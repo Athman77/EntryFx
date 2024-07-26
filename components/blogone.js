@@ -1,3 +1,4 @@
+//
 
 import Image from "next/image";
 import Link from "next/link";
@@ -24,60 +25,47 @@ export default function BlogOne({
     : null;
   return (
     <>
-    
-    <article className="item global-image post tag-joyful-business tag-work-in-public featured">
-    {/*  <Link
-              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                post.slug.current
-              }`}
-            >
-           <a className="global-link" aria-label="A more joyful business"></a></Link>*/}
-           
-             {post.videoType === "upload" ? (
+        <article className="large-article index-0  post tag-reviews tag-hash-import-2023-11-22-03-40">
+    	                                                <h1 className="title medium"><a href="/airo/classNameic/">What are airports going to do about drones in the future?</a></h1>
+    	                               
+    	                                                <div className="featured-image hover-effect grid-50 tablet-grid-50 grid-parent">
+    	                               
+    	                               
+    	                        {post.videoType === "upload" ? (
                 <video
-                  className="img"
+                  className="img thumb cover"
                   
                   src={post?.videoUrl}
                 />
               ) : (
                 <Vid
-                  className="img"
+                  className="img thumb cover"
                   id={post.youtube || "Thumbnail"}
                 />
-              )}
-           
-           
-           {/*<img srcset="images/a-more-joyful-business_1.jpg 400w, images/a-more-joyful-business.jpg 800w" sizes="(max-width:480px) 400px, 800px" src="images/a-more-joyful-business.jpg" loading="lazy" alt="A more joyful business">*/}
-           <div className="item-content global-mask is-image">
-             <div className="item-lock">
-             </div>
-     
-             <div className="item-other">
-     
-               <h2 className="item-title">
-               <Link
-              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                post.slug.current
-              }`}
-            >
-               <a>{post.title}</a></Link>
-               
-               </h2>
-     
-     
-               
-     
-               <div className="item-tags global-tags global-pointer is-image">
-               <Link
-              href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                post.slug.current
-              }`}
-            >
-                 <a>Joyful Business</a></Link>
-               </div>
-             </div>
-           </div>
-         </article>
+              )}                             {/* <a href="/airo/classNameic/" className="thumb cover"
+    	                                         //style="background: url(images/samuel-schwendener-tF2rITQWkNY-unsplash.jpg) no-repeat;"
+    	                                         ></a>*/}
+    	                                                </div>
+    	                               
+    	                                                <div className="excerpt grid-50 tablet-grid-50 grid-parent">
+    	                                                  For the second time in less than a month, flights at a major London airport have been...
+    	                                                  <div className="clear"></div>
+    	                                                  <div className="meta">
+    	                                                    <a href="/airo/author/estudio/" className="author-meta" title="Estudio Patagon">
+    	                                                      <span className="author-image cover"
+    	                                          //style="background-image: url( https://www.gravatar.com/avatar/26263d3127afcbc9393ba1d98bb510f7?s=250&amp;r=x&amp;d=mp );"
+    	                                          ></span>
+    	                                                      <span className="author-name">Estudio Patagon</span>
+    	                                                    </a>
+    	                                                    <a href="/airo/classNameic/#comments" className="comments meta-info alignright"><i className="remixicon remixicon-chat-2-line"></i> <span className="disqus-comment-count" data-disqus-url="https://ghost.estudiopatagon.com/airo/airo/classNameic/" data-disqus-identifier="5d39fcde48d02a0592b82fb5">0</span></a>
+    	                                                    <div className="clear"></div>
+    	                                                  </div>
+    	                                                  <a href="/airo/classNameic/" className="button small">Read More</a>
+    	                                                </div>
+    	                               
+    	                                                <div className="clear"></div>
+    	                               
+    	                                              </article>
     
     
     
@@ -87,8 +75,7 @@ export default function BlogOne({
     
     
     
-    
-    
+   
     </>
   );
 }
