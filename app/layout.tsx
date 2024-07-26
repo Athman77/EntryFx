@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable)}>
-      <body className="home-template global-cover-homepage global-alternative-buttons">
+      <body className="dark-mode home-template global-cover-homepage global-alternative-buttons">
         <Providers>
           {children}
         <Analytics />
