@@ -1,3 +1,4 @@
+//
 import Container from "@/components/container";
 import ThemeSwitch from "@/components/themeSwitch";
 import Image from "next/image";
@@ -8,99 +9,72 @@ import Link from "next/link";
 export default function Footer(props) {
   return (
     <>
-      <div className="nc-Footer relative py-16 lg:py-28 border-t border-neutral-200 dark:border-neutral-700">
-     <div className="container grid grid-cols-2 gap-y-10 gap-x-5 sm:gap-x-8 md:grid-cols-4 lg:grid-cols-5 lg:gap-x-10 ">
-      <div className="grid grid-cols-4 gap-5 col-span-2 md:col-span-4 lg:md:col-span-1 lg:flex lg:flex-col">
-       <div className="col-span-2 md:col-span-1">
-        <a className="ttnc-logo inline-block text-primary-6000 flex-shrink-0" href="/">
-         <svg width="59" height="41" viewbox="0 0 59 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M33.5224 9.69455C34.547 8.66632 35.1818 7.24829 35.1818 5.68181C35.1818 2.54402 32.6378 0 29.5 0C27.516 0 25.7721 1.01857 24.7559 2.55971C24.4868 2.83004 1.8706 30.7044 1.65941 31.0255C0.633591 32.0525 0 33.4705 0 35.037C0 38.1748 2.54281 40.7188 5.6806 40.7188C7.66464 40.7188 9.40853 39.7002 10.4247 38.1591C10.695 37.8888 33.3112 10.0144 33.5224 9.69455Z" fill="currentColor"></path>
-          <path d="M46.6081 22.9203C47.6363 21.8921 48.2723 20.4728 48.2723 18.904C48.2723 15.7662 45.7283 13.2221 42.5905 13.2221C40.6065 13.2221 38.8614 14.2419 37.8452 15.7831C37.5737 16.0558 25.6948 30.6972 25.4824 31.0206C24.4541 32.0489 23.8193 33.4681 23.8193 35.037C23.8193 38.1748 26.3621 40.7188 29.4999 40.7188C31.484 40.7188 33.2291 39.699 34.2452 38.1579C34.5168 37.8851 46.3957 23.2437 46.6081 22.9203Z" fill="currentColor"></path>
-          <path d="M59.0001 5.68181C59.0001 8.81959 56.4573 11.3636 53.3195 11.3636C50.1817 11.3636 47.6377 8.81959 47.6377 5.68181C47.6377 2.54402 50.1817 0 53.3195 0C56.4573 0 59.0001 2.54402 59.0001 5.68181Z" fill="currentColor"></path>
-          <path d="M11.3624 5.68181C11.3624 8.81959 8.81838 11.3636 5.6806 11.3636C2.54281 11.3636 0 8.81959 0 5.68181C0 2.54402 2.54281 0 5.6806 0C8.81838 0 11.3624 2.54402 11.3624 5.68181Z" fill="currentColor"></path>
-         </svg></a>
-       </div>
-       <div className="col-span-2 flex items-center md:col-span-3">
-        <div className="nc-SocialsList1 flex items-center space-x-3 lg:space-x-0 lg:flex-col lg:space-y-2.5 lg:items-start" data-nc-id="SocialsList1">
-         <a href="#" className="flex items-center text-2xl text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white leading-none space-x-3 ">
-          <div>
-           <svg className="w-5 h-5" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-            <g clip-path="url(#clip0_17_61)"> 
-             <path d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z" fill="currentColor"></path> 
-            </g> 
-           </svg> 
-          </div><span className="hidden lg:block text-sm">Facebook</span></a>
-         <a href="#" className="flex items-center text-2xl text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white leading-none space-x-3 ">
-          <div>
-           <svg className="w-5 h-5" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-            <g clip-path="url(#clip0_17_80)"> 
-             <path d="M15.1003 43.5C33.2091 43.5 43.1166 28.4935 43.1166 15.4838C43.1166 15.0619 43.1072 14.6307 43.0884 14.2088C45.0158 12.815 46.679 11.0886 48 9.11066C46.205 9.90926 44.2993 10.4308 42.3478 10.6575C44.4026 9.42588 45.9411 7.491 46.6781 5.21159C44.7451 6.35718 42.6312 7.16528 40.4269 7.60128C38.9417 6.02318 36.978 4.97829 34.8394 4.62816C32.7008 4.27803 30.5064 4.64216 28.5955 5.66425C26.6846 6.68635 25.1636 8.30947 24.2677 10.2827C23.3718 12.2559 23.1509 14.4693 23.6391 16.5807C19.725 16.3842 15.8959 15.3675 12.4 13.5963C8.90405 11.825 5.81939 9.33893 3.34594 6.29909C2.0888 8.46655 1.70411 11.0314 2.27006 13.4722C2.83601 15.9131 4.31013 18.047 6.39281 19.44C4.82926 19.3904 3.29995 18.9694 1.93125 18.2119V18.3338C1.92985 20.6084 2.7162 22.8132 4.15662 24.5736C5.59704 26.334 7.60265 27.5412 9.8325 27.99C8.38411 28.3863 6.86396 28.4441 5.38969 28.1588C6.01891 30.1149 7.24315 31.8258 8.89154 33.0527C10.5399 34.2796 12.5302 34.9613 14.5847 35.0025C11.0968 37.7423 6.78835 39.2283 2.35313 39.2213C1.56657 39.2201 0.780798 39.1719 0 39.0769C4.50571 41.9676 9.74706 43.5028 15.1003 43.5Z" fill="currentColor"></path> 
-            </g> 
-           </svg> 
-          </div><span className="hidden lg:block text-sm">Twitter</span></a>
-         <a href="#" className="flex items-center text-2xl text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white leading-none space-x-3 ">
-          <div>
-           <svg className="w-5 h-5" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-            <g clip-path="url(#clip0_17_68)"> 
-             <path d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H44.4469C46.4062 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4062 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39062 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39062 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z" fill="currentColor"></path> 
-            </g> 
-           </svg> 
-          </div><span className="hidden lg:block text-sm">Linkedin</span></a>
-         <a href="#" className="flex items-center text-2xl text-neutral-700 hover:text-black dark:text-neutral-300 dark:hover:text-white leading-none space-x-3 ">
-          <div>
-           <svg className="w-5 h-5" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-            <g clip-path="url(#clip0_17_63)"> 
-             <path d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z" fill="currentColor"></path> 
-             <path d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z" fill="currentColor"></path> 
-             <path d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z" fill="currentColor"></path> 
-            </g> 
-           </svg> 
-          </div><span className="hidden lg:block text-sm">Instagram</span></a>
+     <footer className="site-footer text-center">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col">
+    
+              <div className="subscribe">
+                <h3 className="h1 title">Join my newsletter</h3>
+                <div className="description">
+                  I send posts digest once in a month. No spam ever, I promise.
+                </div>
+                <form className="members-form" data-members-form="subscribe">
+                  <div className="input-group">
+                    <label for="email" className="sr-only">Email</label>
+                    <input data-members-email="" type="email" className="form-control" placeholder="Your email address" required="" />
+                    <div className="input-group-append">
+                      <button className="submit-btn btn btn-primary" type="submit"><span className="loading-spinner"></span>Subscribe</button>
+                    </div>
+                  </div>
+                  <div className="messages-wrap text-center">
+                    <div className="message-success">
+                      <strong>Great!</strong> Check your inbox and click the link to confirm the subscription.
+                    </div>
+                    <div className="message-error">
+                      <strong>Error!</strong> Please enter a valid email address!
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div className="social-links">
+                <span className="follow-text">Follow me on - </span>
+                <ul>
+                  <li><a href="https://twitter.com/gbjsolution" title="Twitter" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                      </svg></a></li>
+                  <li><a href="https://www.facebook.com/gbjsolution" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                      </svg></a></li>
+                  <li><a href="#" title="Dribbble" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.628 0-12 5.373-12 12s5.372 12 12 12 12-5.373 12-12-5.372-12-12-12zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073-.244-.563-.497-1.125-.767-1.68 2.31-1 4.165-2.358 5.548-4.082 1.35 1.594 2.197 3.619 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68-1.016-1.861-2.178-3.676-3.488-5.438.779-.197 1.591-.314 2.431-.314 2.275 0 4.368.779 6.043 2.072zm-10.516-.993c1.331 1.742 2.511 3.538 3.537 5.381-2.43.715-5.331 1.082-8.684 1.105.692-2.835 2.601-5.193 5.147-6.486zm-5.44 8.834l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.952.67 1.432-3.38 1.057-6.165 3.222-8.337 6.48-1.432-1.719-2.296-3.927-2.296-6.334zm3.829 7.81c1.969-3.088 4.482-5.098 7.598-6.027.928 2.42 1.609 4.91 2.043 7.46-3.349 1.291-6.953.666-9.641-1.433zm11.586.43c-.438-2.353-1.08-4.653-1.92-6.897 1.876-.265 3.94-.196 6.199.196-.437 2.786-2.028 5.192-4.279 6.701z"></path>
+                      </svg></a></li>
+                  <li><a href="#" title="Instagram" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                      </svg></a></li>
+                  <li><a href="#" title="medium" rel="noopener"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"></path>
+                      </svg></a></li>
+                  <li><a href="#" title="github" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <nav className="secondary-nav-wrap">
+                <ul className="secondary-nav-list">
+                  <li className="features nav-item"><a href="https://advant.gbjsolution.com/features/">Features</a></li>
+                  <li className="privacy-policy nav-item"><a href="https://advant.gbjsolution.com/privacy/">Privacy Policy</a></li>
+                  <li className="contact nav-item"><a href="https://advant.gbjsolution.com/contact/">Contact</a></li>
+                </ul>
+              </nav>
+    
+              <div className="copyright">
+                © 2024 <a href="https://advant.gbjsolution.com">Advant</a> - Published with <a href="https://ghost.org/">Ghost</a>
+              </div>
+            </div>
+          </div>
         </div>
-       </div>
-      </div>
-      <div className="text-sm">
-       <h2 className="font-semibold text-neutral-700 dark:text-neutral-200">Getting started</h2>
-       <ul className="mt-5 space-y-4">
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Installation</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Release Notes</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Upgrade Guide</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Browser Support</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Editor Support</a></li>
-       </ul>
-      </div>
-      <div className="text-sm">
-       <h2 className="font-semibold text-neutral-700 dark:text-neutral-200">Explore</h2>
-       <ul className="mt-5 space-y-4">
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Design features</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Prototyping</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Design systems</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Pricing</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Customers</a></li>
-       </ul>
-      </div>
-      <div className="text-sm">
-       <h2 className="font-semibold text-neutral-700 dark:text-neutral-200">Resources</h2>
-       <ul className="mt-5 space-y-4">
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Best practices</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Support</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Developers</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Learn design</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">What's new</a></li>
-       </ul>
-      </div>
-      <div className="text-sm">
-       <h2 className="font-semibold text-neutral-700 dark:text-neutral-200">Community</h2>
-       <ul className="mt-5 space-y-4">
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Discussion Forums</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Code of Conduct</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Community Resources</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Contributing</a></li>
-        <li><a className="text-neutral-6000 dark:text-neutral-300 hover:text-black dark:hover:text-white" href="/">Concurrent Mode</a></li>
-       </ul>
-      </div>
-     </div>
-    </div>
+      </footer>
     </>
   );
 }
