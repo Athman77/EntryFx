@@ -33,13 +33,13 @@ export default function BlogOne({
     	                               <a href="/airo/classNameic/" className="thumb cover">
     	                        {post.videoType === "upload" ? (
                 <video
-                  className="img thumb cover"
+                  className="img cover"
                   
                   src={post?.videoUrl}
                 />
               ) : (
                 <Vid
-                  className="img thumb cover"
+                  className="img cover"
                   id={post.youtube || "Thumbnail"}
                 />
               )}   
