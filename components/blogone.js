@@ -26,12 +26,12 @@ export default function BlogOne({
     <>
     
     <article className="item global-image post tag-joyful-business tag-work-in-public featured">
-    <Link
+    {/*  <Link
               href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
                 post.slug.current
               }`}
             >
-           <a className="global-link" aria-label="A more joyful business"></a></Link>
+           <a className="global-link" aria-label="A more joyful business"></a></Link>*/}
            
              {post.videoType === "upload" ? (
                 <video
