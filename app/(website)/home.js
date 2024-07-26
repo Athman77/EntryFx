@@ -1,3 +1,4 @@
+//
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -28,6 +29,22 @@ export default function Post({ posts }) {
    </div>
  </div>
   {/**** hero *****/}
+   <div className="featured-section items-3">
+            <div className="loop-subtitle global-title-wrap">
+              <h3 className="global-title-large"><span>Featured Artifacts</span></h3>
+            </div>
+            <div className="loop-wrap">
+            {posts.slice(0, 3).map((post) => (
+                    <BlogOne
+                      key={post._id}
+                      post={post}
+                      aspect="landscape"
+                      preloadImage={true}
+                    />
+                  ))}
+            
+            </div>
+            </div>
 
     </main>
     
