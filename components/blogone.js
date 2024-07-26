@@ -34,7 +34,7 @@ export default function BlogOne({
                   {post.videoType === "upload" ? (
                 <video
                   className="img post-thumbnail"
-                  
+                  controls
                   src={post?.videoUrl}
                 />
               ) : (
@@ -53,12 +53,15 @@ export default function BlogOne({
        
               <div className="col-md-6">
                 <div className="post-container">
-                  <time className="date" datetime="2019-07-22 07:14">22 July, 2019</time>
+                  <time className="date" datetime="2019-07-22 07:14">{format(
+                      parseISO(post?.publishedAt || post._createdAt),
+                      "MMMM dd, yyyy"
+                    )}{" "}</time>
                   <span className="watermark" aria-hidden="true"></span>
                   <div className="primary-tag">
                     <a href="/tag/lifestyle/">Lifestyle</a>
                   </div>
-                  <h2 className="post-title h1"><a href="/riding-bicycle-is-environment-friendly-and-good-for-health/">Riding bicycle is environment friendly and good for health</a></h2>
+                  <h2 className="post-title h1"><a href="/riding-bicycle-is-environment-friendly-and-good-for-health/">{post.title}</a></h2>
                   <div className="separetor"></div>
                   <div className="reading-time">3 min read</div>
                 </div>
