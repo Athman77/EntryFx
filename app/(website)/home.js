@@ -1,5 +1,4 @@
-//
-//
+
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -15,97 +14,10 @@ export default function Post({ posts }) {
   return (
     <>
 
-	<div id="wrapper" className="grid-container grid-large grid-parent">
+	<div id="header" className="header-wrap header-wrap-home">
+	<Navbar />
 	
-	  <header id="header" className="grid-20">
-	  
-	    <div className="menu-mobile">
-	      <i className="fa fa-bars"></i>
-	    </div>
-	  
-	    
-	    <div className="menu-wrapper">
-	  
-	      <div className="">
-	  
-	        <div className="logo"><a href="https://ghost.estudiopatagon.com/airo"><img src="images/logo-airo.png" alt="Airo" /></a></div>
-	  
-	  
-	        
-	        <nav className="main-nav grid-container grid-parent" role="navigation">
-	  
-	          <ul id="menu-header" className="menu">
-	            <li className="nav-home current-menu-item"><a href="https://ghost.estudiopatagon.com/airo/"><i className="remixicon remixicon-file-list-line"></i> Home</a></li>
-	            <li className="nav-classNameic-post"><a href="https://ghost.estudiopatagon.com/airo/classNameic/"><i className="remixicon remixicon-file-list-line"></i> classNameic Post</a></li>
-	            <li className="nav-fullwidth-post"><a href="https://ghost.estudiopatagon.com/airo/fullwidth/"><i className="remixicon remixicon-file-list-line"></i> Fullwidth Post</a></li>
-	            <li className="nav-tag"><a href="https://ghost.estudiopatagon.com/airo/tag/dji/"><i className="remixicon remixicon-file-list-line"></i> Tag</a></li>
-	            <li className="nav-author"><a href="https://ghost.estudiopatagon.com/airo/author/jane-robertson/"><i className="remixicon remixicon-file-list-line"></i> Author</a></li>
-	            <li className="nav-features"><a href="https://ghost.estudiopatagon.com/airo/style-guide/"><i className="remixicon remixicon-file-list-line"></i> Features</a></li>
-	            <li className="nav-subscribe"><a href="https://ghost.estudiopatagon.com/airo/subscribe/"><i className="remixicon remixicon-file-list-line"></i> Subscribe</a></li>
-	          </ul>
-	  
-	        </nav>
-	       
-	  
-	        <form action="" method="get" className="hide-on-tablet hide-on-mobile hide-on-desktop-sm search-form">
-	          <input type="text" name="s" value="" className="search-field" placeholder="Enter your search..." required="" />
-	          <button type="submit" className="submit"><i className="remixicon-search-line"></i></button>
-	        </form>
-	  
-	        <div className="clear"></div>
-	  
-	      </div>
-	  
-	      <div className="clear"></div>
-	  
-	    </div>
-	    
-	  
-	    <div className="clear"></div>
-	  
-	    <p className="copyright hide-on-mobile hide-on-tablet">Airo © 2019<br />Published with <a href="https://ghost.org/" target="_blank">Ghost</a></p>
-	  
-	  </header>
-	  
-	  <div className="right-content grid-80">
-	  <main id="home" className="main grid-container" role="main">
-	  
-	         <div className="">
-	           
-	             {/***  <!-- start: .latest-post --> ***/}
-	               <div className="latest-post section">
-	           
-	            <div class="right grid-60">
-	                                <div class="bg-white">
-	                                    <h2 class="title small no-margin">Latest Article</h2>
-	                                    
-	                         {posts.slice(0, 1).map((post) => (
-                    <BlogOne
-                      key={post._id}
-                      post={post}
-                      aspect="landscape"
-                      preloadImage={true}
-                    />
-                  ))}    
-	                  </div> 
-	                  </div>
-	               </div>
-	               {/******* end ****/}
-	         </div>
-	         
-	           
-	           
-	         
-	 
-	  </main>
-	  </div>
-	  
-	  
-	  
-	  
-	  
-	  
-  </div>
+	</div>
    
       {/* <!------ post card------>*/}
   {/*  <Header
