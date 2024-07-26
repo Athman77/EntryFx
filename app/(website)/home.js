@@ -16,7 +16,7 @@ export default function Post({ posts }) {
     <div className="global-cover"></div>
 <div className="global-wrap">
   <div className="global-content">
-    {}
+    <Navbar />
     
     
   </div>
