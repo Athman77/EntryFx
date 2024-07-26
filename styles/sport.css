@@ -3,7 +3,9 @@
 
    /* Search results, post cards, etc. */
    --font-family-one: 'Times New Roman', serif;
-
+--height-logo-header: 32px;
+      --height-logo-footer: 26px;
+      --height-logo-mobile: 26px;
    /* Post content */
    --font-family-two: 'Times New Roman', serif;
    --font-weight-two-regular: 300;
@@ -34,6 +36,41 @@
 }
 
 
+
+    .post-content h1 {
+      font-size: 52px !important;
+      line-height: 1 !important;
+    }
+
+    .post-content h2 {
+      font-size: 44px !important;
+      line-height: 1 !important;
+    }
+
+    .post-content h3 {
+      font-size: 38px !important;
+      line-height: 1 !important;
+    }
+
+    .members-cta h2 {
+      line-height: 1.5 !important;
+    }
+
+    @media (max-width: 1024px) {
+      .header-nav {
+        flex-basis: 100%;
+      }
+
+      .header-nav nav span {
+        left: 0px !important;
+        right: unset !important;
+      }
+
+      .header-checkbox:checked~nav span {
+        display: none;
+      }
+
+    }
 /* Logo
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header-logo {
