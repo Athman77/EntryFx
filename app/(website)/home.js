@@ -34,13 +34,13 @@ export default function Post({ posts }) {
   </div>
 </div>
       {/* <!------ post card------>*/}
-      <Header
+  {/*  <Header
         account="css-ta1yzo"
         tv="css-ta1yzo"
         explore="css-ta1yzo"
         home="css-t8d8hp"
         search="css-ta1yzo"
-      />
+      />*/}
       {/***** end *****/}
     </>
   );
