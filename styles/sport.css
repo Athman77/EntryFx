@@ -13,7 +13,15 @@
 /* --------------------------------------------------------------------------
    1.Global
    -------------------------------------------------------------------------- */
+    .global-cover {
+      background-image: url(https://cdn.sanity.io/images/wusctyxy/production/a42f11650ec74cec195cb6b14df7ad732467e7d7-1200x672.jpg)
+    }
 
+    @media(max-width:480px) {
+      .global-cover {
+        background-image: url(https://cdn.sanity.io/images/wusctyxy/production/9e434913ff096f3c7dd6933bef58f94dbd95389c-800x448.jpg)
+      }
+    }
 
 /* Title
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
