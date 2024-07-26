@@ -85,7 +85,7 @@ export default function Post({ posts }) {
    </div>
         </div>
         </main>
-   
+   <Footer />
       {/* <!------ post card------>*/}
   {/*  <Header
         account="css-ta1yzo"
