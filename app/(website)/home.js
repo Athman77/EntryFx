@@ -17,7 +17,19 @@ export default function Post({ posts }) {
 <div className="global-wrap">
   <div className="global-content">
     <Navbar />
-    
+      <main class="global-main">
+    <div className="hero-section">
+   <div className="hero-wrap hero-wrap-center">
+     <h1 className="hero-title global-title-medium global-title-offset header-center">
+       Explorations in <span>joyful</span> internet business
+     </h1>
+
+     <a href="https://forest.quest/trailhead/" className="hero-button global-button">Enter The Forest</a>
+   </div>
+ </div>
+  {/**** hero *****/}
+
+    </main>
     
   </div>
 </div>
