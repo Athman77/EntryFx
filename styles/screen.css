@@ -356,7 +356,7 @@ textarea::placeholder {
 
 /* Image
    –––––––––––––––––––––––––––––––––––––––––––––––––––– */
-.global-image img {
+.global-image img, .img {
    position: absolute;
    z-index: -1;
    top: 0;
