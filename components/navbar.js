@@ -1,3 +1,4 @@
+//
 
 "use client";
 
@@ -48,89 +49,39 @@ export default function Navbar(props) {
   const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
-    <header id="header" className="minimalist">
-
-    <div className="menu-mobile">
-      <svg className="icon ularge open">
-    {/*<use xlink:href="#menu-icon"></use>*/}
-      </svg>
-      <svg className="icon ularge close">
-    
-      </svg>
-    </div>
-
-    
-    <div className="menu-wrapper">
-
-      <div className="grid-container">
-        <div className="epcl-flex">
-          <div className="logo"><a href="https://ghost.estudiopatagon.com/wavy"><img src="https://cdn.sanity.io/images/wusctyxy/production/0c9a03db187311c93c59a970327d79d0f57fa9a8-359x157.png" alt="Wavy" width="180" height="60" /></a></div>
-
-          <span data-ghost-search="" className="epcl-search-button epcl-button gradient-button circle"><svg className="icon large">
-             
-            </svg></span>
-
-          
-          <nav className="main-nav">
-            <ul className="menu underline-effect">
-              <li className=" nav-home"><a href="https://ghost.estudiopatagon.com/wavy/">Home</a></li>
-              <li className=" nav-tag"><a href="https://ghost.estudiopatagon.com/wavy/tag/design/">Tag</a></li>
-              <li className=" nav-style-guide"><a href="https://ghost.estudiopatagon.com/wavy/style-guide/">Style Guide</a></li>
-              <li className=" nav-membership"><a href="https://ghost.estudiopatagon.com/wavy/membership/">Membership</a></li>
-
-              <li className="nav-more menu-item-has-children">
-                <span className="link">More</span>
-                <ul className="sub-menu">
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/masonry/">Home Grid Posts</a></li>
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/cta-masonry/">Home Grid w/ Intro</a></li>
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/cta-slider/">Home Slider w/ Intro</a></li>
-                  <li className=" current-menu-item"><a href="https://ghost.estudiopatagon.com/wavy/cta-classNameic/">Home classNameic w/ Intro</a></li>
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/vertical/">Post Vertical</a></li>
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/nosidebar/">Post without Sidebar</a></li>
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/classNameic/">Post classNameic</a></li>
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/fullwidth/">Post Fullwidth</a></li>
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/author/jonathan-doe/">Author</a></li>
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/meet-the-authors/">Meet the Authors</a></li>
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/explore-our-tags/">Tags Archive</a></li>
-                  <li className=""><a href="https://ghost.estudiopatagon.com/wavy/404/">404 Page</a></li>
-                </ul>
-              </li>
-
-              <li className="search-menu-item hide-on-mobile hide-on-tablet hide-on-desktop-sm"><span className="link" data-ghost-search=""><svg className="icon black large">
-                    
-                  </svg> Search</span></li>
-
-            </ul>
-
-
-          </nav>
-          
-
-          <div className="account underline-effect hide-on-mobile hide-on-tablet hide-on-desktop-sm">
-            <a href="https://ghost.estudiopatagon.com/wavy/signin" className="link-button epcl-login">
-              Login
-            </a>
-            <a href="https://ghost.estudiopatagon.com/wavy/subscribe" className="epcl-button gradient-button icon wave-button">
-              <svg className="icon large">
-              
-              </svg>
-              Subscribe
-            </a>
-          </div>
-
-          <div className="clear"></div>
-
-        </div>
-
-        <div className="clear"></div>
-      </div>
-
-    </div>
-    
-
-    <div className="clear"></div>
-
-  </header>
+     <header className="header-section">
+             <div className="header-wrap">
+               <div className="header-logo">
+                 <a href="https://forest.quest" className="is-image"><img src="images/Brandmark-design--5-..png" alt="The Forest" /></a>
+               </div>
+               <div className="header-nav">
+                 <input id="toggle" className="header-checkbox" type="checkbox" />
+                 <label className="header-toggle" for="toggle">
+                   <span>
+                     <span className="bar"></span>
+                     <span className="bar"></span>
+                     <span className="bar"></span>
+                   </span>
+                 </label>
+                 <nav>
+     
+                   <ul>
+                     <li><a href="https://forest.quest/manifesto/">Manifesto</a></li>
+                     <li><a href="https://forest.quest/foundations/">Foundations</a></li>
+                     <li><a href="https://forest.quest/coaching/">Coaching</a></li>
+                   </ul>
+     
+                   <ul>
+                     <li className="signin"><a href="https://forest.quest/signin/">Sign in</a></li>
+                     <li className="signup"><a href="https://forest.quest/purchase/" className="global-button">Purchase</a></li>
+                   </ul>
+                   <span data-ghost-search=""><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M16.877 18.456l5.01 5.011c.208.197.484.308.771.308a1.118 1.118 0 00.809-1.888l-5.011-5.01c3.233-4.022 2.983-9.923-.746-13.654l-.291-.29a.403.403 0 00-.095-.075C13.307-.77 7.095-.649 3.223 3.223c-3.997 3.998-3.997 10.489 0 14.485 3.731 3.731 9.633 3.981 13.654.748zm-.784-13.617a7.96 7.96 0 010 11.254 7.961 7.961 0 01-11.253 0 7.96 7.96 0 010-11.254 7.961 7.961 0 0111.253 0z"></path>
+                     </svg></span>
+                 </nav>
+               </div>
+             </div>
+           </header>
   );
 }
 
