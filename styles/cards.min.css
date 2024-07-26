@@ -1,4 +1,4 @@
-/***/
+/*****/
 .kg-audio-card,
 .kg-audio-card * {
   box-sizing: border-box
@@ -1498,3 +1498,98 @@
 .kg-video-card input[type=range]:active::-ms-thumb {
   transform: scale(1.2)
 }
+
+
+
+  .settings-panel {
+    --theme-color: #fda403;
+    width: 240px;
+    position: fixed;
+    top: 200px;
+    right: 0;
+    background: var(--bg-color);
+    border: 1px solid var(--text-light);
+    border-radius: 6px;
+    padding: 24px;
+    z-index: 9999;
+    box-shadow: var(--shadow);
+    transition: right 0.25s;
+  }
+
+  .settings-panel.closed {
+    right: -240px;
+  }
+
+  .settings-panel .icon {
+    position: absolute;
+    left: -38px;
+    background: var(--bg-color);
+    border: 1px solid var(--text-light);
+    padding: 8px;
+    line-height: 0;
+    border-radius: 6px 0 0 6px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+  }
+
+  .settings-panel .settings-heading {
+    padding-bottom: 16px;
+  }
+
+  .settings-panel .icon svg {
+    width: 20px;
+    height: 20px;
+    color: var(--theme-color);
+  }
+
+  .settings-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .settings-options:last-child {
+    padding-bottom: 0;
+  }
+
+  .settings-options .option-name {
+    flex-grow: 1;
+  }
+
+  .settings-options .switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 18px;
+    margin-top: 8px;
+    background-color: #8b8b8b;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .settings-options .switch::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    top: 1px;
+    left: 1px;
+    transition: all 0.25s;
+  }
+
+  .settings-options .checkbox {
+    display: none;
+  }
+
+  .settings-options .checkbox:checked+.switch::after {
+    left: 18px;
+    transition: all 0.25s;
+  }
+
+  .settings-options .checkbox:checked+.switch {
+    background-color: var(--theme-color);
+  }
