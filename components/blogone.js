@@ -30,7 +30,7 @@ export default function BlogOne({
     	                               
     	                                                <div className="featured-image hover-effect grid-50 tablet-grid-50 grid-parent">
     	                               
-    	                               
+    	                               <a href="/airo/classNameic/" className="thumb cover">
     	                        {post.videoType === "upload" ? (
                 <video
                   className="img thumb cover"
@@ -42,7 +42,9 @@ export default function BlogOne({
                   className="img thumb cover"
                   id={post.youtube || "Thumbnail"}
                 />
-              )}                             {/* <a href="/airo/classNameic/" className="thumb cover"
+              )}   
+</a>
+{/* <a href="/airo/classNameic/" className="thumb cover"
     	                                         //style="background: url(images/samuel-schwendener-tF2rITQWkNY-unsplash.jpg) no-repeat;"
     	                                         ></a>*/}
     	                                                </div>
