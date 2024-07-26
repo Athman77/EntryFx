@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { cx } from "@/utils/all";
@@ -19,62 +18,65 @@ export default function BlogOne({
   fontWeight,
 }) {
   const imageProps = post?.mainImage ? urlForImage(post.mainImage) : null;
-  const AuthorimageProps = post?.author?.image ?
-    urlForImage(post.author.image) :
-    null;
+  const AuthorimageProps = post?.author?.image
+    ? urlForImage(post.author.image)
+    : null;
   return (
     <>
-    
       <article className="post tag-lifestyle tag-travel tag-education fade-in-up">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="post-thumbnail-wrap">
-                  <a href="/riding-bicycle-is-environment-friendly-and-good-for-health/" aria-label="Riding bicycle is environment friendly and good for health" tabindex="-1">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="post-thumbnail-wrap">
+                <a
+                  href="/riding-bicycle-is-environment-friendly-and-good-for-health/"
+                  aria-label="Riding bicycle is environment friendly and good for health"
+                  tabindex="-1"
+                >
                   {post.videoType === "upload" ? (
-                <video
-                  className="img post-thumbnail"
-                  controls
-                  src={post?.videoUrl}
-                />
-              ) : (
-                <Vid
-                  className="img 
+                    <video
+                      className="img post-thumbnail"
+                      controls
+                      src={post?.videoUrl}
+                    />
+                  ) : (
+                    <Vid
+                      className="img 
                  post-thumbnail"
-                  id={post.youtube || "Thumbnail"}
-                />
-              )}   
-                  
-                   {/* <img className="post-thumbnail" src="" alt="Riding bicycle is environment friendly and good for health" />
-                    */}
-                  </a>
-                </div>
+                      id={post.youtube || "Thumbnail"}
+                    />
+                  )}
+
+                  {/* <img className="post-thumbnail" src="" alt="Riding bicycle is environment friendly and good for health" />
+                   */}
+                </a>
               </div>
-       
-              <div className="col-md-6">
-                <div className="post-container">
-                  <time className="date" datetime="2019-07-22 07:14">{format(
-                      parseISO(post?.publishedAt || post._createdAt),
-                      "MMMM dd, yyyy"
-                    )}{" "}</time>
-                  <span className="watermark" aria-hidden="true"></span>
-                  <div className="primary-tag">
-                    <a href="/tag/lifestyle/">Lifestyle</a>
-                  </div>
-                  <h2 className="post-title h1"><a href="/riding-bicycle-is-environment-friendly-and-good-for-health/">{post.title}</a></h2>
-                  <div className="separetor"></div>
-                  <div className="reading-time">3 min read</div>
+            </div>
+
+            <div className="col-md-6">
+              <div className="post-container">
+                <time className="date" datetime="2019-07-22 07:14">
+                  {format(
+                    parseISO(post?.publishedAt || post._createdAt),
+                    "MMMM dd, yyyy"
+                  )}{" "}
+                </time>
+                <span className="watermark" aria-hidden="true"></span>
+                <div className="primary-tag">
+                  <a href="/tag/lifestyle/">Lifestyle</a>
                 </div>
+                <h2 className="post-title h1">
+                  <a href="/riding-bicycle-is-environment-friendly-and-good-for-health/">
+                    {post.title}
+                  </a>
+                </h2>
+                <div className="separetor"></div>
+                <div className="reading-time">3 min read</div>
               </div>
             </div>
           </div>
-        </article>
-    
-    
-    
-    
-    
-  
+        </div>
+      </article>
     </>
   );
 }
