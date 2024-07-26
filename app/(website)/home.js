@@ -1,3 +1,4 @@
+//
 
 import Link from "next/link";
 import Container from "@/components/container";
@@ -59,6 +60,23 @@ export default function Post({ posts }) {
 	    </section>
 	
 	</div>
+	
+	  <main className="main-content-area">
+    <div className="site-content-wrap">
+      <div className="post-list">
+        
+       {posts.slice(0, 10).map((post) => (
+                  <BlogOne
+                    key={post._id}
+                    post={post}
+                    aspect="landscape"
+                    preloadImage={true}
+                  />
+                ))}
+        
+        </div>
+        </div>
+        </main>
    
       {/* <!------ post card------>*/}
   {/*  <Header
