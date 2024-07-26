@@ -35,13 +35,13 @@ export default function BlogOne({
            
              {post.videoType === "upload" ? (
                 <video
-                  className=""
+                  className="img"
                   
                   src={post?.videoUrl}
                 />
               ) : (
                 <Vid
-                  className=""
+                  className="img"
                   id={post.youtube || "Thumbnail"}
                 />
               )}
