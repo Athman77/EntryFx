@@ -57,7 +57,7 @@ export default function Navbar(props) {
             className="logo-image"
             id="logo"
           >
-            <img src="https://cdn.sanity.io/images/wusctyxy/production/b878a993591b10ad294912b0577ec666a93d243c-176x133.png" alt="Advant" />
+            <img src="https://cdn.sanity.io/images/wusctyxy/production/3a34bad19657e6a2b4dd81e285fc8f5491f9c32b-447x113.svg" alt="Advant" />
           </a>
           <a
             href="https://advant.gbjsolution.com"
