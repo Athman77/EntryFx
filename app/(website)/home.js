@@ -94,9 +94,11 @@ export default function Post({ posts }) {
           <div className="container-fluid">
             <div className="row">
               <div className="col text-center">
-                <a href="#" className="btn btn-outline-secondary js-load-more">
+                  <Link href="/archive">
+                <a className="btn btn-outline-secondary js-load-more">
                   Load More
                 </a>
+                  </Link>
                 <div className="d-none end-message js-end-message">
                   That's all. No more posts to display.
                 </div>
