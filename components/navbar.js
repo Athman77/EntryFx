@@ -52,20 +52,24 @@ export default function Navbar(props) {
     <header className="site-header d-flex">
       <div className="container-fluid d-flex justify-content-between align-items-center">
         <div className="logo">
+    <Link href="/">
           <a
-            href="https://advant.gbjsolution.com"
+          
             className="logo-image"
             id="logo"
           >
             <img src="https://cdn.sanity.io/images/wusctyxy/production/3a34bad19657e6a2b4dd81e285fc8f5491f9c32b-447x113.svg" alt="Advant" />
           </a>
+              </Link>
+              <Link href="/">
           <a
-            href="https://advant.gbjsolution.com"
+          
             className="logo-image"
             id="logo-alternete"
           >
-            <img src="images/logo-alternate.svg" alt="Advant" />
+            <img src="https://cdn.sanity.io/images/wusctyxy/production/3a34bad19657e6a2b4dd81e285fc8f5491f9c32b-447x113.svg" alt="Advant" />
           </a>
+              </Link>
         </div>
         <nav className="nav-wrap d-none d-lg-block">
           <ul className="nav-list">
