@@ -4,8 +4,8 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "EXsport",
-    "short_name": "Exsport",
+    "name": "Advant",
+    "short_name": "Advant",
     "description": "Get Live Football Scores and Real-Time Football Results with LiveScore",
     "icons": [
       {
