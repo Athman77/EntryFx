@@ -3,7 +3,7 @@
 
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
-//import BlogOne from "@/components/blogone";
+import BlogOne from "@/components/blogone";
 import BlogTwo from "@/components/blogtwo";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
