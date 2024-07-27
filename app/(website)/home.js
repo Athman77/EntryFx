@@ -69,7 +69,7 @@ export default function Post({ posts }) {
               <div className="col-lg-6 col-xl-5">
                 <div className="headshot-wrap">
                   <img
-                    src="images/headshot.png"
+                    src="https://cdn.sanity.io/images/wusctyxy/production/720d11cb3a112908533d81c10d9bc3dc455bcd4f-661x691.png"
                     alt="Head shot portrait"
                     className="headshot"
                   />
