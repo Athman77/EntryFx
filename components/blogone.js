@@ -33,21 +33,24 @@ export default function BlogOne({
                   aria-label="Riding bicycle is environment friendly and good for health"
                   tabindex="-1"
                 >
-                  {post.videoType === "upload" ? (
-                    <video
-                      className="img post-thumbnail"
-                      controls
-                      src={post?.videoUrl}
-                    />
-                  ) : (
-                    <Vid
-                      className="img 
-                 post-thumbnail"
-                      id={post.youtube || "Thumbnail"}
-                    />
-                  )}
+                  {imageProps ? (
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                      
+                    
+                        src={imageProps.src}
+                         className="post-thumbnail"
+                        alt=""
+                        
+                      />
+                    ) : (
+                      <span classNameName="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 text-gray-200">
+                        <PhotoIcon />
+                      </span>
+                    )}
 
-                  {/* <img className="post-thumbnail" src="" alt="Riding bicycle is environment friendly and good for health" />
+                  {/* <img  src="" alt="Riding bicycle is environment friendly and good for health" />
                    */}
                 </a>
               </div>
