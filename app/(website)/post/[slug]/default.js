@@ -1,11 +1,8 @@
-//
-/**/
 
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/container";
 import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import { notFound } from "next/navigation";
 import { PortableText } from "@/lib/sanity/plugins/portabletext";
 import { urlForImage } from "@/lib/sanity/image";
