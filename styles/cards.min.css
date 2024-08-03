@@ -2,6 +2,12 @@
 .bg {
     background-image: url('https://cdn.sanity.io/images/wusctyxy/production/862609bc9723a18d494f3d85f26a10cfb94df443-1440x1781.jpg');
 }
+.bg-post {
+background-image: url('https://cdn.sanity.io/images/wusctyxy/production/862609bc9723a18d494f3d85f26a10cfb94df443-1440x1781.jpg');
+}
+    
+
+
 .kg-audio-card,
 .kg-audio-card * {
   box-sizing: border-box
