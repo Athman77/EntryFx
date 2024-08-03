@@ -28,8 +28,13 @@ export default function BlogOne({
           <div className="row">
             <div className="col-md-6">
               <div className="post-thumbnail-wrap">
+         <Link
+                href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                  post.slug.current
+                }`}
+              >
                 <a
-                  href="/riding-bicycle-is-environment-friendly-and-good-for-health/"
+                  
                   aria-label="Riding bicycle is environment friendly and good for health"
                   tabindex="-1"
                 >
@@ -53,6 +58,7 @@ export default function BlogOne({
                   {/* <img  src="" alt="Riding bicycle is environment friendly and good for health" />
                    */}
                 </a>
+                  </Link>
               </div>
             </div>
 
@@ -69,9 +75,15 @@ export default function BlogOne({
                   <a href="/tag/lifestyle/">Lifestyle</a>
                 </div>
                 <h2 className="post-title h1">
-                  <a href="/riding-bicycle-is-environment-friendly-and-good-for-health/">
+                  <Link
+                href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                  post.slug.current
+                }`}
+              >
+                  <a>
                     {post.title}
                   </a>
+                </Link>
                 </h2>
                 <div className="separetor"></div>
                 <div className="reading-time">3 min read</div>
