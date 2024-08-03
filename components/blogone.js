@@ -28,26 +28,22 @@ export default function BlogOne({
           <div className="row">
             <div className="col-md-6">
               <div className="post-thumbnail-wrap">
-         <Link
-                href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                  post.slug.current
-                }`}
-              >
-                <a
-                  
-                  aria-label="Riding bicycle is environment friendly and good for health"
-                  tabindex="-1"
+                <Link
+                  href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                    post.slug.current
+                  }`}
                 >
-                  {imageProps ? (
+                  <a
+                    aria-label="Riding bicycle is environment friendly and good for health"
+                    tabindex="-1"
+                  >
+                    {imageProps ? (
                       <img
                         loading="lazy"
                         decoding="async"
-                      
-                    
                         src={imageProps.src}
-                         className="post-thumbnail"
+                        className="post-thumbnail"
                         alt=""
-                        
                       />
                     ) : (
                       <span classNameName="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 text-gray-200">
@@ -55,10 +51,10 @@ export default function BlogOne({
                       </span>
                     )}
 
-                  {/* <img  src="" alt="Riding bicycle is environment friendly and good for health" />
-                   */}
-                </a>
-                  </Link>
+                    {/* <img  src="" alt="Riding bicycle is environment friendly and good for health" />
+                     */}
+                  </a>
+                </Link>
               </div>
             </div>
 
@@ -76,14 +72,12 @@ export default function BlogOne({
                 </div>
                 <h2 className="post-title h1">
                   <Link
-                href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                  post.slug.current
-                }`}
-              >
-                  <a>
-                    {post.title}
-                  </a>
-                </Link>
+                    href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                      post.slug.current
+                    }`}
+                  >
+                    <a>{post.title}</a>
+                  </Link>
                 </h2>
                 <div className="separetor"></div>
                 <div className="reading-time">3 min read</div>

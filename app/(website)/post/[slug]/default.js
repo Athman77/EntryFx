@@ -27,44 +27,38 @@ export default function Post(props) {
     notFound();
   }
 
-  const imageProps = post?.mainImage
-    ? urlForImage(post?.mainImage)
-    : null;
-  const cover = post?.videoCover
-    ? urlForImage(post?.videoCover)
-    : null;
+  const imageProps = post?.mainImage ? urlForImage(post?.mainImage) : null;
+  const cover = post?.videoCover ? urlForImage(post?.videoCover) : null;
   const AuthorimageProps = post?.author?.image
     ? urlForImage(post.author.image)
     : null;
 
   return (
     <>
-    
       <div id="header" className="header-wrap">
         <Navbar />
-      </div> <
-      main className = "main-content-area" >
+      </div>{" "}
+      <main className="main-content-area">
         <div className="site-content-wrap">
           <div className="container-fluid">
             <div className="row">
               <div className="col">
                 <div className="post-wrap">
-    
                   <article className="post-single post tag-lifestyle tag-travel tag-education">
-    
                     <div className="post-header bg-post d-flex has-image">
                       <div className="header-content-wrap">
-                        <div className="primary-tag text-center"><a href="/tag/lifestyle/">Lifestyle</a></div>
+                        <div className="primary-tag text-center">
+                          <a href="/tag/lifestyle/">Lifestyle</a>
+                        </div>
                         <h1 className="post-title text-center">{post.title}</h1>
                         <div className="post-meta mx-auto d-flex justify-content-between">
                           <div className="reading-time">3 min read</div>
                           <time className="date" datetime="2019-07-22 07:14">
-                         {format(
-                          parseISO(
-                            post?.publishedAt || post._createdAt
-                          ),
-                          "MMMM dd, yyyy"
-                        )}{" "}</time>
+                            {format(
+                              parseISO(post?.publishedAt || post._createdAt),
+                              "MMMM dd, yyyy"
+                            )}{" "}
+                          </time>
                         </div>
                       </div>
                     </div>
@@ -72,32 +66,13 @@ export default function Post(props) {
                       {post.body && <PortableText value={post.body} />}
                     </div>
                   </article>
-    
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </main>
-    
-    
-    <Footer />
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
- 
+      </main>
+      <Footer />
     </>
   );
 }
