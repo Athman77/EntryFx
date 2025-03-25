@@ -28,6 +28,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-layout="narrow" 
+      data-theme="light"
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable, "light")}>
       <body className=" home-template global-cover-homepage global-alternative-buttons">
