@@ -1,5 +1,3 @@
-//.
-//
 
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
@@ -54,10 +52,11 @@ export default async function Post({ searchParams }) {
                 
                  <div className="post-list">
                            {posts &&
-                  posts.map((post) => (
+                  posts.map((post, index) => (
                     <BlogOne
                       key={post._id}
                       post={post}
+                      chapter={posts.length - index}
                       aspect="landscape"
                       preloadImage={true}
                     />
