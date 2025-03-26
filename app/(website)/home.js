@@ -82,9 +82,10 @@ export default function Post({ posts }) {
       <main className="main-content-area">
         <div className="site-content-wrap">
           <div className="post-list">
-            {posts.slice(0, 10).map((post) => (
+            {posts.slice(0, 10).map((post, index) => (
               <BlogOne
                 key={post._id}
+                chapter={index}
                 post={post}
                 aspect="landscape"
                 preloadImage={true}
