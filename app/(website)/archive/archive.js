@@ -56,7 +56,7 @@ export default async function Post({ searchParams }) {
                     <BlogOne
                       key={post._id}
                       post={post}
-                      chapter={posts.length - index}
+                    //  chapter={posts.length - index}
                       aspect="landscape"
                       preloadImage={true}
                     />
