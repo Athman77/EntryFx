@@ -85,7 +85,7 @@ export default function Post({ posts }) {
             {posts.slice(0, 10).map((post, index) => (
               <BlogOne
                 key={post._id}
-                chapter={index}
+                chapter={index+1}
                 post={post}
                 aspect="landscape"
                 preloadImage={true}
