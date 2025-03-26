@@ -15,6 +15,7 @@ export default function BlogOne({
   pathPrefix,
   preloadImage,
   fontSize,
+  chapter,
   fontWeight,
 }) {
   const imageProps = post?.mainImage ? urlForImage(post.mainImage) : null;
@@ -68,7 +69,7 @@ export default function BlogOne({
                 </time>
                 <span className="watermark" aria-hidden="true"></span>
                 <div className="primary-tag">
-                  <a href="/tag/lifestyle/">Lifestyle</a>
+                  <a href="/tag/lifestyle/">Chapter {chapter}</a>
                 </div>
                 <h2 className="post-title h1">
                   <Link
