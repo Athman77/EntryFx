@@ -58,7 +58,7 @@ export default function Navbar(props) {
             className="logo-image"
             id="logo"
           >
-            <img src="https://cdn.sanity.io/images/wusctyxy/production/3a34bad19657e6a2b4dd81e285fc8f5491f9c32b-447x113.svg" alt="Advant" />
+            <img src="https://cdn.sanity.io/images/11ognen8/production/eab87248fd773280b696b792f649c9f1e96e22f3-622x192.png" alt="Advant" />
           </a>
               </Link>
               <Link href="/">
@@ -67,7 +67,7 @@ export default function Navbar(props) {
             className="logo-image"
             id="logo-alternete"
           >
-            <img src="https://cdn.sanity.io/images/wusctyxy/production/3a34bad19657e6a2b4dd81e285fc8f5491f9c32b-447x113.svg" alt="Advant" />
+            <img src="https://cdn.sanity.io/images/11ognen8/production/eab87248fd773280b696b792f649c9f1e96e22f3-622x192.png" alt="Advant" />
           </a>
               </Link>
         </div>
