@@ -1,4 +1,3 @@
-//
 
 "use client";
 
@@ -58,7 +57,7 @@ export default function Navbar(props) {
             className="logo-image"
             id="logo"
           >
-            <img src="https://cdn.sanity.io/images/11ognen8/production/eab87248fd773280b696b792f649c9f1e96e22f3-622x192.png" alt="Advant" />
+            <img src="https://cdn.sanity.io/images/11ognen8/production/62948b14bb9aa6e81e82c4b0f0402bbc5d8fca9c-994x282.png" alt="Advant" />
           </a>
               </Link>
               <Link href="/">
@@ -67,7 +66,7 @@ export default function Navbar(props) {
             className="logo-image"
             id="logo-alternete"
           >
-            <img src="https://cdn.sanity.io/images/11ognen8/production/eab87248fd773280b696b792f649c9f1e96e22f3-622x192.png" alt="Advant" />
+            <img src="https://cdn.sanity.io/images/11ognen8/production/62948b14bb9aa6e81e82c4b0f0402bbc5d8fca9c-994x282.png" alt="Advant" />
           </a>
               </Link>
         </div>
