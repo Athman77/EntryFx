@@ -62,7 +62,7 @@ export default function Navbar(props) {
               </Link>
               <Link href="/">
           <a
-          
+           
             className="logo-image"
             id="logo-alternete"
           >
