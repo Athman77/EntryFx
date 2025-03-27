@@ -15,54 +15,37 @@ import { myLoader } from "@/utils/all";
 
 export default function Navbar(props) {
   
-  
-  
   const [showSearch, setShowSearch] = useState(false);
-  const openSearch = () => {
-    setShowSearch(true);
-  };
-
+  const [query, setQuery] = useState("");
   const router = useRouter();
-
-  const [param, setParam] = useState("");
-
-  const onSearchHandler = (e) => {
-    e.preventDefault();
-
-    if (e.key === "Enter") {
-      const q = e.currentTarget.value.toLowerCase();
-      router.push(`/search?search=${q}`);
-      setShowSearch(false);
-      router.push(
-        {
-          pathname: `/search`,
-          query: q ? { q } : {},
-        },
-        undefined,
-        { shallow: true }
-      );
-    } else if (e.type === "click") {
-      const q = param.toLowerCase();
-      router.push(
-        {
-          pathname: `/search`,
-          query: q ? { q } : {},
-        },
-        undefined,
-        { shallow: true }
-      );
-    }
+  
+  // Debounce function to optimize input search performance
+  const debounce = (func, delay) => {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => func(...args), delay);
+    };
   };
-
-  const onChange = (e) => {
-    const target = e.target;
-    const value = target.value;
-    setParam(value);
+  
+  // Handle search input changes
+  const handleInputChange = (e) => {
+    setQuery(e.target.value);
   };
-
+  
+  // Optimized search handler
+  const searchHandler = useCallback(
+    debounce((searchQuery) => {
+      if (searchQuery.trim().length >= 3) {
+        router.push(`/search?search=${searchQuery.toLowerCase()}`);
+      }
+    }, 500), // 500ms delay
+    []
+  );
+  
   useEffect(() => {
-    router.prefetch("/search");
-  }, [router]);
+    searchHandler(query);
+  }, [query]);
   
   
   
