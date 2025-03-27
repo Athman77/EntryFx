@@ -247,7 +247,7 @@ export default function Navbar(props) {
      defaultValue={param}
      onKeyUp={onSearchHandler}
                 onChange={(e) => onChange(e)}
-      type="text"
+      type="number"
         className="form-control js-search-input" 
           placeholder="Type to search"
             id="search-input" aria-label="Type to search"
