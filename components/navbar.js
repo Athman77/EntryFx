@@ -39,7 +39,7 @@ export default function Navbar(props) {
       if (searchQuery.trim().length >= 3) {
         router.push(`/search?search=${searchQuery.toLowerCase()}`);
       }
-    }, 1500), // 500ms delay
+    }, 1200), // 500ms delay
     []
   );
   
@@ -232,7 +232,7 @@ export default function Navbar(props) {
             <div className="input-group">
               <input
      onChange={handleInputChange}
-     defaultValue={param}
+     //defaultValue={param}
                 autoFocus
      value={query}
       type="text"
