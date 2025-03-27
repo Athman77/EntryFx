@@ -1,4 +1,4 @@
-//
+
 
 "use client";
 
@@ -253,7 +253,7 @@ export default function Navbar(props) {
             id="search-input" aria-label="Type to search"
               role="searchbox" />
             </div>
-     </form>
+     </div>
           <div id="search-results"></div>
         </div>
       </div>
