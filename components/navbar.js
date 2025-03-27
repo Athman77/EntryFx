@@ -249,7 +249,7 @@ export default function Navbar(props) {
                 onChange={(e) => onChange(e)}
       type="number"
         className="form-control js-search-input" 
-          placeholder="Type to search"
+          placeholder="Search by Quranic chapter"
             id="search-input" aria-label="Type to search"
               role="searchbox" />
             </div>
