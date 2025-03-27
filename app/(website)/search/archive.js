@@ -80,7 +80,7 @@ export default async function Post({ searchParams }) {
             
             {filteredProducts &&
                           filteredProducts.map((post) => (
-                            <BlogOne
+                            <PostList
                               key={post._id}
                               post={post}
                               aspect="landscape"
