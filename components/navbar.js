@@ -232,6 +232,8 @@ export default function Navbar(props) {
             <div className="input-group">
               <input
      onChange={handleInputChange}
+     defaultValue={param}
+                autoFocus
      value={query}
       type="text"
         className="form-control js-search-input" 
