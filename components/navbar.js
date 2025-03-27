@@ -59,7 +59,7 @@ export default function Navbar(props) {
   };
 
   useEffect(() => {
-    router.prefetch("/search");
+    router.push("/search");
   }, [router]);
   
   const leftmenu = [
