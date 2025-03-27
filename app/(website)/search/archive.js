@@ -1,6 +1,6 @@
 //
 
-
+import Navbar from "@/components/navbar";
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
 import BlogOne from "@/components/blogone";
@@ -80,7 +80,7 @@ export default async function Post({ searchParams }) {
             
             {filteredProducts &&
                           filteredProducts.map((post) => (
-                            <PostList
+                            <BlogOne
                               key={post._id}
                               post={post}
                               aspect="landscape"
