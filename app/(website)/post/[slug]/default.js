@@ -45,7 +45,7 @@ export default function Post(props) {
                     <div className="post-header bg-post d-flex has-image">
                       <div className="header-content-wrap">
                         <div className="primary-tag text-center">
-                          <a href="/tag/lifestyle/">Lifestyle</a>
+                          <a href="/tag/lifestyle/">Chapter {imageProps ? post.mainImage.alt : "Quran"}</a>
                         </div>
                         <h1 className="post-title text-center">{post.title}</h1>
                         <div className="post-meta mx-auto d-flex justify-content-between">
