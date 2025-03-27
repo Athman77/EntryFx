@@ -17,7 +17,7 @@ export default async function Post({ searchParams }) {
   const pageIndex = parseInt(page, 10) || 1;
 
   // Set the number of posts to be displayed per page
-  const POSTS_PER_PAGE = 7;
+  const POSTS_PER_PAGE = 114;
 
   // Define the parameters for fetching posts based on the current page
   const params = {
