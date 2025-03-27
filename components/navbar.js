@@ -1,6 +1,6 @@
+//
 
 "use client";
-
 
 import { Fragment } from "react";
 import { Menu, Transition, Disclosure } from "@headlessui/react";
@@ -16,7 +16,6 @@ import { myLoader } from "@/utils/all";
 
 export default function Navbar(props) {
   
-  const [showSearch, setShowSearch] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
   const openSearch = () => {
     setShowSearch(true);
@@ -63,8 +62,6 @@ export default function Navbar(props) {
   useEffect(() => {
     router.prefetch("/search");
   }, [router]);
-  
-  
   
   const leftmenu = [
     {
@@ -247,7 +244,7 @@ export default function Navbar(props) {
       {/* <form id="search-form">*/}
             <div className="input-group">
               <input
-     autoFocus
+     defaultValue={param}
      onKeyUp={onSearchHandler}
                 onChange={(e) => onChange(e)}
       type="text"
@@ -256,7 +253,7 @@ export default function Navbar(props) {
             id="search-input" aria-label="Type to search"
               role="searchbox" />
             </div>
-     {/* </form>*/}
+     {/*    </form>*/}
           <div id="search-results"></div>
         </div>
       </div>
