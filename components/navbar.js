@@ -1,4 +1,4 @@
-//
+
 "use client";
 
 import { Fragment } from "react";
@@ -14,28 +14,62 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { myLoader } from "@/utils/all";
 
 export default function Navbar(props) {
+  
   const [showSearch, setShowSearch] = useState(false);
   const [query, setQuery] = useState("");
   const router = useRouter();
-
+  
+  // Debounce function to optimize input search performance
+  const debounce = (func, delay) => {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => func(...args), delay);
+    };
+  };
+  
   // Handle search input changes
   const handleInputChange = (e) => {
-    const newQuery = e.target.value;
-    setQuery(newQuery);
-
-    if (newQuery.trim().length >= 3) {
-      router.push(`/search?search=${newQuery.toLowerCase()}`);
-    }
+    setQuery(e.target.value);
   };
-
+  
+  // Optimized search handler
+  const searchHandler = useCallback(
+    debounce((searchQuery) => {
+      if (searchQuery.trim().length >= 3) {
+        router.push(`/search?search=${searchQuery.toLowerCase()}`);
+      }
+    }, 1500), // 500ms delay
+    []
+  );
+  
+  useEffect(() => {
+    searchHandler(query);
+  }, [query]);
+  
+  
+  
+  
   const leftmenu = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    {
+      label: "Home",
+      href: "/",
+    },
+    {
+      label: "About",
+      href: "/about",
+    },
+    {
+      label: "Contact",
+      href: "/contact",
+    },
   ];
 
   const rightmenu = [
-    { label: "Archive", href: "/archive" },
+    {
+      label: "Archive",
+      href: "/archive",
+    },
     {
       label: "Pro Version",
       href: "https://stablo-pro.web3templates.com/",
@@ -49,21 +83,101 @@ export default function Navbar(props) {
     },
   ];
 
+  const mobilemenu = [...leftmenu, ...rightmenu];
+
   return (
     <>
-      <header className="site-header d-flex">
-        <div className="container-fluid d-flex justify-content-between align-items-center">
-          <div className="logo">
-            <Link href="/">
-              <a className="logo-image" id="logo">
-                <img
-                  src="https://cdn.sanity.io/images/11ognen8/production/62948b14bb9aa6e81e82c4b0f0402bbc5d8fca9c-994x282.png"
-                  alt="Advant"
-                />
+    <header className="site-header d-flex">
+      <div className="container-fluid d-flex justify-content-between align-items-center">
+        <div className="logo">
+    <Link href="/">
+          <a
+          
+            className="logo-image"
+            id="logo"
+          >
+            <img src="https://cdn.sanity.io/images/11ognen8/production/62948b14bb9aa6e81e82c4b0f0402bbc5d8fca9c-994x282.png" alt="Advant" />
+          </a>
+              </Link>
+              <Link href="/">
+          <a
+           
+            className="logo-image"
+            id="logo-alternete"
+          >
+            <img src="https://cdn.sanity.io/images/11ognen8/production/62948b14bb9aa6e81e82c4b0f0402bbc5d8fca9c-994x282.png" alt="Advant" />
+          </a>
+              </Link>
+        </div>
+        <nav className="nav-wrap d-none d-lg-block">
+          <ul className="nav-list">
+            <li className="home nav-item nav-item-current">
+              <a href="https://advant.gbjsolution.com/">Home</a>
+            </li>
+            <li className="features nav-item">
+              <a href="https://advant.gbjsolution.com/features/">Features</a>
+            </li>
+            <li className="style-guide nav-item">
+              <a href="https://advant.gbjsolution.com/style-guide/">
+                Style Guide
               </a>
-            </Link>
+            </li>
+            <li className="tags nav-item">
+              <a href="https://advant.gbjsolution.com/tag-archive/">Tags</a>
+            </li>
+            <li className="authors nav-item">
+              <a href="https://advant.gbjsolution.com/author-archive/">
+                Authors
+              </a>
+            </li>
+            <li className="contact nav-item">
+              <a href="https://advant.gbjsolution.com/contact/">Contact</a>
+            </li>
+            <li className="error-404 nav-item">
+              <a href="https://advant.gbjsolution.com/error-404/">Error 404</a>
+            </li>
+            <li className="nav-item ">
+              <a href="/signin/">Sign in</a>
+            </li>
+            <li className="nav-item ">
+              <a href="/signup/">Sign up</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="nav-right">
+          <input
+            type="checkbox"
+            name="theme-toggle"
+            id="switch_theme"
+            className="theme-toggle"
+          />
+          <label for="switch_theme" className="theme-toggle-label fade-in">
+            Toggle Theme
+          </label>
+          <a
+            href="#"
+            onClick={() => setShowSearch(true)} 
+            className="search-icon js-search-button"
+            aria-label="Search"
+            tabindex="0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M13.858,15.283a8.57,8.57,0,1,1,1.425-1.425L24,22.576,22.576,24ZM2.014,8.561A6.547,6.547,0,1,0,8.561,2.014,6.554,6.554,0,0,0,2.014,8.561Z"></path>
+            </svg>
+          </a>
+          <div className="menu-icon d-lg-none js-menu-open">
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
           </div>
-          <nav className="nav-wrap d-none d-lg-block">
+        </div>
+        <nav className="mobile-menu nav-wrap d-lg-none" id="mobile-menu">
+          <ul className="nav-list">
             <ul className="nav-list">
               <li className="home nav-item nav-item-current">
                 <a href="https://advant.gbjsolution.com/">Home</a>
@@ -88,71 +202,50 @@ export default function Navbar(props) {
                 <a href="https://advant.gbjsolution.com/contact/">Contact</a>
               </li>
               <li className="error-404 nav-item">
-                <a href="https://advant.gbjsolution.com/error-404/">Error 404</a>
+                <a href="https://advant.gbjsolution.com/error-404/">
+                  Error 404
+                </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <a href="/signin/">Sign in</a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <a href="/signup/">Sign up</a>
               </li>
             </ul>
-          </nav>
-          <div className="nav-right">
-            <a
-              href="#"
-              onClick={() => setShowSearch(true)}
-              className="search-icon js-search-button"
-              aria-label="Search"
-              tabIndex="0"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path d="M13.858,15.283a8.57,8.57,0,1,1,1.425-1.425L24,22.576,22.576,24ZM2.014,8.561A6.547,6.547,0,1,0,8.561,2.014,6.554,6.554,0,0,0,2.014,8.561Z"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </header>
-      {showSearch && (
-        <div className="search-popup js-search-popup visible">
-          <div onClick={() => setShowSearch(false)} className="close-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12.021,13.435,1.414,24.042,0,22.628,10.607,12.021,0,1.414,1.414,0,12.021,10.607,22.628,0l1.414,1.414L13.435,12.021,24.042,22.628l-1.414,1.414Z"></path>
-            </svg>
-          </div>
-          <div className="container popup-inner">
-            <div className="row">
-              <div className="col-sm-12">
-                <form id="search-form">
-                  <div className="input-group">
-                    <input
-                      onChange={handleInputChange}
-                      value={query}
-                      type="text"
-                      className="form-control js-search-input"
-                      placeholder="Type to search"
-                      id="search-input"
-                      aria-label="Type to search"
-                      role="searchbox"
-                    />
-                  </div>
-                </form>
-                <div id="search-results"></div>
-              </div>
+          </ul>
+        </nav>
+        <div className="backdrop d-lg-none js-backdrop" id="backdrop"></div>
+      </div>
+    </header>
+    {showSearch && (
+       <div className="search-popup js-search-popup visible">
+    <div onClick={() => setShowSearch(false)} className="close-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12.021,13.435,1.414,24.042,0,22.628,10.607,12.021,0,1.414,1.414,0,12.021,10.607,22.628,0l1.414,1.414L13.435,12.021,24.042,22.628l-1.414,1.414Z"></path>
+      </svg>
+    </div>
+    <div className="container popup-inner">
+      <div className="row">
+        <div className="col-sm-12">
+          <form id="search-form">
+            <div className="input-group">
+              <input
+     onChange={handleInputChange}
+     value={query}
+      type="text"
+        className="form-control js-search-input" 
+          placeholder="Type to search"
+            id="search-input" aria-label="Type to search"
+              role="searchbox" />
             </div>
-          </div>
+          </form>
+          <div id="search-results"></div>
         </div>
-      )}
+      </div>
+    </div>
+  </div>
+  )}
     </>
   );
 }
@@ -202,7 +295,7 @@ const DropdownMenu = ({ menu, items, mobile }) => {
                             : "text-gray-700 hover:text-blue-500 focus:text-blue-500 dark:text-gray-300"
                         )}
                       >
-                        <span>{item.title}</span>
+                        <span> {item.title}</span>
                       </Link>
                     )}
                   </Menu.Item>
