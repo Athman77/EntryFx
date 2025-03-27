@@ -1,3 +1,4 @@
+/**/
 /***/
   @charset "UTF-8";
  :root {
@@ -12278,19 +12279,19 @@
       padding: 24px
     }
 
-    .search-popup .popup-inner form {
+    .search-popup .popup-inner .form {
       position: relative;
       margin-bottom: 0
     }
 
-    .search-popup .popup-inner form input {
+    .search-popup .popup-inner .form input {
       border: none;
       border-bottom: 2px solid var(--text-light);
       font-size: 1.5rem;
       padding-left: 0
     }
 
-    .search-popup .popup-inner form input:focus {
+    .search-popup .popup-inner .form input:focus {
       border-bottom: 2px solid var(--ghost-accent-color)
     }
 
