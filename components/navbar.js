@@ -230,7 +230,14 @@ export default function Navbar(props) {
         <div className="col-sm-12">
           <form id="search-form">
             <div className="input-group">
-              <input type="text" className="form-control js-search-input" placeholder="Type to search" id="search-input" aria-label="Type to search" role="searchbox" />
+              <input
+     onChange={handleInputChange}
+     value={query}
+      type="text"
+        className="form-control js-search-input" 
+          placeholder="Type to search"
+            id="search-input" aria-label="Type to search"
+              role="searchbox" />
             </div>
           </form>
           <div id="search-results"></div>
