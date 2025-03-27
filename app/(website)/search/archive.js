@@ -34,7 +34,7 @@ export default async function Post({ searchParams }) {
   const filteredProducts = posts?.filter((val) => {
     if (search === "") {
       return val;
-    } else if (val?.post.mainImage.alt?.toLowerCase().includes(search?.toLowerCase())) {
+    } else if (val?.mainImage?.alt?.toLowerCase().includes(search?.toLowerCase())) {
       return val;
     }
   });
