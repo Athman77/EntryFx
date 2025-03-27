@@ -39,7 +39,7 @@ export default function Navbar(props) {
       if (searchQuery.trim().length >= 3) {
         router.push(`/search?search=${searchQuery.toLowerCase()}`);
       }
-    }, 500), // 500ms delay
+    }, 10000), // 500ms delay
     []
   );
   
