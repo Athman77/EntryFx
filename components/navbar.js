@@ -241,7 +241,7 @@ export default function Navbar(props) {
     <div className="container popup-inner">
       <div className="row">
         <div className="col-sm-12">
-      {/* <form id="search-form">*/}
+      <div className="form" id="search-form">
             <div className="input-group">
               <input
      defaultValue={param}
@@ -253,7 +253,7 @@ export default function Navbar(props) {
             id="search-input" aria-label="Type to search"
               role="searchbox" />
             </div>
-     {/*    </form>*/}
+     </form>
           <div id="search-results"></div>
         </div>
       </div>
