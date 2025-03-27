@@ -1,14 +1,11 @@
-
+//
 import Navbar from "@/components/navbar";
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
 import BlogOne from "@/components/blogone";
-//import { useRouter } from "next/navigation";
-//import { useParams } from 'next/navigation';
 import BlogTwo from "@/components/blogtwo";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-//import PostList from "@/components/postlist";
 import Subscribe from "@/components/subscribe";
 import { getPaginatedPosts } from "@/lib/sanity/client";
 
@@ -28,92 +25,85 @@ export default async function Post({ searchParams }) {
   };
 
   const posts = await getPaginatedPosts(params);
- // const router = useRouter();
-  
 
-  
-// const { q } = router.q;
-  const filteredProducts = posts?.filter((val) => {
-    if (search === "") {
-      return val;
-    } else if (val?.title?.toLowerCase().includes(search?.toLowerCase())) {
-      return val;
+  // Advanced filtering: Matches any two-letter sequence in the search query
+  const filteredProducts = posts?.filter((post) => {
+    if (!search) return true; // If no search query, return all posts
+
+    const lowerCaseSearch = search.toLowerCase();
+    const lowerCaseTitle = post?.title?.toLowerCase() || "";
+
+    // Check if any two-letter sequence in the search term exists in the post title
+    for (let i = 0; i < lowerCaseSearch.length - 1; i++) {
+      const subStr = lowerCaseSearch.substring(i, i + 2);
+      if (lowerCaseTitle.includes(subStr)) {
+        return true;
+      }
     }
+
+    return false;
   });
 
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
   const isLastPage = filteredProducts.length < POSTS_PER_PAGE;
 
-  
   return (
     <>
-    <div id="header" className="header-wrap">
+      <div id="header" className="header-wrap">
         <Navbar />
-        </div>
-          <main className="main-content-area">
-    <div className="site-content-wrap">
-    <div className="container-fluid">
-        <div className="cover-wrap  has-image"
-        //style="background-image:url(https://images.unsplash.com/photo-1533525801715-1f3764669187?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ);" data-animation="fade-in"
-        >
-          <div className="cover-inner text-center">
-            <h1 className="name d-inline-flex">Lifestyle</h1>
-            <div className="post-count">12 Posts</div>
-            <div className="description">
-              Ut feugiat libero justo, sed luctus quam commodo et.
+      </div>
+      <main className="main-content-area">
+        <div className="site-content-wrap">
+          <div className="container-fluid">
+            <div className="cover-wrap has-image">
+              <div className="cover-inner text-center">
+                <h1 className="name d-inline-flex">Lifestyle</h1>
+                <div className="post-count">12 Posts</div>
+                <div className="description">
+                  Ut feugiat libero justo, sed luctus quam commodo et.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="post-list">
+            {filteredProducts && filteredProducts.length === 0 && (
+              <div className="flex h-40 items-center justify-center">
+                <span className="text-lg text-gray-500">End of the result!</span>
+              </div>
+            )}
+
+            {filteredProducts &&
+              filteredProducts.map((post) => (
+                <BlogOne
+                  key={post._id}
+                  post={post}
+                  aspect="landscape"
+                  preloadImage={true}
+                />
+              ))}
+          </div>
+
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col text-center">
+                <Pagination
+                  pageIndex={pageIndex}
+                  isFirstPage={isFirstPage}
+                  isLastPage={isLastPage}
+                  tag="archive"
+                />
+                <div className="d-none end-message js-end-message">
+                  That's all. No more posts to display.
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    
-    
-    <div className="post-list">
-     {filteredProducts && filteredProducts?.length === 0 && (
-              <div className="flex h-40 items-center justify-center">
-                <span className="text-lg text-gray-500">
-                  End of the result!
-                </span>
-              </div>
-            )}
-            
-            {filteredProducts &&
-                          filteredProducts.map((post) => (
-                            <BlogOne
-                              key={post._id}
-                              post={post}
-                              aspect="landscape"
-                              preloadImage={true}
-                            />
-                          ))}
-    </div>
-    
-    
-         <div className="container-fluid">
-        <div className="row">
-          <div className="col text-center">
-             <Pagination
-              pageIndex={pageIndex}
-              isFirstPage={isFirstPage}
-              isLastPage={isLastPage}
-              tag="archive"
-            />
-            <div className="d-none end-message js-end-message">That's all. No more posts to display.</div>
-          </div>
-        </div>
-      </div>
-    
-    
-    
-    </div>
-    </main>
-    
-    <Footer />
-    
-    
-    
-    
-     
+      </main>
+
+      <Footer />
     </>
   );
 }
