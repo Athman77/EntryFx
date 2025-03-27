@@ -1,3 +1,4 @@
+//
 
 
 import PostList from "@/components/postlist";
@@ -48,160 +49,72 @@ export default async function Post({ searchParams }) {
   
   return (
     <>
-      <div className="global-cover"></div>
-
-      <div className="global-wrap">
-        <div className="global-content">
-          <Header />
-
-          <main className="global-main">
-            {filteredProducts && filteredProducts?.length === 0 && (
-              <div className="flex h-40 items-center justify-center">
-                <span className="text-lg text-gray-500">
-                  End of the result!
-                </span>
-              </div>
-            )}
-            {/** ==.hhd ==**/}
-
-            {filteredProducts && filteredProducts?.length === 0 && (
-              <div className="flex h-40 items-center justify-center">
-                <span className="text-lg text-gray-500">
-                  End of the result!
-                </span>
-              </div>
-            )}
-          </main>
+    <div id="header" className="header-wrap">
+        <Navbar />
+        </div>
+          <main className="main-content-area">
+    <div className="site-content-wrap">
+    <div className="container-fluid">
+        <div className="cover-wrap  has-image"
+        //style="background-image:url(https://images.unsplash.com/photo-1533525801715-1f3764669187?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ);" data-animation="fade-in"
+        >
+          <div className="cover-inner text-center">
+            <h1 className="name d-inline-flex">Lifestyle</h1>
+            <div className="post-count">12 Posts</div>
+            <div className="description">
+              Ut feugiat libero justo, sed luctus quam commodo et.
+            </div>
+          </div>
         </div>
       </div>
-
-      <div
-        data-elementor-type="wp-page"
-        data-elementor-id="4810"
-        className="elementor elementor-4810"
-        data-elementor-post-type="page"
-      >
-        {/* <!------ post card------>*/}
-        <div className="elementor-element elementor-element-510726c e-flex e-con-boxed e-con e-parent">
-          <div className="e-con-inner">
-            <div className="elementor-element elementor-element-cb5e833 elementor-absolute e-transform elementor-widget elementor-widget-bt-orbit-circle">
-              <div className="elementor-widget-container">
-                <div className="bt-elwg-orbit-circle">
-                  <div className="bt-orbit-wrap">
-                    <div className="bt-orbit red">
-                      <span></span>
-                    </div>
-                    <div className="bt-orbit blue">
-                      <span></span>
-                    </div>
-                    <div className="bt-orbit yellow">
-                      <span></span>
-                    </div>
-                    <div className="bt-orbit purple">
-                      <span></span>
-                    </div>
-                    <div className="bt-orbit green">
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
+    
+    
+    <div className="post-list">
+     {filteredProducts && filteredProducts?.length === 0 && (
+              <div className="flex h-40 items-center justify-center">
+                <span className="text-lg text-gray-500">
+                  End of the result!
+                </span>
               </div>
-            </div>
-            <div className="elementor-element elementor-element-09f894c elementor-absolute e-transform elementor-widget elementor-widget-bt-pattern-background">
-              <div className="elementor-widget-container">
-                <div className="bt-elwg-pattern-background">
-                  <div className="bt-bg-pattern-effect"></div>
-                </div>
-              </div>
-            </div>
-            <div className="elementor-element elementor-element-b28e6c6 e-flex e-con-boxed e-con e-child">
-              <div className="e-con-inner">
-                <div className="elementor-element elementor-element-170057f elementor-widget elementor-widget-heading">
-                  <div className="elementor-widget-container">
-                    <h6 className="elementor-heading-title elementor-size-default">
-                      Search Results
-                    </h6>
-                  </div>
-                </div>
-                <div
-                  className="elementor-element elementor-element-bd103a3 elementor-widget elementor-widget-heading"
-                  data-id="bd103a3"
-                  data-element_type="widget"
-                  data-widget_type="heading.default"
-                >
-                  <div className="elementor-widget-container">
-                    <h2 className="elementor-heading-title elementor-size-default text-white">
-                      My recent <span>Highlights</span>
-                    </h2>
-                  </div>
-                </div>
-                <div className="elementor-element elementor-element-8f9a284 elementor-widget__width-initial elementor-widget elementor-widget-text-editor">
-                  <div className="elementor-widget-container">
-                    <p className="text-white">
-                      Get Live Football Scores and Real-Time Football Results with LiveScore!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="elementor-element elementor-element-061914d e-flex e-con-boxed e-con e-child"
-              data-id="061914d"
-              data-element_type="container"
-            >
-              <div className="e-con-inner">
-                <div
-                  className="elementor-element elementor-element-922d7a7 bt-image-effect elementor-widget elementor-widget-bt-podcast-grid-style-2"
-                  data-id="922d7a7"
-                  data-element_type="widget"
-                  data-widget_type="bt-podcast-grid-style-2.default"
-                >
-                  <div className="elementor-widget-container">
-                    <div className="bt-elwg-podcast-grid--style-2">
-                      <div className="bt-podcast-grid">
-                        {filteredProducts &&
+            )}
+            
+            {filteredProducts &&
                           filteredProducts.map((post) => (
-                            <PostList
+                            <BlogOne
                               key={post._id}
                               post={post}
                               aspect="landscape"
                               preloadImage={true}
                             />
                           ))}
-                      </div>
-
-             
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-        
-       
-          </div>
-        </div>
-
-        
-      </div>
-
-      
-
-      <div className="global-wrap">
-        <div className="global-content">
-          <main className="global-main">
-            <Pagination
+    </div>
+    
+    
+         <div className="container-fluid">
+        <div className="row">
+          <div className="col text-center">
+             <Pagination
               pageIndex={pageIndex}
               isFirstPage={isFirstPage}
               isLastPage={isLastPage}
               tag="archive"
             />
-            <Subscribe />
-          </main>
-          <Footer />
+            <div className="d-none end-message js-end-message">That's all. No more posts to display.</div>
+          </div>
         </div>
       </div>
+    
+    
+    
+    </div>
+    </main>
+    
+    <Footer />
+    
+    
+    
+    
+     
     </>
   );
 }
