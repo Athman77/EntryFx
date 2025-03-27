@@ -7,11 +7,49 @@ import Container from "@/components/container";
 import Link from "next/link";
 import Image from "next/image";
 import { urlForImage } from "@/lib/sanity/image";
+import { useEffect, useState, useCallback } from "react";
+import { useRouter } from "next/navigation";
 import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { myLoader } from "@/utils/all";
 
 export default function Navbar(props) {
+  
+  const [showSearch, setShowSearch] = useState(false);
+  const [query, setQuery] = useState("");
+  const router = useRouter();
+  
+  // Debounce function to optimize input search performance
+  const debounce = (func, delay) => {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => func(...args), delay);
+    };
+  };
+  
+  // Handle search input changes
+  const handleInputChange = (e) => {
+    setQuery(e.target.value);
+  };
+  
+  // Optimized search handler
+  const searchHandler = useCallback(
+    debounce((searchQuery) => {
+      if (searchQuery.trim().length >= 3) {
+        router.push(`/search?search=${searchQuery.toLowerCase()}`);
+      }
+    }, 500), // 500ms delay
+    []
+  );
+  
+  useEffect(() => {
+    searchHandler(query);
+  }, [query]);
+  
+  
+  
+  
   const leftmenu = [
     {
       label: "Home",
@@ -48,6 +86,7 @@ export default function Navbar(props) {
   const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
+    <>
     <header className="site-header d-flex">
       <div className="container-fluid d-flex justify-content-between align-items-center">
         <div className="logo">
@@ -117,6 +156,7 @@ export default function Navbar(props) {
           </label>
           <a
             href="#"
+            onClick={() => setShowSearch(true)} 
             className="search-icon js-search-button"
             aria-label="Search"
             tabindex="0"
@@ -178,6 +218,28 @@ export default function Navbar(props) {
         <div className="backdrop d-lg-none js-backdrop" id="backdrop"></div>
       </div>
     </header>
+    {showSearch && (
+       <div className="search-popup js-search-popup visible">
+    <div onClick={() => setShowSearch(false)} className="close-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12.021,13.435,1.414,24.042,0,22.628,10.607,12.021,0,1.414,1.414,0,12.021,10.607,22.628,0l1.414,1.414L13.435,12.021,24.042,22.628l-1.414,1.414Z"></path>
+      </svg>
+    </div>
+    <div className="container popup-inner">
+      <div className="row">
+        <div className="col-sm-12">
+          <form id="search-form">
+            <div className="input-group">
+              <input type="text" className="form-control js-search-input" placeholder="Type to search" id="search-input" aria-label="Type to search" role="searchbox" />
+            </div>
+          </form>
+          <div id="search-results"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  )}
+    </>
   );
 }
 
