@@ -11,6 +11,7 @@ import { getPaginatedPosts } from "@/lib/sanity/client";
 
 export default async function Post({ searchParams }) {
   // Fetch the current page from the query parameters, defaulting to 1 if it doesn't exist
+  
   const page = searchParams.page;
   const search = searchParams.search;
   const pageIndex = parseInt(page, 10) || 1;
@@ -25,29 +26,24 @@ export default async function Post({ searchParams }) {
   };
 
   const posts = await getPaginatedPosts(params);
+ // const router = useRouter();
+  
 
-  // Advanced filtering: Matches any two-letter sequence in the search query
-  const filteredProducts = posts?.filter((post) => {
-    if (!search) return true; // If no search query, return all posts
-
-    const lowerCaseSearch = search.toLowerCase();
-    const lowerCaseTitle = post?.title?.toLowerCase() || "";
-
-    // Check if any two-letter sequence in the search term exists in the post title
-    for (let i = 0; i < lowerCaseSearch.length - 1; i++) {
-      const subStr = lowerCaseSearch.substring(i, i + 2);
-      if (lowerCaseTitle.includes(subStr)) {
-        return true;
-      }
+  
+// const { q } = router.q;
+  const filteredProducts = posts?.filter((val) => {
+    if (search === "") {
+      return val;
+    } else if (val?.title?.toLowerCase().includes(search?.toLowerCase())) {
+      return val;
     }
-
-    return false;
   });
 
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;
   const isLastPage = filteredProducts.length < POSTS_PER_PAGE;
 
+  
   return (
     <>
       <div id="header" className="header-wrap">
