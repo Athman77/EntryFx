@@ -243,8 +243,9 @@ export default function Navbar(props) {
           <form id="search-form">
             <div className="input-group">
               <input
-     onChange={handleInputChange}
-     value={query}
+     defaultValue={param}
+     onKeyUp={onSearchHandler}
+                onChange={(e) => onChange(e)}
       type="text"
         className="form-control js-search-input" 
           placeholder="Type to search"
