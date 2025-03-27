@@ -66,12 +66,12 @@ export default async function Post({ searchParams }) {
           <div className="post-list">
             {filteredProducts && filteredProducts.length === 0 && (
               <div className="flex h-40 items-center justify-center">
-                <span className="text-lg text-gray-500">End of the result!</span>
+                <span className="text-lg text-gray-500">Nothing Found!</span>
               </div>
             )}
 
             {filteredProducts &&
-              filteredProducts.map((post) => (
+              filteredProducts.slice(0, 1).map((post) => (
                 <BlogOne
                   key={post._id}
                   post={post}
@@ -84,12 +84,12 @@ export default async function Post({ searchParams }) {
           <div className="container-fluid">
             <div className="row">
               <div className="col text-center">
-                <Pagination
+                    {/*<Pagination
                   pageIndex={pageIndex}
                   isFirstPage={isFirstPage}
                   isLastPage={isLastPage}
                   tag="archive"
-                />
+                />*/}
                 <div className="d-none end-message js-end-message">
                   That's all. No more posts to display.
                 </div>
