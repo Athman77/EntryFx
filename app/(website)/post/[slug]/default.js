@@ -1,3 +1,4 @@
+//
 
 import Image from "next/image";
 import Link from "next/link";
@@ -58,6 +59,40 @@ export default function Post(props) {
                             )}{" "}
                           </time>
                         </div>
+                          {post.videoType === "upload" ? (
+                            <video
+                              className="rounded-xl object-cover bg-dark/10 absolute h-full w-full left-0 top-0 right-0 bottom-0 text-transparent"
+                              id="my-video"
+                              controls
+                              poster={cover?.src}
+                              // autoPlay
+                              playsInline>
+                              <source
+                                src={post?.videoUrl}
+                                type="video/mp4"
+                                data-quality="720p"
+                                title="720p"
+                                label="720p"
+                                res="720"
+                                size="720"
+                              />
+                            </video>
+                          ) : post.videoType === "youtube" ? (
+                            <VideoOne id={post.youtube || "Thumbnail"} />
+                          ) : (
+                            <>
+                              {imageProps && (
+                                <img
+                                  sizes="(max-width:480px) 300px, (max-width:768px) 600px, (max-width:1024px) 1200px, 2000px"
+                                  className="rounded-xl object-cover bg-dark/10  absolute h-full w-full left-0 top-0 right-0 bottom-0 text-transparent"
+                                  src={imageProps.src}
+                                  alt={
+                                    post.mainImage?.alt || "Thumbnail"
+                                  }
+                                />
+                              )}
+                            </>
+                          )}
                       </div>
                     </div>
                     {/***** YouTube****/}
