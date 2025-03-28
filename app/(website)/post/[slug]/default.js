@@ -83,7 +83,7 @@ export default function Post(props) {
                               />
                             </video>
                           ) : post.videoType === "youtube" ? (
-                            <VideoOne id={post.youtube || "Thumbnail"} />
+                            <Video id={post.youtube || "Thumbnail"} />
                           ) : (
                             <>
                               {imageProps && (
