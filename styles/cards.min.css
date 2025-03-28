@@ -6,6 +6,13 @@
 background-image: url('https://cdn.sanity.io/images/11ognen8/production/657478bec2255c91df857a4373bf606d2bd4d4e7-736x1470.jpg');
 }
     
+.tube {
+    max-width: 858px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      padding: 0 15px !important;
+      z-index: 2
+}
 
 
 .kg-audio-card,
