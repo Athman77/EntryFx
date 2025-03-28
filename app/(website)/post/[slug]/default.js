@@ -1,4 +1,3 @@
-//
 
 import Image from "next/image";
 import Link from "next/link";
@@ -63,7 +62,7 @@ export default function Post(props) {
                     </div>
                     {/***** YouTube****/}
                           <div className="header-content-wrap">
-                    <div className="header-content-wrap">
+                    <div className="header-content-wrap tube">
                        {post.videoType === "upload" ? (
                             <video
                               className="rounded-xl object-cover bg-dark/10 absolute h-full w-full left-0 top-0 right-0 bottom-0 text-transparent"
