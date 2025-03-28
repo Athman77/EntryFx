@@ -13,7 +13,7 @@ import PostList from "@/components/postlist";
 import Subscribe from "@/components/subscribe";
 import CategoryLabel from "@/components/blog/category";
 import AuthorCard from "@/components/blog/authorCard";
-import Video from "@/components/video";
+import VideoOne from "@/components/video";
 
 export default function Post(props) {
   const { loading, post } = props;
@@ -83,7 +83,7 @@ export default function Post(props) {
                               />
                             </video>
                           ) : post.videoType === "youtube" ? (
-                            <Video id={post.youtube || "Thumbnail"} />
+                            <VideoOne id={post.youtube || "Thumbnail"} />
                           ) : (
                             <>
                               {imageProps && (
