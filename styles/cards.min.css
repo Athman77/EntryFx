@@ -7,11 +7,9 @@ background-image: url('https://cdn.sanity.io/images/11ognen8/production/657478be
 }
     
 .tube {
-    max-width: 858px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      padding: 0 15px !important;
-      z-index: 2
+    
+      margin-top: 15px !important;
+      
 }
 
 
