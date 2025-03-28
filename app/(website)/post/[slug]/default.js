@@ -1,3 +1,4 @@
+//
 
 import Image from "next/image";
 import Link from "next/link";
@@ -61,8 +62,7 @@ export default function Post(props) {
                       </div>
                     </div>
                     {/***** YouTube****/}
-                         <div className="post-header bg-post d-flex has-image">
-                      <div className="header-content-wrap">
+                          <div className="header-content-wrap">
                     
                        {post.videoType === "upload" ? (
                             <video
@@ -101,7 +101,7 @@ export default function Post(props) {
                   
                         
                       </div>
-                    </div>
+                    
                     
                     {/******/}
                     <div className="post-content">
