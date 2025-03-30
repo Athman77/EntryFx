@@ -40,7 +40,7 @@ export default async function Post({ searchParams }) {
                 <div className="site-content-wrap">
                 
                  <div className="container-fluid">
-                        <div className="cover-wrap bg  has-image" data-animation="fade-in">
+                        <div className="cover-wrap bg bg-post has-image" data-animation="fade-in">
                           <div className="cover-inner text-center">
                             <h1 className="name d-inline-flex">Our Posts</h1>
                             <div className="post-count">{posts.length}</div>
