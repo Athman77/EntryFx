@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/navbar";
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
