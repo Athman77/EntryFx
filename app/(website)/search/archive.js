@@ -54,10 +54,10 @@ export default async function Post({ searchParams }) {
           <div className="container-fluid">
             <div className="cover-wrap has-image">
               <div className="cover-inner text-center">
-                <h1 className="name d-inline-flex">Lifestyle</h1>
-                <div className="post-count">12 Posts</div>
+                <h1 className="name d-inline-flex">Quran</h1>
+                <div className="post-count">Posts</div>
                 <div className="description">
-                  Ut feugiat libero justo, sed luctus quam commodo et.
+                  Experience the guidance, wisdom, and peace of Allah’s words. Start your journey today.
                 </div>
               </div>
             </div>
