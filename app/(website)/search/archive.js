@@ -51,7 +51,7 @@ export default async function Post({ searchParams }) {
       <main className="main-content-area">
         <div className="site-content-wrap">
           <div className="container-fluid">
-            <div className="cover-wrap has-image">
+            <div className="cover-wrap bg-post has-image">
               <div className="cover-inner text-center">
                 <h1 className="name d-inline-flex">Quran</h1>
                 <div className="post-count">{}</div>
