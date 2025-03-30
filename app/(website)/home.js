@@ -24,8 +24,8 @@ export default function Post({ posts }) {
                   <h2 className="by-line h3">Welcome to my blog.</h2>
                   <div className="hero-form-wrap">
                     <div className="description">
-                      I send posts digest once in a month. No spam ever, I
-                      promise.
+                      
+وَأَن لَّيْسَ لِلْإِنسَـٰنِ إِلَّا مَا سَعَىٰ ٣٩ and that each person will only have what they strive for,
                     </div>
                     <form
                       className="members-form hero-form"
