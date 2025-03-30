@@ -54,9 +54,9 @@ export default async function Post({ searchParams }) {
             <div className="cover-wrap has-image">
               <div className="cover-inner text-center">
                 <h1 className="name d-inline-flex">Quran</h1>
-                <div className="post-count">Posts</div>
+                <div className="post-count">{}</div>
                 <div className="description">
-                  Experience the guidance, wisdom, and peace of Allah’s words. Start your journey today.
+                  Illuminate Your Heart with the Quran
                 </div>
               </div>
             </div>
