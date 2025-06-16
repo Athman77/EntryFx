@@ -1,3 +1,5 @@
+import IframePreview from "./previews/iframe";
+
 /**
  * This is the schema definition for the rich text fields used for
  * for this blog studio. When you import it in schemas.js it can be
@@ -60,6 +62,63 @@ export default {
     {
       type: "image",
       options: { hotspot: true }
+    },
+    {
+      type: "object",
+      name: "embed",
+      title: "Embed",
+      fields: [
+        {
+          name: "url",
+          type: "url",
+          description:
+            "Enter the URL to Embed \r\n(eg: https://youtube.com/embed/xxx or https://open.spotify.com/embed/track/xxxx)"
+        },
+        {
+          name: "height",
+          type: "number",
+          description:
+            "Enter Required Height for this Embed. Leave it blank for 16:9 ratio."
+        }
+      ],
+      components: {
+        preview: IframePreview
+      },
+      preview: {
+        select: { url: "url", height: "height" }
+      }
+    },
+    {
+      type: "object",
+      name: "audio",
+      title: "Audio",
+      fields: [
+        {
+          name: "title",
+          type: "string",
+          title: "Title"
+        },
+        {
+          name: "file",
+          type: "file",
+          title: "Audio File",
+          options: {
+            accept: "audio/*"
+          }
+        }
+      ],
+      preview: {
+        select: {
+          title: "title",
+          file: "file"
+        },
+        prepare({ title, file }) {
+          return {
+            title: title || "Audio",
+            subtitle: file ? "Audio file uploaded" : "No audio file"
+          };
+        }
+      }
     }
   ]
 };

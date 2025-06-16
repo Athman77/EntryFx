@@ -20,7 +20,11 @@ export default {
         maxLength: 96
       }
     },
-
+   {
+      name: "chapter",
+      title: "Chapter",
+      type: "number"
+    },
     {
       name: 'tags',
       title: 'Tags',
@@ -166,6 +170,18 @@ export default {
       title: "Mark as Featured",
       type: "boolean"
     },
+     {
+      title: 'Verses',
+      name: 'verses',
+      type: 'array',
+      of: [
+        {
+          title: 'Verses',
+          type: 'verses',
+        },
+      ],
+    },
+    
     {
       name: "body",
       title: "Body",
