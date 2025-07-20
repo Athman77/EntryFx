@@ -47,7 +47,7 @@ export default function BlogOne({
     <div className="tag-list flex">
       <span className="post-featured" data-tooltip="Featured">
         <svg>
-          <use xlinkHref="#i-star"></use>
+                      {/* <use xlinkHref="#i-star"></use>*/}
         </svg>
       </span>
       <a href="/tag/technology/" //style="--tag-color:#007FFF"
