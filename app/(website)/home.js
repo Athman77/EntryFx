@@ -29,7 +29,7 @@ export default function Post({ posts }) {
           <div className="hero-search flex justify-space-between" data-ghost-search="">
             <span className="hero-search-placeholder">Search post, tags, and authors</span>
             <span className="hero-search-icon"><svg>
-                <use xlink:href="#i-search"></use>
+                
               </svg></span>
           </div>
         </div>
