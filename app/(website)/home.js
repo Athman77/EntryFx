@@ -89,7 +89,7 @@ export default function Post({ posts }) {
       </div>
       <div class="col-md-6">
          {posts.slice(0, 4).map((post, index) => (
-              <BlogOne
+              <BlogPages
                 key={post._id}
                 chapter={posts.length - index}
                 post={post}
