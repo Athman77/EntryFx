@@ -1,7 +1,9 @@
+//.
 
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
 import BlogOne from "@/components/blogone";
+import BlogBig from "@/components/blogbig";
 import BlogTwo from "@/components/blogtwo";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -32,39 +34,53 @@ export default async function Post({ searchParams }) {
 
   return (
     <>
+      <main className="main">
+    <div className="container">
+  <div className="archive-cover flex align-center">
+    <div className="tag-image-wrap">
+      <img className="cover-image lazy" loading="lazy" src="https://cdn.sanity.io/images/wusctyxy/production/720d11cb3a112908533d81c10d9bc3dc455bcd4f-661x691.png" alt="tag Inspiration: feature image" />
+    </div>
     
-       <div id="header" className="header-wrap header-wrap-home">
-            <Navbar />
-            </div>
-            <main className="main-content-area">
-                <div className="site-content-wrap">
-                
-                 <div className="container-fluid">
-                        <div className="cover-wrap bg bg-post has-image" data-animation="fade-in">
-                          <div className="cover-inner text-center">
-                            <h1 className="name d-inline-flex">Our Posts</h1>
-                            <div className="post-count">{posts.length}</div>
-                          
-                          </div>
-                        </div>
-                      </div>
-                {/*********/}
-                
-                 <div className="post-list">
-                           {posts &&
-                  posts.map((post, index) => (
-                    <BlogOne
-                      key={post._id}
-                      post={post}
-                    //  chapter={posts.length - index}
-                      aspect="landscape"
-                      preloadImage={true}
-                    />
-                  ))}
-                          </div>
-                
-                </div>
-                </main>
+    <div className="cover-content-wrapper">
+      <div className="tag-info-wrap text-center">
+        <h1 className="tag-name h3">Inspiration</h1>
+        <div className="tag-meta flex align-center justify-center">
+          <span className="post-count">9 posts</span>
+        </div>
+        <div className="tag-description">
+          Spark for creativity, motivation, and dreams
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section className="latest-posts">
+  <div className="container">
+    <div className="latest-posts-cards-wrap loop-post-cards-wrap grid">
+      
+       {
+   posts &&
+     posts.map((post, index) => ( <
+       BlogBig key = { post._id } post = { post }
+       //  chapter={posts.length - index}
+       aspect = "landscape"
+       preloadImage = { true }
+       />
+     ))
+ }
+    </div>
+  </div>
+</section>
+  </main>
+    
+    
+    
+    
+    
+    
+      
+           
            
         {posts && posts?.length === 0 && (
           <div className="flex h-40 items-center justify-center">
@@ -82,7 +98,7 @@ export default async function Post({ searchParams }) {
             </div>
     
     
-     <Footer />
+     
     
     
     
