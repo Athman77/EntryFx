@@ -1,5 +1,4 @@
-
-
+//
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -101,6 +100,39 @@ export default function Post({ posts }) {
     </div>
   </div>
  </section>
+ 
+  <section className="post-by-tag">
+                <div className="container">
+                    <div className="tag-posts-tabs-wrapper">
+                              <div className="inner-wrapper">
+                            <div className="tag-button-wrap">
+                                <button className="btn-tag active">Inspiration</button>
+                                
+                            </div>
+                        </div>
+                      
+                      {/*****/}
+                            <div className="inner-wrapper">
+                            <div className="tab-content active">
+                              
+                              
+                                {posts.slice(0, 3).map((post, index) => (
+              <BlogPages
+                key={post._id}
+                chapter={posts.length - index}
+                post={post}
+                aspect="landscape"
+                preloadImage={true}
+              />
+            ))}
+                              
+                              </div>
+                              </div>
+                              
+                      
+                      </div>
+                      </div>
+                      </section>
    
          </main>
        </div>
