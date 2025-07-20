@@ -130,7 +130,7 @@ export default function Post({ posts }) {
                   {posts.slice(0, 5).map((post, index) => (
               <BlogSmall
                 key={post._id}
-                chapter={posts.length - index}
+                //chapter={posts.length - index}
                 post={post}
                 aspect="landscape"
                 preloadImage={true}
