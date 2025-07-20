@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
 import BlogOne from "@/components/blogone";
+import BlogSmall from "@/components/blogsmall";
 import BlogTwo from "@/components/blogtwo";
 import BlogLast from "@/components/bloglast";
 import BlogPages from "@/components/blogpage";
@@ -118,6 +119,16 @@ export default function Post({ posts }) {
                               
                                 {posts.slice(0, 3).map((post, index) => (
               <BlogPages
+                key={post._id}
+                chapter={posts.length - index}
+                post={post}
+                aspect="landscape"
+                preloadImage={true}
+              />
+            ))}
+
+                  {posts.slice(0, 5).map((post, index) => (
+              <BlogSmall
                 key={post._id}
                 chapter={posts.length - index}
                 post={post}
