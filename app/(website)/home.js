@@ -175,6 +175,7 @@ export default function Post({ posts }) {
               <span>Load more</span>
             </button>
           </div>
+          <Subscribe />
         </main>
       </div>
     </>
