@@ -1,8 +1,10 @@
 //
+//
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
 import BlogOne from "@/components/blogone";
+import BlogBig from "@/components/blogbig";
 import BlogSmall from "@/components/blogsmall";
 import BlogTwo from "@/components/blogtwo";
 import BlogLast from "@/components/bloglast";
@@ -127,7 +129,7 @@ export default function Post({ posts }) {
               />
             ))}
 
-                  {posts.slice(0, 5).map((post, index) => (
+                  {posts.slice(0, 4).map((post, index) => (
               <BlogSmall
                 key={post._id}
                 //chapter={posts.length - index}
@@ -144,6 +146,27 @@ export default function Post({ posts }) {
                       </div>
                       </div>
                       </section>
+                      
+                      
+                  <section className="latest-posts">
+                <div className="container">
+                    <h2 className="section-title">
+                        Latest <span>Article</span>
+                    </h2>
+                    <div className="latest-posts-cards-wrap loop-post-cards-wrap grid">
+                    {posts.slice(0, 10).map((post, index) => (  
+                 <BlogBig
+                key={post._id}
+                //chapter={posts.length - index}
+                post={post}
+                aspect="landscape"
+                preloadImage={true}
+              />
+            ))}     
+                      
+            </div>
+            </div>
+            </section>
    
          </main>
        </div>
