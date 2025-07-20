@@ -1,3 +1,4 @@
+//
 
 import Link from "next/link";
 import Container from "@/components/container";
@@ -86,6 +87,17 @@ export default function Post({ posts }) {
               />
             ))}
       </div>
+      <div class="col-md-6">
+         {posts.slice(0, 4).map((post, index) => (
+              <BlogTwo
+                key={post._id}
+                chapter={posts.length - index}
+                post={post}
+                aspect="landscape"
+                preloadImage={true}
+              />
+            ))}
+        </div>
     </div>
   </div>
  </section>
