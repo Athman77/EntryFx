@@ -36,19 +36,18 @@ export default function Post({ posts }) {
       </div>
     </div>
     
-    {/******** site ******/}
-    <div className="site-hero home-intro-two">
-   <div className="container">
-     <div className="hero-content-wrap-full-width">
-       <h1 className="intro-title">
-         Hey, We're <span>Sucharu</span>, Explore our Thoughts, Stories, Ideas.
-       </h1>
-       <div className="intro-description">
-         This Ghost theme is perfect for <strong>magazine, newsletter, professional and personal blog</strong> publishing. Crafted readers in mind. <strong>Customizable features</strong> tailored to your creative vision.
-       </div>
-     </div>
-   </div>
- </div>
+
+  <section className="featured-posts">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-7">
+          
+          {/*** article one ***/}
+        </div>
+      </div>
+    </div>
+  </section>
+   
          </main>
        </div>
     </>
