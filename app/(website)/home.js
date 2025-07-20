@@ -167,7 +167,12 @@ export default function Post({ posts }) {
             </div>
             </div>
             </section>
-   
+
+ <div className="pagination-wrap text-center" id="pagination-wrap">
+                <button className="btn post-load-button" id="load-more"><span>Load more</span></button>
+            </div>
+
+                  
          </main>
        </div>
     </>
