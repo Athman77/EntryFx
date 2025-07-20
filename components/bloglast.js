@@ -46,7 +46,7 @@ export default function BlogLast({
         {/*  <use xlink:href="#i-lock"></use>*/}
         </svg>
       </span>
-      <a href="/tag/health/" style="--tag-color:#4CAF50"><span>Trading Forex</span></a>
+      <a href="/tag/health/"><span>Trading Forex</span></a>
     </div>
     <h2 className="h4 post-title">
       <Link
