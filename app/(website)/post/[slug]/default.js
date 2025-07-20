@@ -1,5 +1,6 @@
 //
 //
+//
 
 import Image from "next/image";
 import Link from "next/link";
@@ -34,84 +35,102 @@ export default function Post(props) {
   
   return (
     <>
-      <div id="header" className="header-wrap">
-        <Navbar />
-      </div>{" "}
-      <main className="main-content-area">
-        <div className="site-content-wrap">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col">
-                <div className="post-wrap">
-                  <article className="post-single post tag-lifestyle tag-travel tag-education">
-                  
-                    <div className="post-header bg-post d-flex has-image">
-                      <div className="header-content-wrap">
-                        <div className="primary-tag text-center">
-                          <a href="/tag/lifestyle/">Chapter {imageProps ? post.mainImage.alt : "Quran"}</a>
-                        </div>
-                        <h1 className="post-title text-center">{post.title}</h1>
-                        <div className="post-meta mx-auto d-flex justify-content-between">
-                          <div className="reading-time">3 min read</div>
-                          <time className="date" datetime="2019-07-22 07:14">
+    <div className="site-wrap">
+      <main className="main">
+        <div className="container single-post">
+          <div className="post-header">
+    <div className="tag-list flex">
+      <span className="post-visibility" data-tooltip="members">
+        <svg>
+         {/* <use xlink:href="#i-lock"></use>*/}
+        </svg>
+      </span>
+      <a href="/tag/health/"><span>Forex</span></a>
+      <a href="/"><span>Investment</span></a>
+    </div>
+    <h1 className="post-title">{post.title}</h1>
+    <div className="custom-excerpt">
+      {/*** excerpt ***/}
+    </div>
+    <div className="post-meta text-s flex align-center">
+      <div className="author-avatars flex">
+        {AuthorimageProps && (
+                                  <Link
+                                    href={`/author/${post.author.slug.current}`}>
+                      <a className="author-image-wrap" title="Harini Banerjee">              <img
+                                      src={AuthorimageProps.src}
+                                      alt={post?.author?.name}
+                                    />
+                          </a>        </Link>
+                                )}
+      
+          
+        
+        <a href="/author/ishan/" className="author-image-wrap" title="Ishan Sharma">
+          <img src="https://cdn.sanity.io/images/wusctyxy/production/9b43586e288b2a37a69886bf9e8b8994291bf5ef-250x250.webp" alt="Ishan Sharma" />
+        </a>
+      </div>
+      <div className="author-names">
+        
+        <a href="/author/harini/">Gaucho</a>
+        &
+        <a href="/author/ishan/">Ishan Sharma</a>
+      </div>
+        <time className="post-date" datetime="2024-05-19">
                             {format(
                               parseISO(post?.publishedAt || post._createdAt),
                               "MMMM dd, yyyy"
                             )}{" "}
                           </time>
-                        </div>
-                        <div className="tube">
-                          {post.videoType === "upload" ? (
-                            <video
-                              className=""
-                              id="my-video"
-                              controls
-                              poster={cover?.src}
-                              // autoPlay
-                              playsInline>
-                              <source
-                                src={post?.videoUrl}
-                                type="video/mp4"
-                                data-quality="720p"
-                                title="720p"
-                                label="720p"
-                                res="720"
-                                size="720"
-                              />
-                            </video>
-                          ) : post.videoType === "youtube" ? (
-                            <VideoOne id={post.youtube || "Thumbnail"} />
-                          ) : (
-                            <>
-                              {imageProps && (
-                                <img
-                                  sizes="(max-width:480px) 300px, (max-width:768px) 600px, (max-width:1024px) 1200px, 2000px"
-                                  className="rounded-xl object-cover bg-dark/10  absolute h-full w-full left-0 top-0 right-0 bottom-0 text-transparent"
-                                  src={imageProps.src}
+      
+      <span className="read-time">2 min read</span>
+    </div>
+  </div>
+          {/***** header end ***/}
+         
+          <figure className="single-post-img-container">
+                    {imageProps && (
+               <img
+
+                       loading="lazy"  sizes="(max-width: 472px) 400px, (max-width: 767px) 600px, (min-width: 768px) 1200px"           src={imageProps.src}
                                   alt={
                                     post.mainImage?.alt || "Thumbnail"
                                   }
                                 />
                               )}
-                            </>
-                          )}
-                          </div>
-                      </div>
-                    </div>
-                    {/***** YouTube****/}
-                         
-                    {/******/}
+    
+    
+  </figure>
+  
+  <div className="post-content-area flex">
                     <div className="post-content">
+                      
                       {post.body && <PortableText value={post.body} />}
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
+                      
+           {/***** subscribe *****
+            <div class="post-membership-cta text-center">
+                            <h2 class="title h3">This post is for subscribers only</h2>
+                            <div class="button-wrap">
+                                <a class="btn btn-flat" href="https://sucharu.gbjsolution.com/signup/">Sign up now</a>
+                            </div>
+                            <div class="sign-in-cta">
+                                Already have an account? <a href="https://sucharu.gbjsolution.com/signin/">Sign in</a>
+                            </div>
+                        </div>
+           {/*******/}
+                      </div>
+                      </div>
           </div>
-        </div>
-      </main>
-      <Footer />
+          
+        </main>
+    </div>
+      
+      
+      
+      
+      
+      
+       
     </>
   );
 }
