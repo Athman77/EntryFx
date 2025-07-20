@@ -1,4 +1,3 @@
-//
 
 import Image from "next/image"; 
 import Link from "next/link";
@@ -31,11 +30,7 @@ export default function BlogLast({
                 >
   <a>
     {imageProps ? (
-              <img loading="lazy" src={imageProps.src}
-              {...(post.mainImage.blurDataURL && {
-                placeholder: "blur",
-                blurDataURL: post.mainImage.blurDataURL
-              })} alt="Sleep, Stress, and Success: The Role of Rest and Relaxation in Health" />
+              <img loading="lazy" src={imageProps.src} alt="Sleep, Stress, and Success: The Role of Rest and Relaxation in Health" />
             ) : (
               <span className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 text-gray-200">
                 <PhotoIcon />
