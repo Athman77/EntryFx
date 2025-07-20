@@ -21,11 +21,11 @@ export default function Subscribe() {
              </p>
              <form data-members-form="subscribe" className="esub-form">
                <div className="input-group">
-                 <label for="name" className="sr-only" style="color:black">Name</label>
+                 <label for="name" className="sr-only">Name</label>
                  <input data-members-name="" type="text" name="name" id="name" placeholder="Name" />
                </div>
                <div className="input-group">
-                 <label for="email" className="sr-only" style="color: black">Email</label>
+                 <label for="email" className="sr-only">Email</label>
                  <input data-members-email="" type="email" name="email" id="email" placeholder="Your email address" />
                  <button className="btn esub-submit" type="submit"><span>Subscribe</span></button>
                </div>
