@@ -1,3 +1,4 @@
+//
 import Image from "next/image";
 import Link from "next/link";
 import { cx } from "@/utils/all";
@@ -19,74 +20,80 @@ export default function BlogOne({
   fontWeight,
 }) {
   const imageProps = post?.mainImage ? urlForImage(post.mainImage) : null;
-  const AuthorimageProps = post?.author?.image
-    ? urlForImage(post.author.image)
-    : null;
+  const AuthorimageProps = post?.author?.image ?
+    urlForImage(post.author.image) :
+    null;
   return (
     <>
-      <article className="post tag-lifestyle tag-travel tag-education fade-in-up">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-6">
-              <div className="post-thumbnail-wrap">
-                <Link
+    <article className="post-card-bordered">
+      <Link
                   href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
                     post.slug.current
                   }`}
                 >
-                  <a
-                    aria-label="Riding bicycle is environment friendly and good for health"
-                    tabindex="-1"
-                  >
-                    {imageProps ? (
-                      <img
-                        loading="lazy"
-                        decoding="async"
-                        src={imageProps.src}
-                        className="post-thumbnail"
-                        alt=""
-                      />
+  <a className="post-img-wrap">
+       {imageProps ? (
+                     <img loading="lazy"  sizes="(max-width:432px) 400px, (max-width:696px) 600px, (max-width:767px) 671px, 600px" src={imageProps.src} alt="" />
+ 
                     ) : (
                       <span classNameName="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 text-gray-200">
                         <PhotoIcon />
                       </span>
                     )}
 
-                    {/* <img  src="" alt="Riding bicycle is environment friendly and good for health" />
-                     */}
-                  </a>
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-md-6">
-              <div className="post-container">
-                <time className="date" datetime="2019-07-22 07:14">
-                  {format(
-                    parseISO(post?.publishedAt || post._createdAt),
-                    "MMMM dd, yyyy"
-                  )}{" "}
-                </time>
-                <span className="watermark" aria-hidden="true"></span>
-                <div className="primary-tag">
-                  <a href="/tag/lifestyle/">Chapter {imageProps ? post.mainImage.alt : "Quran"}</a>
-                </div>
-                <h2 className="post-title h1">
-                  <Link
-                    href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
-                      post.slug.current
-                    }`}
-                  >
-                    <a>{post.title}</a>
-                  </Link>
-                </h2>
-                <div className="separetor"></div>
-                <div className="reading-time">3 min read</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+  </a>
+  </Link>
+  <div className="post-info-wrap">
+    <div className="tag-list flex">
+      <span className="post-featured" data-tooltip="Featured">
+        <svg>
+          <use xlink:href="#i-star"></use>
+        </svg>
+      </span>
+      <a href="/tag/technology/" //style="--tag-color:#007FFF"
+      ><span>Forex Trading</span></a>
+    </div>
+    <h2 className="h3 post-title">
+      <Link
+                  href={`/post/${pathPrefix ? `${pathPrefix}/` : ""}${
+                    post.slug.current
+                  }`}
+                >
+      <a>{post.title}</a>
+      </Link>
+    </h2>
+    <div className="post-meta text-s flex align-center">
+      <div className="author-avatars flex">
+        <a href="/" className="author-image-wrap" title="Biswajit Saha">
+                           { post?.author?.image && ( 
+       <img src = { AuthorimageProps.src } alt = { post?.author?.name } />
+     )
+   }
+        
+        </a>
+      </div>
+      <div className="author-names">
+        <a href="/author/biswajit/">{post?.author?.name}</a>
+      </div>
+      <span className="read-time">3 min read</span>
+      <span className="comment-count">
+        <a href="/" className="flex align-center"><svg>
+            {/*<use xlink:href="#i-comment"></use>*/}
+          </svg>
+         
+        </a>
+      </span>
+    </div>
+  </div>
+</article>
+      
+      
+      
+      
+      
+      
+      
+    
     </>
   );
 }
