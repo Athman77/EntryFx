@@ -41,12 +41,12 @@ export default function BlogLast({
   </Link>
   <div className="post-info-wrap">
     <div className="tag-list flex">
-      <span className="post-visibility" data-tooltip="members">
+      <span className="post-visibility i-lock" data-tooltip="members">
         <svg>
         {/*  <use xlink:href="#i-lock"></use>*/}
         </svg>
       </span>
-      <a href="/tag/health/"><span>Trading Forex</span></a>
+      <a href="/tag/health/"><span>Trading</span></a>
     </div>
     <h2 className="h4 post-title">
       <Link
