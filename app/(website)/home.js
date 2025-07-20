@@ -1,4 +1,4 @@
-//
+
 
 import Link from "next/link";
 import Container from "@/components/container";
@@ -88,7 +88,7 @@ export default function Post({ posts }) {
             ))}
       </div>
       <div class="col-md-6">
-         {posts.slice(0, 4).map((post, index) => (
+         {posts.slice(0, 3).map((post, index) => (
               <BlogLast
                 key={post._id}
                 chapter={posts.length - index}
