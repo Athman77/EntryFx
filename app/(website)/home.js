@@ -1,5 +1,3 @@
-//
-//
 
 import Link from "next/link";
 import Container from "@/components/container";
@@ -70,6 +68,27 @@ export default function Post({ posts }) {
       </div>
     </div>
   </section>
+   
+   
+   <section className="editors-choice">
+  <div className="container">
+    <h2 className="section-title">Editor's <span>choice</span></h2>
+    <div className="row">
+      <div className="col-md-6 card-large-wrap">
+        {/**** first bkog **/}
+         {posts.slice(1, 2).map((post, index) => (
+              <PostList
+                key={post._id}
+                chapter={posts.length - index}
+                post={post}
+                aspect="landscape"
+                preloadImage={true}
+              />
+            ))}
+      </div>
+    </div>
+  </div>
+ </section>
    
          </main>
        </div>
