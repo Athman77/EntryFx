@@ -1,5 +1,4 @@
-//
-//
+
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -89,7 +88,7 @@ export default function Post({ posts }) {
               <div className="row">
                 <div className="col-md-6 card-large-wrap">
                   {/**** first bkog **/}
-                  {posts.slice(1, 2).map((post, index) => (
+                  {posts.slice(3, 4).map((post, index) => (
                     <PostList
                       key={post._id}
                       chapter={posts.length - index}
@@ -100,7 +99,7 @@ export default function Post({ posts }) {
                   ))}
                 </div>
                 <div class="col-md-6">
-                  {posts.slice(0, 3).map((post, index) => (
+                  {posts.slice(4, 8).map((post, index) => (
                     <BlogLast
                       key={post._id}
                       chapter={posts.length - index}
@@ -126,7 +125,7 @@ export default function Post({ posts }) {
                 {/*****/}
                 <div className="inner-wrapper">
                   <div className="tab-content active">
-                    {posts.slice(0, 3).map((post, index) => (
+                    {posts.slice(8, 12).map((post, index) => (
                       <BlogPages
                         key={post._id}
                         chapter={posts.length - index}
@@ -136,7 +135,7 @@ export default function Post({ posts }) {
                       />
                     ))}
 
-                    {posts.slice(0, 4).map((post, index) => (
+                    {posts.slice(12, 17).map((post, index) => (
                       <BlogSmall
                         key={post._id}
                         //chapter={posts.length - index}
@@ -157,7 +156,7 @@ export default function Post({ posts }) {
                 Latest <span>Article</span>
               </h2>
               <div className="latest-posts-cards-wrap loop-post-cards-wrap grid">
-                {posts.slice(0, 10).map((post, index) => (
+                {posts.slice(17, 26).map((post, index) => (
                   <BlogBig
                     key={post._id}
                     //chapter={posts.length - index}
