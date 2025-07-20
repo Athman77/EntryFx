@@ -43,6 +43,15 @@ export default function Post({ posts }) {
         <div className="col-md-7">
           
           {/*** article one ***/}
+   {posts.slice(0, 1).map((post, index) => (
+              <BlogOne
+                key={post._id}
+                chapter={posts.length - index}
+                post={post}
+                aspect="landscape"
+                preloadImage={true}
+              />
+            ))}
         </div>
       </div>
     </div>
