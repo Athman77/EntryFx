@@ -3,12 +3,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import { cx } from "@/utils/all";
+import ReactPlayer from "react-player";
+import Vid from "@/components/vid";
 import { urlForImage } from "@/lib/sanity/image";
 import { parseISO, format } from "date-fns";
 import { PhotoIcon } from "@heroicons/react/24/outline";
 import CategoryLabel from "@/components/blog/category";
 
-export default function BlogPages() {
+export default function BlogPages({
+  post,
+  aspect,
+  minimal,
+  pathPrefix,
+  preloadImage,
+  fontSize,
+  chapter,
+  fontWeight,
+}) {
+  const imageProps = post?.mainImage ? urlForImage(post.mainImage) : null;
+  const AuthorimageProps = post?.author?.image ?
+    urlForImage(post.author.image) :
+    null;
 
   return (
     <>
