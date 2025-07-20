@@ -1,5 +1,6 @@
 //
- 
+//
+
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
@@ -53,6 +54,19 @@ export default function Post({ posts }) {
               />
             ))}
         </div>
+        
+        <div className="col-md-5">
+          {/***** article 2 ***/}
+          {posts.slice(1, 2).map((post, index) => (
+              <BlogTwo
+                key={post._id}
+                chapter={posts.length - index}
+                post={post}
+                aspect="landscape"
+                preloadImage={true}
+              />
+            ))}
+          </div>
       </div>
     </div>
   </section>
