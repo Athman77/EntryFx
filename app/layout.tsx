@@ -29,7 +29,7 @@ export default function RootLayout({
     <html
       lang="en"
       data-layout="narrow" 
-      data-theme="light"
+      data-theme="dark"
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable, "light")}>
       <body className=" home-template global-cover-homepage global-alternative-buttons">
