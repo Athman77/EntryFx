@@ -33,6 +33,7 @@ export default function Post(props) {
   return (
     <>
       <div className="site-wrap">
+       <Header />
         <main className="main">
           <div className="container single-post">
             <div className="post-header">
