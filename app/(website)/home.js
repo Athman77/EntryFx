@@ -16,6 +16,7 @@ export default function Post({ posts }) {
   return (
     <>
       <div className="site-wrap">
+        <Header />
         <main className="main">
           <div className="site-hero home-intro-one">
             <div className="container">
